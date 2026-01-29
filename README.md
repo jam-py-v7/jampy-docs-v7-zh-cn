@@ -31,7 +31,7 @@ jam-project.py
 server.py
 ```
 
-[![Jam.py 演示](https://github.com/platipusica/jampy-docs-v7-zh-cn/blob/main/_static/builder_animation.gif?raw=true)](https://northwind.pythonanywhere.com)
+[![Jam.py 演示](https://github.com/platipusica/jampy-docs-v7-zh-cn/blob/main/_static/builder_animation.gif?raw=true)]([https://northwind.pythonanywhere.com](https://github.com/platipusica/jampy-docs-v7-zh-cn/blob/main/_static/builder_animation.gif))
 
 
 [![Jam.py 演示](https://github.com/platipusica/jampy-docs-v7-zh-cn/blob/main/_static/demo_zh_cn.png?raw=true)](https://northwind.pythonanywhere.com)
