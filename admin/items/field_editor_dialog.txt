@@ -13,7 +13,7 @@
 该对话框有以下选项卡：**Field** （字段）、**Lookup** （查找）、**Interface** （界面）和 **Calculation** （计算）。
 
 字段选项卡
-=========
+===========
 
 .. image:: /admin/_images/fields_editr_field_jampy.png
 	:align: center
