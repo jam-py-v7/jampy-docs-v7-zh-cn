@@ -40,6 +40,6 @@ Index.html
     </script>
 
 在此脚本中，调用了在加载 *jam.js* 文件时创建的任务的 :doc:`load </refs/client/task/m_load>` 方法，该方法从服务器加载有关 
-:doc:`任务树 </programming/task_tree>` 的信息，并根据此信息构建项目的对象树、加载模块、为其项目分配事件处理程序，并触发 :doc:`on_page_loaded </refs/client/task/on_page_loaded>` 事件。请参阅 :doc:`初始化应用程序 <initializing_application>`
+:doc:`任务树 </programming/task_tree>` 的信息，并根据此信息构建项目的对象树、加载模块、为其实体分配事件处理程序，并触发 :doc:`on_page_loaded </refs/client/task/on_page_loaded>` 事件。请参阅 :doc:`初始化应用程序 <initializing_application>`
 
 

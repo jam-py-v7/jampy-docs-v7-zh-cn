@@ -4,12 +4,12 @@
 
 框架的关键概念之一是表单概念。
 
-当用户点击主菜单的菜单项时，会执行相应项目的 :doc:`view </refs/client/item/m_view>` 方法，该方法会创建查看表单。
+当用户点击主菜单的菜单项时，会执行相应实体的 :doc:`view </refs/client/item/m_view>` 方法，该方法会创建查看表单。
 
 此查看表单可以有 **新建(New)** 和 **编辑(Edit)** 按钮，点击这些按钮将执行
  :doc:`insert_record </refs/client/item/m_insert_record>` 
 和
- :doc:`edit_record </refs/client/item/m_edit_record>` 方法。这些方法会创建项目编辑表单。
+ :doc:`edit_record </refs/client/item/m_edit_record>` 方法。这些方法会创建实体编辑表单。
 
 表单基于 HTML :doc:`表单模板 <form_templates>` ，这些模板决定了表单的布局。表单模板定义在项目的根目录中的 :doc:`Index.html <index_html>` 文件中。
 
@@ -42,7 +42,7 @@
 
 如果指定了 ``container`` （一个 Jquery 对象）参数，该方法会先清空它，再并将 html 模板添加到其中；否则，它会创建一个空的模态表单，并将模板添加到表单中。
 
-此后，它将项目的 ``prefix_form`` 属性分配给模板，触发 ``on_prefix_form_created`` 事件，显示表单并触发 ``on_prefix_form_shown`` 事件，其中 prefix 是表单的类型（view（查看）、edit（编辑）、filter（过滤）、param（参数））。
+此后，它将实体的 ``prefix_form`` 属性分配给模板，触发 ``on_prefix_form_created`` 事件，显示表单并触发 ``on_prefix_form_shown`` 事件，其中 prefix 是表单的类型（view（查看）、edit（编辑）、filter（过滤）、param（参数））。
 详情请参阅 :doc:`表单事件 <form_events>`。
 
 以下是任务的 ``on_edit_form_created`` 事件处理程序的示例：
@@ -77,9 +77,9 @@
 :doc:`close_edit_form </refs/client/item/m_close_edit_form>`
 方法来关闭表单。
 
-然后，如果项目不是明细表，并且在其所有者的客户端模块中定义了事件处理程序 ``on_edit_form_created``，则执行此事件处理程序。
+然后，如果实体不是明细表，并且在其所有者的客户端模块中定义了事件处理程序 ``on_edit_form_created``，则执行此事件处理程序。
 
-之后，如果项目在其客户端模块中定义了事件处理程序 ``on_edit_form_created``，
+之后，如果实体在其客户端模块中定义了事件处理程序 ``on_edit_form_created``，
 则执行此事件处理程序。
 
 在这些事件处理程序中，可以执行一些额外的操作。

@@ -4,7 +4,7 @@
 
 在本部分教程中，我们将解释如何使用明细表。
 
-让我们在项目树中选择"任务(Task)/组(Groups)" 项目，并点击页面右下角的 **新建(New)** 按钮，新建一个项目组：
+让我们在项目树中选择"任务(Task)/组(Groups)" ，并点击页面右下角的 **新建(New)** 按钮，新建一个项目组：
 
 .. image:: /intro/_images/detail_group_jampy.png
     :scale: 50%
@@ -20,7 +20,7 @@
 
 在
 :doc:`项目编辑器 </admin/items/item_editor_dialog>`
-对话框中，我们将新项目命名为 “待办事项列表(To do list)” ，并按照前一教程的方式添加 “创建时间(Created)” 和 “待办事项(To do)” 两个字段：
+对话框中，我们将新实体命名为 “待办事项列表(To do list)” ，并按照前一教程的方式添加 “创建时间(Created)” 和 “待办事项(To do)” 两个字段：
 
 .. image:: /intro/_images/new_detail_jampy.png
     :scale: 50%
@@ -60,7 +60,7 @@
     :align: center
     :alt: details_dialog_jampy.png
 
-一个新的 “待办事项列表(To do list)” 项目将被创建为 “联系人(Contacts)” 日志的子项。
+一个新的 “待办事项列表(To do list)” 实体将被创建为 “联系人(Contacts)” 日志的子项。
 
 .. image:: /intro/_images/contacts_to_do_list_jampy.png
     :scale: 50%
@@ -76,7 +76,7 @@
     :align: center
     :alt: details_to_edit_jampy.png
 
-让我们更新项目页面并双击某个联系人。现在我们可以为该联系人的待办事项列表添加项目。
+让我们更新项目页面并双击某个联系人。现在我们可以为该联系人的待办事项列表添加内容。
 
 .. image:: /intro/_images/new_to_do_item_jampy.png
     :scale: 50%
@@ -90,7 +90,7 @@
     :align: center
     :alt: detail_group_visible_jampy.png
 
-当我们刷新项目页面时，我们将在主菜单中看到 “待办事项列表(To do list)”  项目。
+当我们刷新项目页面时，我们将在主菜单中看到 “待办事项列表(To do list)”  实体。
 点击它以查看所有联系人的待办事项列表。
 
 .. image:: /intro/_images/todo_all_jampy.png

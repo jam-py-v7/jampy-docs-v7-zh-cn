@@ -2,7 +2,7 @@
 数据感知控件
 ===================
 
-要创建一个表格来显示项目的数据集，请使用 
+要创建一个表格来显示实体的数据集，请使用 
 :doc:`create_table </refs/client/item/m_create_table>` 方法：
 
 .. code-block:: js
@@ -22,7 +22,7 @@
 
 这些方法通常在 **on_view_form_created** 和 **on_edit_form_created** 事件处理程序中使用。
 
-所有由这些方法创建的可视控件（表格、输入框、复选框）都是数据感知的。这意味着它们会立即反映项目数据集的任何更改。
+所有由这些方法创建的可视控件（表格、输入框、复选框）都是数据感知的。这意味着它们会立即反映实体数据集的任何更改。
 
 有时需要禁用这种交互。
 为此，请分别使用 :doc:`disable_controls </refs/client/item/m_disable_controls>`

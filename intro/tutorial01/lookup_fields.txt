@@ -2,7 +2,7 @@
 查找字段
 =============
 
-现在，我们将创建 “联系人(Contacts)” 日志，并使用查找字段将联系人与客户关联起来。查找字段允许一个数据项目（即目录或日志）的元素引用另一个数据项目中的元素。
+现在，我们将创建 “联系人(Contacts)” 日志，并使用查找字段将联系人与客户关联起来。查找字段允许一个数据实体（即目录或日志）的元素引用另一个实体中的元素。
 
 在项目任务树中选择"Journals"（日志）组，并以与创建 “客户” 目录相同的方式添加新日志。日志和目录一样，对应数据库中的不同表。有关更多信息，请参阅此 :doc:`链接 </faq/faq_catalogs_vs_journals>`。
 
@@ -26,7 +26,7 @@
 	:align: center
 	:alt: 客户查找选项卡
 
-这将弹出一个项目列表。双击 “客户(Customers)” 记录以选择它。
+这将弹出一个实体列表。双击 “客户(Customers)” 记录以选择它。
 
 .. image:: /intro/_images/cutomers_lookup_item_jampy.png
 	:scale: 50%
@@ -56,7 +56,7 @@
 	:align: center
 	:alt: 电话查找字段
 
-点击 **确定** 按钮保存 “联系人(Contacts)” 项目。
+点击 **确定** 按钮保存 “联系人(Contacts)” 实体。
 
 .. image:: /intro/_images/contacts_sql_jampy.png
 	:scale: 50%

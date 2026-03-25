@@ -10,7 +10,7 @@
 
 当执行 :doc:`load </refs/client/task/m_load>` 方法时，文件被处理并作为 JQuery 对象存储在 :doc:`templates </refs/client/task/at_templates>` 的属性中。
 
-要为项目添加表单模板，您应该在 templates.html 中添加一个 class 为 ``name-suffix`` 的 div，其中 ``name`` 是项目的
+要为实体添加表单模板，您应该在 templates.html 中添加一个 class 为 ``name-suffix`` 的 div，其中 ``name`` 是实体的
 :doc:`item_name </refs/client/abstr_item/at_item_name>`
 ，而 ``suffix`` 是表单类型：view（查看）、edit（编辑）、filter（过滤）、param（参数）。
 
@@ -22,7 +22,7 @@
 		...
 	</div>
 
-是 **发票(invoices)** 项目的编辑表单模板。
+是 **发票(invoices)** 实体的编辑表单模板。
 
 对于明细表，其名称前应加上其主表的名称，并用连字符分隔：
 
@@ -32,7 +32,7 @@
 		...
 	</div>
 
-如果项目没有表单模板，则将使用其所有者的表单模板（如果已定义）。
+如果实体没有表单模板，则将使用其所有者的表单模板（如果已定义）。
 
 因此，模板
 
@@ -42,9 +42,9 @@
 		...
 	</div>
 
-将用于创建 **Journals** （日志）组所拥有且没有自己的编辑表单模板的项目的编辑表单。
+将用于创建 **Journals** （日志）组所拥有且没有自己的编辑表单模板的实体的编辑表单。
 
-如果通过这种方式搜索后，没有为项目找到模板，则将使用 class 为 ``default-suffix`` 的模板来创建表单。
+如果通过这种方式搜索后，没有为实体找到模板，则将使用 class 为 ``default-suffix`` 的模板来创建表单。
 
 因此，模板
 
@@ -54,7 +54,7 @@
 		...
 	</div>
 
-将用于为那些没有为其及其所有者定义模板的项目创建编辑表单。
+将用于为那些没有为其及其所有者定义模板的实体创建编辑表单。
 
 创建新项目时，index.html 已经包含此类模板。
 
