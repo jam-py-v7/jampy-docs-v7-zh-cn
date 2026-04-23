@@ -11,7 +11,9 @@
 要启动演示应用程序，请进入 demo 文件夹并运行 *server.py* 脚本。
 
 .. code-block:: console
-
+    
+    $ git clone https://github.com/jam-py-v7/jampy-docs-v7/
+    $ cd demo_zh_CN
     $ ./server.py
 
 
@@ -38,6 +40,9 @@
 	:alt: 演示应用程序
 
 
+
+
+业务应用程序构建器 ：
 
 
 .. image:: /intro/_images/demo_admin_jampy.png

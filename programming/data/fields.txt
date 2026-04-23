@@ -15,9 +15,7 @@
    :doc:`field_name </refs/client/field/at_field_name>`, :doc:`field_name </refs/server/field/at_field_name>`, "字段的名称，将在编程代码中用于访问字段对象。"   
    :doc:`field_caption </refs/client/field/at_field_caption>`, :doc:`field_caption </refs/server/field/at_field_caption>`, "向用户显示的字段名称。"   
    :doc:`field_type </refs/client/field/at_field_type>`, :doc:`field_type </refs/server/field/at_field_type>`, "字段类型，为以下值之一： **text** 、 **integer** 、 **float** 、 **currency** 、 **date** 、 **datetime** 、 **boolean** 、 **blob** 。"      
-   :doc:`field_size </refs/client/field/at_field_size>`, :doc:`field_size </refs/server/field/at_field_size>`, "类型为 **text** 的字段的
-
-大小"   
+   :doc:`field_size </refs/client/field/at_field_size>`, :doc:`field_size </refs/server/field/at_field_size>`, "类型为 **text** 的字段的 大小。"   
    :doc:`required </refs/client/field/at_required>`, :doc:`required </refs/server/field/at_required>`, "指定字段是否需要非空值。"   
 
 为了访问实体的数据集数据，Field 类具有以下属性：

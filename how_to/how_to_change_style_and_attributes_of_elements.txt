@@ -29,8 +29,8 @@
 找到表单的元素后，就能使用 jQuery 方法对其更改。
 
 由于字段的输入框是在 :doc:`on_edit_form_created </refs/client/item/on_edit_form_created>`
-事件触发后，由 :doc:`create_inputs </refs/client/item/m_create_inputs>`方法自动创建的
-（可参考任务客户端模块中的 ``on_edit_form_created`` 事件处理器），
+事件触发后，由 :doc:`create_inputs </refs/client/item/m_create_inputs>`
+方法自动创建的（可参考任务客户端模块中的 ``on_edit_form_created`` 事件处理器），
 因此你必须编写 :doc:`on_edit_form_shown </refs/client/item/on_edit_form_shown>` 
 事件处理器来修改输入框样式和属性。
 
