@@ -54,7 +54,7 @@ html_baseurl = 'https://jampy-docs.readthedocs.io/projects/V7/zh-cn/latest'
 
 html_context = {
     "display_github": True, # Integrate GitHub
-    "github_user": "platipusica", # Username
+    "github_user": "jam-py-v7", # Username
     "github_repo": "jampy-docs-v7-zh-cn", # Repo name
     "github_version": "main", # Version
     "conf_py_path": "/", # Path in the checkout to the docs root

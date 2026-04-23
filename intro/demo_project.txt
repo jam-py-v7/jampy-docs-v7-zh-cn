@@ -38,6 +38,8 @@
 	:alt: 演示应用程序
 
 
+
+
 .. image:: /intro/_images/demo_admin_jampy.png
 	:scale: 70 %
 	:align: center
