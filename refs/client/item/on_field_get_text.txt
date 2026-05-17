@@ -13,17 +13,14 @@ on_field_get_text(field)
 Description
 ===========
 
-Write an ``on_field_get_text`` event handler to specify the ``text`` that will be 
-inserted in the table cell for the field.
+编写 ``on_field_get_text`` 事件处理程序，
+来指定将被插入到字段的单元格中的 ``text`` 。
 
+``field`` 参数是一个字段，
+它的 :doc:`display_text </refs/client/field/at_display_text>` 已经被处理。
+要获取拥有此字段的实体项，请使用字段的 :doc:`owner </refs/client/field/at_owner>` 属性。
 
-The ``field`` parameter is the field whose 
-:doc:`display_text </refs/client/field/at_display_text>`
-is processed. To get the item that owns the field, use the
-:doc:`owner </refs/client/field/at_owner>` attribute of the field.
-
-The function is used to concatenate two or more fields for displaying. The 
-fields can be any lookups from some other tables.
+该函数用于连接两个或多个字段进行显示。这些字段可以是其他表中的任何可以访问的字段。
 
 Example
 =======

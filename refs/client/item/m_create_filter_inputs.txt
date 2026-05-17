@@ -11,45 +11,37 @@ create_filter_inputs
 Description
 ===========
 
-Use ``create_filter_inputs`` to create data-aware visual controls (inputs, 
-cheboxes) for editing 
-:doc:`filters <at_filters>`
-of an item.
+使用 ``create_filter_inputs`` 方法创建数据感知控件（输入框、复选框等）以编辑实体项的 :doc:`过滤器 <at_filters>` 。
 
-This method is usually used in ``on_filter_form_created`` events triggered by
-:doc:`create_filter_form <m_create_filter_form>`
-method.
+通常，在由 :doc:`create_filter_form <m_create_filter_form>` 
+方法触发的 ``on_filter_form_created`` 事件中使用该方法。
 
-The following parameters are passed to the method:
+下列参数可以传递给该方法：
 
-* ``container`` - a JQuery object that will contain visual controls, if 
-  container length is 0 (no container), the method returns.
+* ``container`` - 一个包含可视化控件的 JQuery 对象，如果该对象的长度为 0 （没有），
+  该方法将直接返回。
 
-* ``options`` - options that specify how controls are displayed
+* ``options`` - 指定如何显示控件的选项。
 
-The ``options`` parameter is an object that may have following attributes:
+``options`` 参数是一个可以有下列属性的对象：
 
-* ``filters`` - a list of filter names. If specified, a visual control will be 
-  created for each filter whose name is in this list, if not specified 
-  (the default) then the fields attribute of an 
-  :doc:`filter_options <at_filter_options>`
-  will be used (by default it lists all visible filters specified in the 
-  Application builder),
+* ``filters`` - 过滤器的名称列表。
+  如果指定了该属性，那么将为该列表中的每个过滤器创建一个可视化的控件；
+  如果没有指定该属性（默认不指定），
+  那么将使用 :doc:`filter_options <at_filter_options>` 的字段属性
+  （默认情况下，它会列出在应用程序构建器中指定的所有可见过滤器）。
 
-* ``col_count`` - the number of columns that will be created for visual controls, 
-  the default value is 1.
+* ``col_count`` - 为可视化控件创建的列数，其默认值是 1 。
+
+* ``label_on_top``: 其默认值是 false 。
+  如果值为 false，标签将被放置于控件的左测；否则，在控件的上面创建标签。
+
+* ``tabindex`` - 如果指定了 ``tabindex`` ，它将是第一个可视控件的选项卡索引，所有后续控件的 tabindex 值将依次增加 1 。
   
-* ``label_on_top``: the default value is false. If this value is false, the 
-  labels are placed to the left of controls, otherwise the are created above the
-  controls
-  
-* ``tabindex`` - if tabindex is specified, it will the tabindex of the first 
-  visual control, tabindex of all subsequent controls will be increased by 1.
-  
-* ``autocomplete`` - the default value is false. If this attribute is set to 
-  true, the autocomplete attribute of controls is set to "on"   
+* ``autocomplete`` - 其默认值是 false 。
+  如果将此属性设置为 true ，控件的自动补全属性将被设置为 “ on ” 。
 
-Before creating controls the application empties the container.
+在创建空间之前，应用程序将清空  ``container`` 。
 
 Example
 =======
@@ -70,7 +62,7 @@ Example
 See also
 ========
 
-:doc:`filters <at_filters>`
+:doc:`过滤器 <at_filters>`
 
 :doc:`create_filter_form <m_create_filter_form>`
 

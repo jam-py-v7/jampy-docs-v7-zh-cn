@@ -13,18 +13,14 @@ calc_summary
 Description
 ===========
 
-Use the calc_summary method to calculate sums for fields of a detail and save 
-these values in fields of its master in the on_detail_changed event handler.
+使用 calc_summary 方法计算明细项的字段的总和，并在 on_detail_changed 事件处理程序中将这些值保存明细项的主表的字段中。
 
-The ``detail`` parameter is the detail for the fields of which the sums are 
-calculated.
+``detail`` 参数是将对其求和的字段的明细。
 
-The ``fields`` parameter is an object that defines the correspondence between 
-the master and detail fields. The keys of this object are the master fields, 
-the values are the corresponding details fields. If the detail field is a numeric 
-field, its sum is calculated, otherwise the resulting value will be the number 
-of records. The value of this object can be a function that returns the result 
-of the calculation for a record of the detail.
+``fields`` 参数是一个对象，它定义了主表字段和明细项字段之间的对应。
+对象的键是主表字段，值是对应的明细项的字段。
+如果 明细项字段是一个数值类型的字段，将对其求和，否则，计算的结果是记录的数量。
+这个对象的值可以是一个函数，它返回对明细项的记录的计算结果。
 
 Example
 =======
@@ -45,4 +41,4 @@ See also
 ========
 
 :doc:`on_detail_changed <on_detail_changed>`
-:doc:`Details </programming/data/details>`
+:doc:`明细 </programming/data/details>`

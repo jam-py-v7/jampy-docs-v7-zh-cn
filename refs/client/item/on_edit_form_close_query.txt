@@ -13,11 +13,10 @@ on_edit_form_close_query(item)
 Description
 ===========
 
-The ``on_edit_form_close_query`` event is triggered by the 
-:doc:`close_edit_form <m_close_edit_form>`
-method of the item.
+``on_edit_form_close_query`` 事件由实体项的 
+:doc:`close_edit_form <m_close_edit_form>` 方法触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
 See also
 ========

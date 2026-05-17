@@ -13,11 +13,9 @@ on_edit_form_shown(item)
 Description
 ===========
 
-The **on_edit_form_shown** event is triggered by the 
-:doc:`create_edit_form <m_create_edit_form>`
-method when the form has been shown.
+**on_edit_form_shown** 事件在表单窗体已经显示后由 :doc:`create_edit_form <m_create_edit_form>` 方法触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
 See also
 ========

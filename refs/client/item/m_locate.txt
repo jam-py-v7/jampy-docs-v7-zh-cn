@@ -13,22 +13,18 @@ locate
 Description
 ===========
 
-Implements a method for searching an item dataset for a specified record and 
-makes that record the active record.
+实现一种方法，用于在实体数据集中搜索指定的记录，并使该记录成为 “活动” 记录。
 
-Arguments:
+参数：
 
-* ``fields``: a field name, or list of field names
-* ``values``: a field value of list of field values
+* ``fields``：字段名称，或字段名称列表
+* ``values``：字段值，或字段值列表
 
-This method locates the record where the fields specified by ``fields`` parameter 
-have the values specified by ``values`` parameter.
+此方法定位记录，其中 ``fields`` 参数指定的字段具有 ``values`` 参数指定的值。
 
-``Locate`` returns true if a record is found that matches the specified criteria and 
-the cursor repositioned to that record.
+如果找到匹配指定条件的记录，并将光标重新定位到该记录，则 ``Locate`` 返回 true 。
 
-If a matching record was not found and the cursor is not repositioned, this 
-method returns false.
+如果未找到匹配的记录或光标未重新定位，则此方法返回 false 。
 
 See also
 ========

@@ -13,16 +13,15 @@ on_after_open(item)
 Description
 ===========
 
-Occurs after an application receives a response from the server for obtaining a 
-dataset.
+应用程序接收到来自服务端获取数据集的响应之后发生此事件。
 
-The ``item`` parameter is an item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-Write an ``on_after_open`` event handler to take specific action immediately 
-after an application obtains an dataset from the server. ``on_after_open`` is 
-called by :doc:`open <m_open>` method. 
+编写一个 ``on_after_open`` 事件处理程序，应用程序在接收到来自服务端获取数据集的响应之后，立即执行指定的操作。
 
-On Demo application this event is used to identify the Invoice for the Track purchased:
+``on_after_open`` 由 :doc:`open <m_open>` method 调用。
+
+在演示应用程序中，此事件用于标识所购曲目的发票:
 
 .. code-block:: js
 

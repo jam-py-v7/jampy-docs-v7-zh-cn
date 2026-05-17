@@ -13,8 +13,8 @@ last
 Description
 ===========
 
-Call ``last`` to position the cursor on the last record in the item dataset and 
-make it the active record. 
+调用 ``last`` 方法将游标移到实体项数据集的最后一条记录上，
+并使之成为 “活动(active)” 记录。
 
 See also
 ========

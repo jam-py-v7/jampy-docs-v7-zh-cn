@@ -13,13 +13,12 @@ close
 Description
 ===========
 
-Call ``сlose`` to close an item dataset. After dataset is closed the 
-:doc:`active <at_active>` 
-property is ``false``.
+调用 ``close`` 方法关闭实体项的数据集。
+在数据集被关闭后， :doc:`active <at_active>` 属性是 ``false``。
 
 See also
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
 :doc:`open <m_open>`

@@ -13,37 +13,32 @@ copy
 Description
 ===========
 
-Use copy to create a copy of an item. The created copy is not added to the 
-:doc:`task tree </programming/task_tree>`
-and will be destroyed by JavaScript garbage collection process when no longer 
-needed.
+使用 ``copy`` 方法创建一个实体项的副本。创建的副本不会被添加到 :doc:`任务树 </programming/task_tree>` 中，而且不再需要时，它会被 JavaScript 垃圾处理程序回收。
 
-All attributes of the copy object are defined as they were at the time of loading
-of the task tree when application started. See 
-:doc:`Workflow </programming/workflow>`
+副本对象的所有属性都是在应用程序启动时加载任务树时被定义的。
+请见 :doc:`工作流 </programming/workflow>`
 
 ``Options`` parameter further specifies the created copy. It can have the 
 following attributes:
+``Options`` 参数进一步指定了创建的副本，它可以有下列属性：
 
-* ``handlers`` - if the value of this attribute is ``true``, all the settings 
-  to the item made in the Form Dialogs in the Application Builder and all the 
-  functions and events defined in the client module of the item will also be 
-  available in the copy. The default value is ``true``.
-* ``filters`` - if the value of this attribute is ``true``, the filters will be 
-  created for the copy, otherwise there will be no filters. The default value 
-  is ``true``.
-* ``details`` - if the value of this attribute is ``true``, the details will be 
-  created for the copy, otherwise there will be no details. The default value 
-  is ``true``.
+* ``handlers`` - 如果这个属性的值是 ``true`` ，
+  那么，在应用程序构建器的表单窗体对话框中对实体项做的所有设置
+  和在实体项客户端模块中定义的所有函数和事件也可以在副本里生效和使用。
+  其默认值是 ``true`` 。
+  
+* ``filters`` - 如果这个属性的值是 ``true`` ，将为副本创建设置的过滤器，
+  否则，副本没有过滤器。其默认值是 ``true`` 。
+  
+* ``details`` -如果这个属性的值是 ``true`` ， 将为副本创建设置的明细项，
+  否则，副本没有明细项。 其默认值是 ``true`` 。
 
 
 Example
 =======
 
-The following code is used in the 
-:doc:`Demo project </intro/demo_project>`
-to asynchronously calculate total values of the fields, displayed at the foot of 
-the **Invoice** journal table:
+在 :doc:`演示项目 </intro/demo_project>` 中，使用下面的代码来异步计算字段值的总和，
+其结果显示在 **发票(Invoice)** 业务表的页脚位置：
 
 .. code-block:: js
 
@@ -68,6 +63,6 @@ the **Invoice** journal table:
 See also
 ========
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`任务树 </programming/task_tree>`
 
-:doc:`Workflow </programming/workflow>`
+:doc:`工作流 </programming/workflow>`

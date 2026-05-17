@@ -13,12 +13,9 @@ disable_edit_form
 Description
 ===========
 
-Call ``disable_edit_form`` to prevent any user actions when 
-:doc:`edit_form <at_edit_form>` is visible.
+当 :doc:`edit_form <at_edit_form>` 可见时，调用 ``disable_edit_form`` 方法可以阻止任何用户的操作。
 
-Call 
-:doc:`enable_edit_form <m_enable_edit_form>`
-to re-enable edit form.
+调用 :doc:`enable_edit_form <m_enable_edit_form>` 方法重新启用编辑表单对窗体。
 
 Example
 =======

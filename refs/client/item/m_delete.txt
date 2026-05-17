@@ -13,41 +13,36 @@ delete
 Description
 ===========
 
-Deletes the active record and positions the cursor on the next record.
+删除活动的记录，并将游标移到下一条记录上。
 
-The ``delete`` method
+``delete`` 方法
 
-* checks if item dataset is 
-  :doc:`active <at_active>`, otherwise raises exception
+* 检查实体项数据集是否处于:doc:`active <at_active>` 状态。
+  如果不是，则引发异常。
 
-* checks if item dataset is not empty, otherwise raises exception
+* 检查实体项数据集是否不为空。如果为空，则引发异常。
 
-* if item is a 
-  :doc:`detail </programming/data/details>`
-  , checks if the master item is in edit or insert 
-  :doc:`state <at_item_state>`, otherwise raises exception.
+* 如果实体项是一个 :doc:`明细项 </programming/data/details>` ，
+  那么检查其主实体项是否处于 “编辑” 或 “插入”  
+  :doc:`状态 <at_item_state>` ，如果不是，则引发异常。
   
-* if item is not a 
-  :doc:`detail </programming/data/details>`
-  , checks if it is in browse 
-  :doc:`state <at_item_state>`, otherwise raises exception.
+* 如果实体项不是一个 :doc:`明细项 </programming/data/details>` ，
+  那么检查其是否处于 “浏览” :doc:`状态 <at_item_state>` ，
+  如果不是，则引发异常。
   
-* triggers the :doc:`on_before_delete <on_before_delete>` event handler if one is 
-  defined for the item. 
+* 触发为实体项定义的 :doc:`on_before_delete <on_before_delete>` 事件处理程序。
   
-* puts the item into delete :doc:`state <at_item_state>`
+* 将实体项置于 “删除” :doc:`状态 <at_item_state>` 。
 
-* deletes the active record and positions the cursor on the next record
+* 删除活动的记录，并将游标移到下一条记录。
 
-* puts the item into browse :doc:`state <at_item_state>`
+* 将实体项置于 “浏览”  :doc:`状态 <at_item_state>`
 
-* triggers the :doc:`on_after_delete <on_after_delete>` event handler if one is 
-  defined for the item
+* 触发为实体项定义的 :doc:`on_after_delete <on_after_delete>`  事件处理程序。
 
-* updates 
-  :doc:`data-aware controls </programming/interface/data_controls>`
+* 更新 :doc:`数据感知控件 </programming/interface/data_controls>` 
 
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

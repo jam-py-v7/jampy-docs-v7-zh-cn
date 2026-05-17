@@ -14,10 +14,9 @@ master_applies
 Description
 ===========
 
-If the ``master_applies`` attribute is a set to **true** in Master/Detail scenario, the **Master** will apply the 
-changes made with adding/removing Detail item. 
-If the attribute is a set to **false**, the **Detail** will apply the changes immediately 
-to complete dataset in Details on creating a new record.
+如果在 master/Detail 场景中，将 ``master_applies`` 属性设置为 **true** ，则**master** 将应用对明细项的 “添加/删除” 操作所做的更改。 
+
+如果该属性设置为 **false** ，则 **Detail** 将在创建新记录时立即应用更改以保证 Details 中的数据集的完整。
 
 
 Example

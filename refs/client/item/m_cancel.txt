@@ -13,31 +13,24 @@ cancel
 Description
 ===========
 
-Call ``cancel`` to undo modifications made to one or more fields belonging to 
-the current record, as long as those changes are not already posted to the item 
-dataset. 
+调用 ``cancel`` 方法以撤销对当前记录一个或多个字段所作的修改，只要变更还没有被提交到实体项数据集。
 
 **Cancel** 
 
-* triggers the 
-  :doc:`on_before_cancel <on_before_cancel>`
-  event handler if one is defined for the item. 
+* 如果为实体项定义了 :doc:`on_before_cancel <on_before_cancel>` 事件处理程序，
+  就触发它
 
-* to undo modifications made to the current record and its details if the record
-  has been edited or removes the new record if one was appended or inserted. 
+* 如果当前已有的记录被编辑，则撤销当前对记录和与之关联的明细项的修改；如果新记录被添加或插入，则移除新记录。。
 
-* puts the item into browse :doc:`state <at_item_state>`
+* 将实体项置于 “浏览” :doc:`状态 <at_item_state>`
 
-* triggers the 
-  :doc:`on_after_cancel <on_after_cancel>`
-  event handler if one is 
-  defined for the item.
+* 如果为实体项定义了 :doc:`on_after_cancel <on_after_cancel>` 事件处理程序，
+  就触发它
   
-* updates 
-  :doc:`data-aware controls </programming/interface/data_controls>`
+* 更新 :doc:`数据感知控件 </programming/interface/data_controls>`
 
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 

@@ -13,23 +13,18 @@ cancel_edit
 Description
 ===========
 
-Cancel visual editing on the record
+取消记录的可视化编辑
 
-The ``cancel_edit`` method 
+``cancel_edit`` 方法
 
-* calls the
-  :doc:`close_edit_form <m_close_edit_form>`
-  method to destroy the edit_form
+* 调用 :doc:`close_edit_form <m_close_edit_form>` 方法以销毁 edit_form
 
-* calls the
-  :doc:`cancel <m_cancel>`
-  method to undo modifications made to the record
-  
+* 调用 :doc:`cancel <m_cancel>` 方法以撤销对记录所做的修改。
 
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 :doc:`close_edit_form <m_close_edit_form>`
 

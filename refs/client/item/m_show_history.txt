@@ -13,8 +13,7 @@ show_history
 Description
 ===========
 
-Class show_history method of am item to open a dialog displaying history of 
-changes of the selected record
+实体项的 ``show_history`` 方法打开一个对话框，显示所选记录的更改历史。
 
 See also
 ========

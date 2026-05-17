@@ -2,7 +2,7 @@
 on_open_report
 ==============
 
-See:
+请见
 ====
 
 :doc:`Report Events</refs/client/reports/on_open_report>`

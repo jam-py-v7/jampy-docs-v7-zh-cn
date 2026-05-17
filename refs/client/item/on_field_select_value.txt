@@ -13,19 +13,15 @@ on_field_select_value(field, lookup_item)
 Description
 ===========
 
-When user clicks on the button to the right of the field input or uses typeahead,
-the application creates a copy of the lookup item of the field and
-triggers ``on_field_select_value`` event. Use ``on_field_select_value`` to 
-specify fields that will be displayed, set up filters for the lookup item, before
-it will be opened.
+当用户点击字段输入框右侧的按钮或使用与输入时，应用程序将创建该字段查找项的一个副本，
+并触发 ``on_field_select_value`` 事件。
+使用 ``on_field_select_value`` 指定将要现实的字段，在数据被打开之前为其查找项设置过滤器。
 
-In short, ``on_field_select_value`` is used for locating or identifying the record
-on the lookup table when we click on the lookup icon.
+简而言之，当我们点击查找图标时， ``on_field_select_value`` 用于定位或标识查找表上的记录。
 
+``field`` 参数是其数据将被选择的字段。
 
-The ``field`` parameter is the field whose data will be selected.
-
-The ``lookup_item`` parameter is a copy of the lookup item of the field
+``lookup_item`` 参数是字段的查找项的副本。
 
 Example
 =======

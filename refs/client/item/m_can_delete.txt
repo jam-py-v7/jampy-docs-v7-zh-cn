@@ -13,16 +13,9 @@ can_delete
 Description
 ===========
 
-Use ``can_delete`` method to determine if a user have a right to delete a record of 
-an item dataset.
+使用 ``can_delete`` 方法确定一个用户是否有权限删除一个属于实体项数据集的记录。
 
-This method takes into account the user permissions set in the :doc:`roles node </admin/roles>`
-in the Application Builder when the project 
-:doc:`safe mode parameter </admin/project/parameters>`
-is set as well as the values of the 
-:doc:`permissions <at_permissions>` 
-attribute and the value of
-:doc:`can_modify <at_can_modify>` attribute.
+当设置了项目 :doc:`安全模式参数 </admin/project/parameters>` 以及 :doc:`permissions <at_permissions>` 属性和 :doc:`can_modify <at_can_modify>` 属性的值时，此方法考虑了在应用程序生成器的 :doc:`角色节点 </admin/roles>` 中设置的用户权限。
 
 Example
 =======

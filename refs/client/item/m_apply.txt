@@ -13,81 +13,66 @@ apply
 Description
 ===========
 
-Sends all updated, inserted, and deleted records from the item dataset to the 
-application server for writing to the database.
+将所有已更新的、已插入的、已删除的记录从实体项数据集发送到应用程序服务端，以写入数据库。
 
-The ``apply`` method can have the following parameters:
+``apply`` 方法有如下参数：
 
-* ``callback``: if the parameter is not present and ``async`` parameter is ``false`` 
-  or ``undefined``, the request to the server is 
-  sent synchronously, otherwise, the request is executed asynchronously and 
-  after the response is received, the callback is executed
+* ``callback``: 如果参数不存在，并且 ``async`` 参数是 ``false`` 或是 
+  ``undefined``，发送到服务端的请求是同步的；
+  否则，将异步执行请求，在收到响应后，将执行回调。 
 
-* ``params`` - an object specifying user defined params, that can be used 
-  on the server in the
-  :doc:`on_apply </refs/server/item/on_apply>`
-  event handler for some additional processing
+* ``params`` - 一个指定用户定义参数的对象，可以在服务器上的 
+  :doc:`on_apply </refs/server/item/on_apply>` 事件处理程序中使用，
+  以进行一些额外的处理
 
-* ``async``: if its value is true, and callback parameter is missing, the request 
-  is executed asynchronously 
+* ``async``: 如果值是 true ，并且没有回调参数，将异步执行请求
 
-The order of parameters doesn't matter.
+参数的先后顺序无关紧要。
 
-The ``apply`` method
+``apply`` 方法
 
-* checks whether the item is a detail, and if it is, returns (the master saves the
+* 检查实体项是否是一个明细项，如果它是，返回 and if it is, returns (the master saves the
   details changes)
 
-* checks whether the item is in edit or insert 
-  :doc:`state <at_item_state>`
-  , and if so, posts the record
-  
-* checks if the change log has changes, and if not, executes callback if it is 
-  passed and then returns
+* 检查实体项是否处于 “编辑” 或 “插入” :doc:`状体 <at_item_state>` ，
+  如果是，则提交记录
 
-* triggers the 
-  :doc:`on_before_apply <on_before_apply>`
-  event handler if one is defined for the item 
+* 检查变更记录是否有变化，如果没有，则执行回调函数（如果传递了），然后返回
 
-* sends changes to the server 
+* 如果为实体项定义了 :doc:`on_before_apply <on_before_apply>` 事件处理程序，则触发
 
-* server on receiving the request checks whether
-  :doc:`on_apply </refs/server/item/on_apply>`
-  event handler is defined for the item, and if it is, executes it, otherwise   
-  generates and executes SQL query to write changes to the database, see also
-  :doc:`on_apply events </programming/server/on_apply_events>` topic
-  
-* when generating an SQL query, checks whether a user, that send the request, has 
-  rights to make these changes, if not raises an exception
-  
-* writes changes to the database  
+* 将变更发送到服务端。
 
-* after writing changes to the database, server sends to the client results
-  of the execution
+* 服务器在接收到求情后，检查是否为实体项定义了 
+  :doc:`on_apply </refs/server/item/on_apply>` 事件处理程序，
+  如果定义了，就执行它。否则，生成 SQL 查询语句并执行，已将变更写入数据库。
+  请参考 :doc:`on_apply events </programming/server/on_apply_events>` 话题。
 
-* if exception was raised during the operation on the server the client throws an 
-  exception, before throwing exception, if the callback parameter is passed, 
-  it is called and the error is passed as the callback function parameter
+* 在生成一个 SQL 查询语句时，会检查发送请求的用户是否有权限进行更改，
+  如果没有，则抛出一个异常。
 
-* the client, based on the results, updates the change log   
+* 将变更写入数据库。
 
-* triggers the 
-  :doc:`on_after_apply <on_after_apply>`
-  event handler if one is defined for the item 
+* 在将变更写入数据库之后，服务器将执行的结果发送到客户端。
+
+* 如果在服务端上的操作引发了异常，那么在抛出异常之前，客户端也会抛出异常。
+  如果传了回调参数，将调用它，将错误信息作为回调函数的参数进行传递。
+
+* 客户端依据执行结果更新变更日志。
+
+* 如果为实体项定义了 :doc:`on_after_apply <on_after_apply>` 事件处理程序，
+  则触发它。
  
-* if the callback parameter is passed, it is called. 
+* 如果传递了回调参数，则调用它。
 
 .. note::
-    The server, before writing new records to the database table, generates 
-    values for the primary fields. The client updates these fields, based on 
-    information received from the server. If you change values of some other 
-    fields in the 
-    :doc:`on_apply </refs/server/item/on_apply>`
-    event handler, these changes will not be reflected on the client. You can
-    update them yourself using, for example, 
-    :doc:`refresh_record <m_refresh_record>`
-    method
-    
+
+    服务端在将新记录写入数据库表之前，会为主字段生成值。
+    客户端根据从服务端接收到的信息更新这些字段。
+    如果你在 :doc:`on_apply </refs/server/item/on_apply>` 事件处理程序中
+    更改了其他字段的值，这些更改不会反映在客户端上。
+    您可以自己使用像 :doc:`refresh_record <m_refresh_record>`这样的方法更新它们。
+
 Example
 =======
 
@@ -109,4 +94,4 @@ Example
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

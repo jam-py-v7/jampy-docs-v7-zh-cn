@@ -13,15 +13,11 @@ on_field_get_summary(field, value)
 Description
 ===========
 
-Write an ``on_field_get_summary`` event handler to specify the ``summary`` that will be 
-inserted in the summary cell for the field.
+编写 ``on_field_get_summary`` 事件处理程序，
+来指定将被插入到字段的汇总单元格中的 ``summary`` 。
 
-
-The ``field`` parameter is the field whose 
-:doc:`on_field_get_summary </refs/client/item/on_field_get_summary>`
-is processed. To get the item that owns the field, use the
-:doc:`owner </refs/client/field/at_owner>` attribute of the field.
-
+``field`` 参数是一个字段，它的 :doc:`on_field_get_summary </refs/client/item/on_field_get_summary>` 已经被处理。要获取拥有此字段的实体项，请使用字段的 :doc:`owner </refs/client/field/at_owner>` 属性。
+ 
 Example
 =======
 

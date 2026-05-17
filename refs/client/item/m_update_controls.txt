@@ -13,9 +13,7 @@ update_controls
 Description
 ===========
 
-Call
-:doc:`update_controls <m_update_controls>` to tell associated controls to redraw
-to reflect current data.
+调用 :doc:`update_controls <m_update_controls>` 告诉相关联的控件刷新显示以反应当前的数据。
 
 See also
 ========

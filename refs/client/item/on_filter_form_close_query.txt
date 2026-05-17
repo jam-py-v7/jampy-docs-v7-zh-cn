@@ -11,11 +11,10 @@ on_filter_form_close_query(item)
 Description
 ===========
 
-The ``on_filter_form_close_query`` event is triggered by the 
-:doc:`close_filter_form <m_close_filter_form>`
-method of the item.
+``on_filter_form_close_query`` 事件由实体项的 
+:doc:`close_filter_form <m_close_filter_form>` 方法触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
 See also
 ========

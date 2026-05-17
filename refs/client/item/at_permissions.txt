@@ -13,27 +13,25 @@ permissions
 Description
 ===========
 
-Set the ``permissions`` property attributes to prohibit changing of the item in 
-the visual controls.
+设置 ``permissions`` 属性以禁止更改可视化控件中的实体项。
 
-The ``permissions`` property is an object that has the following attributes:
+``permissions`` 属性是一个对象，它有下列属性：
 
 * can_create
 * can_edit
 * can_delete
 
 By default theses attributes are set to true.
+这些属性的默认值是 true。
 
-When these attributes are set to false the corresponding
+当这些属性被设置为 false 时，下来相应的方法返回 false ：
 
 * :doc:`can_create <m_can_create>`, 
 * :doc:`can_edit <m_can_edit>`, 
 * :doc:`can_delete <m_can_delete>` 
 
-methods return false.
-
 
 See also 
 ========
 
-:doc:`How to prohibit changing record </how_to/how_to_prohibit_changing_record>`
+:doc:`如何禁止修改记录 </how_to/how_to_prohibit_changing_record>`

@@ -11,26 +11,21 @@ create_detail_views
 Description
 ===========
 
-Use ``create_detail_views`` to create view froms of the details of the item.
-These details can be specified in the **Edit details** attribute of the
-:doc:`Edit Form Dialog </admin/items/edit_form_dialog>` or
-set in the ``edit_details`` attribute of the
-:doc:`edit_options <at_edit_options>`. 
+使用 ``create_detail_views`` 方法创建实体项的明细项的视图表单窗体。
+可以在 :doc:`编辑表单对话框 </admin/items/edit_form_dialog>` 的  **编辑明细(Edit details)**  属性里指定明细项，或是在 :doc:`edit_options <at_edit_options>` 的  ``edit_details`` 属性里设置明细项。
 
-This method is usually used in the ``on_edit_form_created`` event handler.
+这个方法通常用在 ``on_edit_form_created`` 事件处理程序里。
 
 The following parameters are passed to the method:
+下列参数传递给方法：
 
-* ``container`` - a JQuery object that will contain view form of the details, if 
-  there is no container, the method returns.
+* ``container`` - 一个 JQuery 对象，它包含明细项的视图表单窗体。
+  如果没有指定此参数，方法将返回。
 
-If there is more than one detail, the method creates view forms in tabs.
+如果有多个明细项，该方法将在窗体的不同选项卡里创建视图表单。
 
-If details are not 
-:doc:`active <at_active>`
-, the method calls their 
-:doc:`open <m_open>`
-method.
+如果明细项没处于 :doc:`活动 <at_active>` 状体，
+该方法会调用它们的 :doc:`open <m_open>` 方法来激活明细项。
 
 Example
 =======

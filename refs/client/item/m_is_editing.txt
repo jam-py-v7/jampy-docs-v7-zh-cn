@@ -13,9 +13,9 @@ is_edited
 Description
 ===========
 
-Checks if an item is in edit state and returns ``true`` if it is.
+检查一个实体项是否处于 “编辑” 状体。如果是，则返回 ``true`` 。
 
-An application calls :doc:`edit <m_edit>` to put an item into edit state.
+应用程序通过调用 :doc:`edit <m_edit>` 方法可以将一个实体项置于 “编辑” 状态，
 
 See also
 ========

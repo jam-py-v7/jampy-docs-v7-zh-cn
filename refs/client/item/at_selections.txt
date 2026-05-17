@@ -13,28 +13,16 @@ selections
 Description
 ===========
 
-The ``selections`` attribute stores a list of a primary key field values.
+``selections`` 属性存储主键字段值的列表。
 
-When a **Multiple selection** check box is checked on the 
-**Layout** tab in the
-:doc:`View Form Dialog </admin/items/view_form_dialog>` or
-multiselect attribute of the
-:doc:`table_options <at_table_options>` is set programmatically,
-the check box in the leftmost column of the table appears and
-each time a user clicks on the check box, the ``selections`` attribute changes.
+当在 :doc:`View Form Dialog </admin/items/view_form_dialog>` 的 **布局** 选项卡上选中 **多选** 复选框，或者以编程方式设置 :doc:`table_options <at_table_options>` 的多选属性时，表格的最左侧列就会出现复选框，每次用户单击复选框时，  ``selections`` 属性都会发生变化。
 
-It can also be changed programmatically by using ``add`` or ``remove`` methods
-or assigning an array.
+也可以通过使用 ``add`` 或 ``remove`` 方法或分配数组以编程方式对其进行更改。
 
 Example
 =======
 
-In this example, the ``send_email`` function, on the client, uses **Customers** selection 
-attribute to get array of primary key field values selected by users and send them
-to the ``send_email`` function defined in the server module of the item using
-the
-:doc:`server </refs/client/abstr_item/m_server>`
-method
+在这个例子中，客户端上的 ``send_email`` 函数使用 **Customers** 的 selections 属性获取用户选择的主键字段值数组，并使用 :doc:`server </refs/client/abstr_item/m_server>` 方法将它们发送到实体项服务端模块中定义的 ``send_email``功能
 
 .. code-block:: js
 
@@ -56,10 +44,8 @@ method
       );
   }
   
-On the server, this array is used to retrieve information about selected customers
-using 
-:doc:`open </refs/server/item/m_open>`
-method
+
+在服务端，使用 :doc:`open </refs/server/item/m_open>` 方法来检索已选择的客户的相关信息。
 
 .. code-block:: py
 
@@ -73,5 +59,5 @@ method
       for c in cust:
           to.append(c.email.value)
           
-      # code that sends email        
+      # code that sends email
     

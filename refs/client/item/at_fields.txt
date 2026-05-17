@@ -13,9 +13,8 @@ fields
 Description
 ===========
 
-Lists all 
-:doc:`field </refs/client/field_api>`
-objects of the item.
+列举出了实体项的所有的 
+:doc:`字段 </refs/client/field_api>` 对象。
 
 Example
 =======
@@ -32,7 +31,7 @@ Example
 See also
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`Field class </refs/client/field_api>`
 

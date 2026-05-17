@@ -13,16 +13,12 @@ on_edit_form_created(item)
 Description
 ===========
 
-The **on_edit_form_created** event is triggered by the 
-:doc:`create_edit_form <m_create_edit_form>`
-method when the form has been created but not shown yet.
+``on_edit_form_created`` 事件，在表单窗体被创建但还未显示之前，由实体项的 
+:doc:`create_edit_form <m_create_edit_form>` 方法触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-The following code is used in the 
-:doc:`Demo project </intro/demo_project>`
-Invoices table to make read only the field ``paid``, and to remove the footer:
-
+:doc:`Demo project </intro/demo_project>` 使用下面的代码将 “发票(Invoices)” 数据表的 read_only 字段设置为 ``paid`` 字段的值，并删除页脚：
 
 .. code-block:: js
 

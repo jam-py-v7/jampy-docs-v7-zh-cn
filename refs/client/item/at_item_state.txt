@@ -13,41 +13,31 @@ item_state
 Description
 ===========
 
-Examine ``item_state`` to determine the current operating mode of the item. 
-Item_state determines what can be done with data in an item dataset, such as 
-editing existing records or inserting new ones. The ``item_state`` constantly 
-changes as an application processes data. 
+检查  ``item_state`` 以确定实体项的当前操作模式。
+Item_state 决定了可以对一个实体项中的数据集进行哪些操作，例如编辑已存在额记录，或者插入新记录。 ``item_state`` 在应用程序处理数据时不断变化。
+Opening a item changes state from inactive to browse.
+打开一个实体项会将数据集的状态由不活动状态变为浏览状态。应用程序可以调用 :doc:`edit <m_edit>` 将实体项置于编辑状态，或者调用 :doc:`insert <m_insert>` 或 :doc:`append <m_append>` 将实体项置于插入状态。
 
-Opening a item changes state from inactive to browse. An application can call 
-:doc:`edit <m_edit>`
-to put an item into edit state, or call 
-:doc:`insert <m_insert>`
-or
-:doc:`append <m_append>`
-to put an item into 
-insert state. 
+提交或取消编辑、插入或删除，将使 ``item_state`` 从实体项的当前状态变为浏览状态。
+关闭一个数据集，将使其处于不活动状态。
 
-Posting or cancelling edits, insertions, or deletions, changes ``item_state`` 
-from its current state to browse. Closing a dataset changes its state to 
-inactive.
+要检查 item_state 的值，请使用下面的方法：
 
-To check item_state value use the following methods:
+* :doc:`is_new <m_is_new>` - 指明实体项是否处于插入状态
+* :doc:`is_edited <m_is_editing>` - 指明实体项是否处于编辑状态
+* :doc:`is_changing <m_is_changing>` - 指明实体项是否处于编辑或插入状态
 
-* :doc:`is_new <m_is_new>` - indicates whether the item is in insert state
-* :doc:`is_edited <m_is_editing>` - indicates whether the item is in edit state
-* :doc:`is_changing <m_is_changing>` - indicates whether the item is in edit or 
-  insert state
+item_state 的值，可以是：
 
-item_state value can be:
-
-* 0 - inactive state,
-* 1 - browse state,
-* 2 - insert state,
-* 3 - edit state,
-* 4 - delete state
+* 0 - 不活动状态
+* 1 - 浏览状态
+* 2 - 插入状态
+* 3 - 编辑状态
+* 4 - 删除状态
 
 item :doc:`task </refs/client/abstr_item/at_task>` attribute have consts object 
 that defines following attributes:
+实体项的 :doc:`task </refs/client/abstr_item/at_task>` 属性有一个常量对象，它有下列属性：
 
 * "STATE_INACTIVE": 0,
 * "STATE_BROWSE": 1,
@@ -55,7 +45,8 @@ that defines following attributes:
 * "STATE_EDIT": 3,
 * "STATE_DELETE": 4
 
-so if the item is in edit state can be checked the following way:
+因此，可以使用下列方法检查实体项是否处于插入状态：
+
 ::
 
     item.item_state === 2
@@ -71,4 +62,4 @@ or::
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

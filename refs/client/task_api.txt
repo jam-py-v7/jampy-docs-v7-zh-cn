@@ -8,14 +8,13 @@ Task class
 
 **language**: javascript
 
-Task class is used to create the root of the 
-:doc:`Task tree </programming/task_tree>`
-of the project.
 
-Below the attributes, methods and events of the class are listed.
+Task 类用于创建项目的 :doc:`任务树 </programming/task_tree>` 。
 
-It, as well, inherits attributes and methods of its ancestor class
-:doc:`AbstractItem class <abstractitem_api>`
+下面列出了的这个类的属性、方法和事件。
+
+它同样继承了其祖先类 :doc:`AbstractItem class <abstractitem_api>` 的属性和方法。
+
 
 Attributes
 ==========

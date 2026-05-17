@@ -13,22 +13,18 @@ apply_record
 Description
 ===========
 
-Writes changes to the application dataset. 
+将更改写入应用程序的数据集。
 
-The ``apply_record`` method 
+``apply_record`` 方法
 
-* calls the
-  :doc:`apply <m_apply>`
-  to writes changes to the dataset. 
+* 调用 :doc:`apply <m_apply>` 方法将更改写入数据集。
 
-* calls the
-  :doc:`close_edit_form <m_close_edit_form>`
-  method to destroy the edit_form
+* 调用 :doc:`close_edit_form <m_close_edit_form>` 方法销毁 edit_form
 
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 :doc:`close_edit_form <m_close_edit_form>`
 

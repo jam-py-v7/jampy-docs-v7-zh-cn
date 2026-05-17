@@ -8,8 +8,7 @@ Detail class
 
 **language**: javascript
 
-Detail class inherits attributes, methods and events of 
-:doc:`Item class <item_api>`
+Detail class 继承了 :doc:`Item class <item_api>` 的属性、方法和事件。
 
 Attributes
 ==========

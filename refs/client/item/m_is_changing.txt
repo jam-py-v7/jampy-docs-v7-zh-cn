@@ -13,15 +13,12 @@ is_changing
 Description
 ===========
 
-Checks if an item is in edit or insert state and returns ``true`` if it is.
+检查一个实体项是否处于 “编辑” 或 “插入” 状体。 如果是，则返回 ``true`` 。
 
-An application calls 
-:doc:`edit <m_edit>` 
-to put an item into edit state and
-:doc:`append <m_append>`
-or
-:doc:`insert <m_insert>`
-to put an item into insert state.
+应用程序通过调用 :doc:`edit <m_edit>` 方法可以将一个实体项置于 “编辑” 状态，
+通过调用 :doc:`append <m_append>` 或者 :doc:`insert <m_insert>` 方法
+可以将一个实体项置于 “插入” 状态。
+
 
 See also
 ========

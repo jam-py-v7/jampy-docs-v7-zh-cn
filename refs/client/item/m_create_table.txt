@@ -11,43 +11,26 @@ create_table
 Description
 ===========
 
-Use ``create_table`` method to create a table that displays records of 
-the item dataset.
+使用 ``create_table`` 方法创建一个表格来显示实体项数据集的记录。
 
-The behavior of the table is determined by the 
-:doc:`paginate <at_paginate>`
-attribute of the item. 
+表格的行为由实体项的 :doc:`paginate <at_paginate>` 属性决定。
 
-When
-:doc:`paginate <at_paginate>`
-is true, a paginator will be created, that will internally update the item 
-dataset when the page is changed.
+当 :doc:`paginate <at_paginate>` 为 true 时，将创建一个分页器，在页面切换时，它将在内部更新实体项数据集。
 
-If the value of 
-:doc:`paginate <at_paginate>`
-is false, all available records of the item dataset will be displayed in the table.
+当 :doc:`paginate <at_paginate>` 为 false 时，实体项数据集的所有可用记录都将同时显示在表格里。
 
-The table, created by this method is data aware, when you change the dataset, 
-these changes are immediately reflected in the table. So you can create a table
-and then call the
-:doc:`open <m_open>`
-method.
+这个方法创建的是数据感知类型的表格，当你变更数据集时，这些更改会立即反映在表格中。
+因此，你可以先创建一个表格，然后再调用 :doc:`open <m_open>` 方法。
 
-The following parameters could be passed to the method:
+下列参数可以传递给该方法：
 
-* ``container`` - a JQuery object that will contain the table, if 
-  container length is 0 (no container), the method returns. Before creating 
-  the table the application empties the container.
+* ``container`` - 一个包含可视化控件的 JQuery 对象，如果该对象的长度为 0 （没有），
+  该方法将直接返回。在创建空间之前，应用程序将清空 ``container`` 。
 
-* ``options`` - options that specify the way the table will be displayed. 
-  By default, the method uses the
-  :doc:`table_options <at_table_options>` that are set in the
-  :doc:`View Form Dialog </admin/items/view_form_dialog>` in Application
-  Builder when creating the table. The ``options`` attributes take precedence over the
-  :doc:`table_options <at_table_options>` attributes.
+* ``options`` - 指定表格显示方法的选项。
+  在创建表格时，该方法默认使用 :doc:`table_options <at_table_options>` ，这些属性是在应用程序构建器的 :doc:`视图表单对话框 </admin/items/view_form_dialog>` 中设置的属性。``options``  属性优先于 :doc:`table_options <at_table_options>` 属性。
 
-The ``options`` parameter is an object that may have the same attributes as 
-:doc:`table_options <at_table_options>`.
+``options`` 参数一个与 :doc:`table_options <at_table_options>` 有相同属性的对象。
 
 Examples
 ========
@@ -67,6 +50,6 @@ Examples
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
-:doc:`Data-aware controls </programming/interface/data_controls>`
+:doc:`数据感知控件 </programming/interface/data_controls>`

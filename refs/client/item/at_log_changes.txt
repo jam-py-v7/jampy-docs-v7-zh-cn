@@ -13,19 +13,15 @@ log_changes
 Description
 ===========
 
-Indicates whether to log data changes.
+指明是否记录数据变更的日志。
 
-Use ``log_changes`` to control whether or not changes made to the data in an 
-item dataset are recorded. When ``log_changes`` is ``true`` (the default), all 
-changes are recorded. They can later be applied to an application server by 
-calling the 
-:doc:`apply <m_apply>`
-method. When ``log_changes`` is false, data changes are not recorded and cannot 
-be applied to an application server.
+使用 ``log_changes`` 来控制对一个实体项数据集中的数据做作的更改是否进行记录。
+当 ``log_changes`` 为 ``true`` （这是默认值），所由更改都被记录下来。以后，可以通过调用 :doc:`apply <m_apply>` 方法，在应用程序服务器上使用它们。
+当 ``log_changes`` 为 `false`` ，所做的更改不被记录，也不可以在应用程序服务器上使用它们。
 
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 :doc:`apply <m_apply>`

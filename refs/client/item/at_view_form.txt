@@ -13,22 +13,16 @@ view_form
 Description
 ===========
 
-Use ``view_form`` attribute to get access to a Jquery object representing the 
-view form of the item. 
+使用 ``view_form`` 属性访问表示实体项视图表单的 Jquery 对象。
 
-It is created by the 
-:doc:`view <m_view>`
-method.
+它由 :doc:`view <m_view>` 方法创建。
 
-The 
-:doc:`close_view_form <m_close_view_form>`
-method sets the ``view_form`` value to undefined.
+:doc:`close_view_form <m_close_view_form>` 方法会将 ``view_form`` 的值设置为 undefined 。
 
 Example
 =======
 
-In the following example the button defined in the item html template is assigned 
-a click event:
+在下面的示例中，在实体项的 html 模板中定义的按钮上分配了一个 click 事件：
 
 .. code-block:: js
 
@@ -41,7 +35,7 @@ a click event:
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
 :doc:`view <m_view>`
 

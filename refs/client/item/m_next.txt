@@ -13,8 +13,8 @@ next
 Description
 ===========
 
-Call ``next`` to position the cursor on the next record in the item dataset and 
-make it the active record. Next posts any changes to the active record.
+调用 ``next`` 方法将游标移到实体项数据集的下一条记录上，
+并使之成为 “活动(active)” 记录。 ``next`` 会提交当前 “活动” 记录的变更。
 
 See also
 ========

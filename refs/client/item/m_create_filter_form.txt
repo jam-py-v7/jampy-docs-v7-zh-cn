@@ -13,62 +13,52 @@ create_filter_form
 Description
 ===========
 
-Use ``create_filter_form`` method to create an filter form of the item for visual 
-editing item filters.
+使用 ``create_filter_form`` 方法创建一个实体项的过滤器表单窗体，以对记录过滤进行可视化编辑。
 
-The method searches for an item html template in the task 
-:doc:`templates </refs/client/task/at_templates>`
-attribute (See 
-:doc:`Forms </programming/interface/forms>`
-), creates a 
-clone of the template and assigns it to the item 
-:doc:`filter_form <at_filter_form>`
-attribute.
+该方法在 “任务” 的 :doc:`模板 </refs/client/task/at_templates>` 
+属性里搜索实体项的 html 模板
+（请见 :doc:`表单 </programming/interface/forms>` ），
+然后创建模板的一个副本并将其分配给实体项的 
+:doc:`filter_form <at_filter_form>` 属性。
 
-If ``container`` parameter is specified the method empties it and appends the 
-html template to it. Otherwise it creates a modal form and appends the 
-html to it.
+如果指定了 ``container`` 参数，则该方法将其清空并将 html 模板附加到该参数上。
+否则，它将创建一个模态表单并将 html 附加到该表单上。
 
-Triggers the 
-:doc:`on_filter_form_created </refs/client/task/on_filter_form_created>`
-of the task.
+触发 “任务” 的 
+:doc:`on_filter_form_created </refs/client/task/on_filter_form_created>` 
+事件。
 
-Triggers the 
-:doc:`on_filter_form_created </refs/client/group/on_filter_form_created>`
-of the group that owners the item, if one is defined for the group.
+如果为实体项所属的组定义了 
+:doc:`on_filter_form_created </refs/client/group/on_filter_form_created>` 
+事件, 那么触发定义的事件。
 
-Triggers the 
-:doc:`on_filter_form_created <on_filter_form_created>`
-of the item, if one is defined.
+如果为实体定义了 
+:doc:`on_filter_form_created <on_filter_form_created>` 
+事件, 那么触发定义的事件
 
-Assigns the JQuery keyup and keydown events to the filter_form so 
-that when an JQuery event of the window occurs, the ``on_filter_form_keyup`` and 
-``on_filter_form_keydown`` events are triggered. They are triggered (if defined) 
-in the same way: first the task event handler, the group event handler and 
-then the event handler of the item itself. After that the JQuery stopPropagation 
-method of the event is called.
 
-If the form is modal, shows it. Before showing the form the method applies 
-options specified in the 
-:doc:`filter_options <at_filter_options>` 
-attribute.
 
-Triggers the 
+将 JQuery 的 keyup 和 keydown 事件分配给 filter_form 后，当窗体的 JQuer 事件发生时，会触发 ``on_filter_form_keyup`` 和 ``on_filter_form_keydown` 事件。会以相同的方法触发已定义的事件：首先是 “任务” 的事件处理程序，然后是 “组” 的事件处理程序，最后是实体项自己的事件处理程序。之后，调用事件的 JQuery stopPropagation 方法。
+
+如果表单是模态形式，则显示它。在显示表单之前，该方法会先启用在 :doc:`filter_options <at_filter_options>` 属性里指定的选项。
+
+
+触发 “任务” 的 
 :doc:`on_filter_form_shown </refs/client/task/on_filter_form_shown>`
-of the task.
+事件。
 
-Triggers the 
-:doc:`on_filter_form_shown </refs/client/group/on_filter_form_shown>`
-of the group that owners the item, if one is defined for the group.
+如果为实体项所属的组定义了 
+:doc:`on_filter_form_shown </refs/client/group/on_filter_form_shown>` 
+事件, 那么触发定义的事件。
 
-Triggers the 
-:doc:`on_filter_form_shown <on_filter_form_shown>`
-of the item, if one is defined.
+如果为实体定义了 
+:doc:`on_filter_form_shown <on_filter_form_shown>` 
+事件, 那么触发定义的事件。
 
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
 :doc:`filter_form <at_filter_form>`
 

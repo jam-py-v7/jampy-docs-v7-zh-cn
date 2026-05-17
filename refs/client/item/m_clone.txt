@@ -13,12 +13,11 @@ clone
 Description
 ===========
 
-Use the clone method to create a copy of an item that shares with it its dataset.
-The clone item has its own cursor, so you can navigate it and the cursor 
-position of the item doesn't change.
+使用 ``clone`` 方法来创建一个与其共享数据集的实体项的副本。
 
-Set the ``keep_filtered`` parameter to true if you want the clone to have the same 
-local filter as the item.
+这个副本有它自己的游标，因此你可以导航游标，而实体项的有标位置不会受影响。
+
+如果你希望副本有与实体项一样的本地过滤器，请将 ``keep_filtered`` 参数设置为 true 。
 
 Example
 =======

@@ -13,24 +13,18 @@ delete_record
 Description
 ===========
 
-* calls the 
-  :doc:`can_delete <m_can_delete>`
-  method to check whether a user have a right to delete a record, and if not,
-  returns
+* 调用 :doc:`can_delete <m_can_delete>` 方法检查一个用户是否有权限删除操作的记录，
+  如果没有权限，则直接返回。
   
-* asks a user to confirm the operation
+* 如果用户有权限，则要求用户是否确认操作。
 
-* calls the
-  :doc:`delete <m_delete>`
-  method to delete the record
+* 调用 :doc:`delete <m_delete>` 方法删除操作的记录。
   
-* calls the
-  :doc:`apply <m_apply>`
-  method to write changes to the application database
+* 调用 :doc:`apply <m_apply>` 方法将变更写入应用程序数据库。
 
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 :doc:`delete <m_delete>`

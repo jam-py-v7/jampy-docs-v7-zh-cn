@@ -13,14 +13,12 @@ on_edit_form_keyup(item, event)
 Description
 ===========
 
-The ``on_edit_form_keyup`` event is triggered when the keyup event 
-occurs for the 
-:doc:`edit form <at_edit_form>`
-of the item.
+``on_edit_form_keyup`` 事件在实体项的 :doc:`edit form <at_edit_form>` 上发生 keyup 事件时被触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-The ``event`` is JQuery event object.
+``event`` 是一个 JQuery 事件对象。
+
 
 See also
 ========

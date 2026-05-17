@@ -13,14 +13,12 @@ on_view_form_created(item)
 Description
 ===========
 
-The **on_view_form_created** event is triggered by the 
-:doc:`view <m_view>`
-method when form has been created but not shown yet.
+``on_view_form_created`` 事件，在表单窗体被创建但还未显示之前，由 
+:doc:`view <m_view>` 方法触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-The **on_view_form_created** code is used in the 
-:doc:`Demo project </intro/demo_project>`.
+在 :doc:`Demo project </intro/demo_project>` 中，有使用了 **on_view_form_created** 的代码。
 
 See also
 ========

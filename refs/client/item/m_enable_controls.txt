@@ -13,13 +13,11 @@ enable_controls
 Description
 ===========
 
-Call ``enable_controls`` to permit data display in data-aware controls and
-and redraw them after a prior call to 
-:doc:`disable_controls <m_disable_controls>`. 
+调用 ``enable_controls`` 方法以允许在数据感知控件中显示数据，并在之前调用 :doc:`disable_controls <m_disable_controls>` 后再重新绘制它们。
 
 See also
 ========
 
-:doc:`Data-aware controls </programming/interface/data_controls>`
+:doc:`数据感知控件 </programming/interface/data_controls>`
 
 :doc:`disable_controls <m_disable_controls>`. 

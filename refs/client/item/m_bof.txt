@@ -13,25 +13,26 @@ bof
 Description
 ===========
 
-Test ``bof`` (beginning of file) method to determine if the cursor is positioned 
-at the first record in an item dataset.
+调用 ``bof`` (beginning of file) 方法，以确定数据库的游标是否在一个实体项数据集的第一条记录上。
 
-If bof returns true, the cursor is unequivocally on the first row in the dataset. 
-bof returns true when an application
+``bof`` 返回 true 时，游标就明确地位于数据集中的第一行。
 
-* Opens an item dataset.
-* Calls an item's :doc:`first <m_first>` method.
-* Call an item's :doc:`prior <m_prior>` method, and the method fails (because 
-  the cursor is already on the first row in the dataset).
+``bof`` 返回 true ，当应用程序：
 
-bof returns false in all other cases.
+* 打开一个实体项数据集；
+* 调用一个实体项的 :doc:`first <m_first>` 方法；
+* 调用一个实体项的 :doc:`prior <m_prior>` 方法, 
+  且方法执行失败 (因为游标已经就在数据集的第一行)。
+
+在其它所有情况下， ``bof`` 返回 false。
 
 .. note::
-    If both :doc:`eof <m_eof>` and bof return true, the item dataset is empty.
-    
+
+    如果 :doc:`eof <m_eof>` 和 bof 都返回 true ，实体项数据集是空的。
+
 See also
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`

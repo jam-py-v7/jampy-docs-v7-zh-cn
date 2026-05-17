@@ -13,15 +13,12 @@ each_filter
 Description
 ===========
 
-Use each_filter method to iterate over 
-:doc:`filters <at_filters>`
-owned by an item.
+使用 ``each_filter`` 方法来迭代访问一个实体项所拥有的 :doc:`过滤器 <at_filters>` 。
 
-The each_filter() method specifies a function to run for each filter (the current
-filter is passed as a parameter).
+``each_filter`` 方法指定了一个函数，这个函数会为实体项的每个过滤器执行。
+（当前过滤器作为参数传递给该方法）
 
-You can break the each_filter loop at a particular iteration by making the callback 
-function return ``false``. 
+通过使回调函数返回 ``false`` ，你能在一个特定的迭代中终止 each_filter 循环。
 
 Example
 =======
@@ -34,6 +31,6 @@ Example
         });
     }    
     
-:doc:`Filters </programming/data/filters>`    
+:doc:`过滤器 </programming/data/filters>` 
 
 :doc:`Filter class </refs/client/filter_api>`

@@ -11,35 +11,29 @@ create_inputs
 Description
 ===========
 
-Use ``create_inputs`` to create data-aware visual controls (inputs, checkboxes) 
-for editing 
-:doc:`fields <at_fields>`
-of the item.
+使用 ``create_inputs`` 方法创建数据感知控件（输入框、复选框等）以编辑实体项的 :doc:`过滤器 <at_filters>` 。
 
-This method is usually used in the ``on_edit_form_created`` events.
+通常，在 ``on_edit_form_created`` 事件中使用该方法。
 
-The following parameters are passed to the method:
+下列参数可以传递给该方法：
 
-* ``container`` - a JQuery object that will contain visual controls, if 
-  container length is 0 (no container), the method returns.
+* ``container`` - 一个包含可视化控件的 JQuery 对象，如果该对象的长度为 0 （没有），
+  该方法将直接返回。
 
-* ``options`` - options that specify how controls are displayed
+* ``options`` - 指定如何显示控件的选项。
 
-The ``options`` parameter is an object that may have following attributes:
+``options`` 参数是一个可以有下列属性的对象：
 
-* ``fields`` - a list of field names.  If specified, a visual control will be 
-  create for each field whose name is in this list, if not specified then the 
-  ``fields`` attribute of 
-  :doc:`edit_options <at_edit_options>` 
-  will be used (if defined), otherwise the layout, created in the 
-  :doc:`Edit Form Dialog </admin/items/edit_form_dialog>` of
-  Application builder, will be created
+* ``fields`` - 字段的名称列表。
+  如果指定了该属性，那么将为该列表中的每个字段创建一个可视化的控件；
+  如果没有指定该属性，  那么将使用 :doc:`edit_options <at_edit_options>` 
+  中已定义的 ``fields`` 属性，否则，将创建在应用程序构建器的 
+  :doc:`编辑表单对话框 </admin/items/edit_form_dialog>` 中的设置布局。
 
-* ``col_count`` - the number of columns that will be created for visual controls, 
-  the default value is 1, 
-  
+* ``col_count`` - 为可视化控件创建的列数，其默认值是 1 。
 
-Before creating controls the application empties the container.
+
+在创建空间之前，应用程序将清空  ``container`` 。
 
 Example
 =======
@@ -55,7 +49,7 @@ Example
 See also
 ========
 
-:doc:`fields <at_fields>`
+:doc:`字段 <at_fields>`
 
 :doc:`Data-aware controls </programming/interface/data_controls>`
 

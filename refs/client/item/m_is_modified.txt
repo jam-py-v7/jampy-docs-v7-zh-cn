@@ -16,6 +16,8 @@ Description
 Checks if the current record of an item dataset has been modified during edit or
 insert opertaions. The method returns ``false`` after the
 :doc:`post <m_post>` method is executed.
+检查实体项数据集的当前记录在 “编辑” 或 “插入” 操作时是否被修改了。
+在执行 :doc:`post <m_post>` 方法之后， is_modified 方法返回 ``false`` 。
 
 See also
 ========

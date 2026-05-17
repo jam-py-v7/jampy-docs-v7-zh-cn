@@ -13,13 +13,9 @@ disable_controls
 Description
 ===========
 
-Call ``disable_controls`` to "turn off" data-aware controls, so they will not refrect 
-changes to the item dataset data.
+调用 ``disable_controls`` 方法 “关闭” 控件的数据感知功能。因此，控件不再实时反应实体项数据集中数据的变更。
 
-Call 
-:doc:`enable_controls <m_enable_controls>` 
-to re-enable data display in data-aware controls associated with the dataset and
-update values they display.
+调用 :doc:`enable_controls <m_enable_controls>` 方法，以重新启用与数据集关联的数据感知控件中的数据显示，同时更新它们显示的数据值。
 
 Example
 =======
@@ -63,6 +59,6 @@ Example
 See also
 ========
 
-:doc:`Data-aware controls </programming/interface/data_controls>`
+:doc:`数据感知控件 </programming/interface/data_controls>`
 
 :doc:`enable_controls <m_enable_controls>` 

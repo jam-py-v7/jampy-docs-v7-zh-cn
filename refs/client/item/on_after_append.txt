@@ -13,13 +13,14 @@ on_after_append(item)
 Description
 ===========
 
-Occurs after an application inserts or appends a record.
+在应用程序插入或追加一条记录之后发生此事件。
 
-The ``item`` parameter is an item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-Write an on_after_append event handler to take specific action immediately after 
-an application inserts or appends a record in an item. on_after_append is called 
-by :doc:`insert <m_insert>` or :doc:`append <m_append>` method.
+编写一个 ``on_after_append`` 事件处理程序，应用程序在实体项中插入或追加一条记录之后，立即执行指定的操作。
+
+``on_after_append`` 方法由 :doc:`insert <m_insert>` 或 
+:doc:`append <m_append>` 方法调用。
 
 See also
 ========

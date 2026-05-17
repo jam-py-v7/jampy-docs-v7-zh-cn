@@ -13,50 +13,37 @@ append_record
 Description
 ===========
 
-Open a new, empty record at the end of the dataset and creates an 
-:doc:`edit_form <at_edit_form>`
-for visuall editing of the record.
+在数据集末尾，打开一个新的空记录，并创建一个 :doc:`edit_form <at_edit_form>` 用于记录的可视化编辑。
 
-If ``container`` parameter (Jquery object of the DOM element) is specified the
-edit form html template is inserted in the container.
+如果指定了 ``container`` 参数（DOM 元素的 JQuery 对象），那么编辑表单的 html 模板会被添加到容器（container）里面。
 
-If ``container`` parameter is not specified but **Modeless form** attribute is 
-set in the 
-:doc:`Edit Form Dialog </admin/items/edit_form_dialog>` or modeless attribute 
-of the 
-:doc:`edit_options <at_edit_options>` is set programmatically and task has the
-:doc:`forms_in_tabs </refs/client/task/at_forms_in_tabs>`
-attribute set and the application doesn't have modal forms, the 
-modeless edit form will be created in the new tab of the
-:doc:`forms_container </refs/client/task/at_forms_container>` object of the task.
+如果未指定 ``container`` 参数，但在 :doc:`编辑表单对话框 
+</admin/items/edit_form_dialog>` 中设置了 **无模式表单(Modeless form)** 属性，
+或者以编程方式设置了 :doc:`edit_options <at_edit_options>` 的无模式属性，并且
+设置了任务的  :doc:`forms_in_tabs </refs/client/task/at_forms_in_tabs>` 属性，
+而应用程序没有模式表单，则将在任务的 
+:doc:`forms_container </refs/client/task/at_forms_container>` 
+对象的新选项卡中创建无模式编辑表单。
 
-In all other cases the modal form will be created.
+在其它情况下，将创建模态表单窗体。
 
-If adding of a record is allowed in modeless mode, the application calls the 
-:doc:`copy <m_copy>`
-method to create a copy of the item. This copy will be used to append the record. 
+如果在非模态模式下允许添加记录，应用程序会调用 :doc:`copy <m_copy>` 方法创建实体项的一个副本。这个副本用来添加新记录。
 
-The ``append_record`` method 
+``append_record`` 方法：
 
-* calls the 
-  :doc:`can_create <m_can_create>`
-  method to check whether a user have a right to append a record, and if not,
-  returns
-  
-* checks whether the item is in edit or insert 
-  :doc:`state <at_item_state>`
-  , and if not, calls the 
-  :doc:`append <m_append>`
-  method to append a record
-  
-* calls the
-  :doc:`create_edit_form <m_create_edit_form>`
-  method to create a form for visuall editing of the record
+* 调用 :doc:`can_create <m_can_create>` 方法检查一个用户是否有权限添加记录，
+  如果没有权限，则
+
+* 检查实体项是否处于编辑或插入 :doc:`状态 <at_item_state>` ，
+  如果不是，则调用 :doc:`append <m_append>` 方法添加一个新记录，
+
+* 调用 :doc:`create_edit_form <m_create_edit_form>` 方法
+  创建一个用于记录的可视化编辑的表单窗体。
 
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 :doc:`append <m_append>`
 

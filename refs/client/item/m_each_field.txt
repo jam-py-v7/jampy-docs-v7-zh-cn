@@ -13,15 +13,13 @@ each_field
 Description
 ===========
 
-Use each_field method to iterate over 
-:doc:`fields <at_fields>`
-owned by an item.
 
-The each_field() method specifies a function to run for each field (the current
-field is passed as a parameter).
+使用 ``each_field`` 方法来迭代访问一个实体项所拥有的 :doc:`字段 <at_fields>` 。
 
-You can break the each_field loop at a particular iteration by making the callback 
-function return ``false``. 
+``each_field`` 方法指定了一个函数，这个函数会为实体项的每个字段执行。
+（当前字段作为参数传递给该方法）
+
+通过使回调函数返回 ``false`` ，你能在一个特定的迭代中终止 each_field 循环。
 
 Example
 =======
@@ -35,7 +33,7 @@ Example
         });
     }    
     
-:doc:`Fields </programming/data/fields>`    
+:doc:`字段 </programming/data/fields>`
 
 :doc:`Field class </refs/client/field_api>`
 

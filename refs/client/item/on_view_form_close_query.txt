@@ -13,11 +13,10 @@ on_view_form_close_query(item)
 Description
 ===========
 
-The ``on_view_form_close_query`` event is triggered by the 
-:doc:`close_view_form <m_close_view_form>`
-method of the item.
+``on_view_form_close_query`` 事件由实体项的 
+:doc:`close_view_form <m_close_view_form>` 方法触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
 See also
 ========

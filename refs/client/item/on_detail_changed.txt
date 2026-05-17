@@ -13,16 +13,15 @@ on_detail_changed(item, detail)
 Description
 ===========
 
-Occurs after changes to detail record has been posted. It uses the clearTimeout
-and setTimeout Javascript functions so if records have been changed in a cycle it
-is triggered only when last record change occurs.
+在明细项记录的更改提交之后发生。
+它使用 clearTimeout 和 setTimeout 这两个 Javascript 函数，
+因此如果记录在一个周期内发生了更改，则只有在最后一次记录更改发生时才会触发。
 
-The ``item`` parameter is an item that triggered the event.
-The ``detail`` parameter is a detail that has been changed.
+``item`` 参数是触发了这个事件的实体项。
+``detail`` 参数是那个已经被更改的明细项。
 
-Write an on_detail_changed event handler to calculate, by using 
-:doc:`calc_summary <m_calc_summary>` method,
-sums for fields of a detail and save these values in fields of its master.
+编写一个 ``on_detail_changed`` 事件处理程序，通过使用 
+:doc:`calc_summary <m_calc_summary>`方法计算明细项的字段的总和，并将这些值保存在其主表的字段中。
 
 Example
 =======

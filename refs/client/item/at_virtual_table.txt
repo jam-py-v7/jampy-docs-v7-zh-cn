@@ -13,14 +13,8 @@ virtual_table
 Description
 ===========
 
-Use the read-only ``virtual_table`` property to find out if the item has a 
-corresponding table in the project database.
+使用只读的 ``virtual_table`` 属性找出对应的实体项在项目数据库中是否有相应的数据表。
 
-If ``virtual_table`` is ``True`` there is no corresponding table in the project 
-database. You can use these items to work with in-memory dataset or use its 
-modules to write code.
-Calling the 
-:doc:`open <m_open>` 
-method creates an empty data set, and calling the 
-:doc:`apply <m_apply>`
-method does nothing.
+如果 ``virtual_table`` 属性是 ``True`` ，那么在项目数据库中与之对应的数据表。
+你可以使用这样的实体项来处理内存中的数据集，也可以使用其模块来编写代码。
+调用 :doc:`open <m_open>` 方法会创建一个空的数据集，而调用 :doc:`apply <m_apply>` 方法什么也不会发生。

@@ -11,27 +11,26 @@ add_view_button
 Description
 ===========
 
-Use ``add_view_button`` to dynamically add a button in the view form.
+使用 ``add_view_button`` ，可以在视图表单窗体上动态地添加一个按钮。
 
-This method is usually used in the ``on_view_form_created`` events.
+在 ``on_view_form_created`` 事件中经常使用这个方法。
 
-The following parameters are passed to the method:
+下列参数被传给这个方法：
 
-* ``text`` - the text that will be displayed on the button
+* ``text`` - 将在按钮上显示的文本内容。
 
-* ``options`` - options that specify additional properties of the button
+* ``options`` - 指定按钮额外属性的选项。
 
-The ``options`` parameter is an object that may have following attributes:
+``options`` 参数是一个对象，他又下列属性:
 
-* ``parent_class_name`` is a class name of the parent element, the default value
-  is 'form-footer'
 
-* ``btn_id`` - the id attribute of the button
+* ``parent_class_name`` 是其父元素的一个样式类的名称，默认值是 “form-footer” 。
 
-* ``btn_class`` - the class of the button
+* ``btn_id`` - 按钮的 ID 属性。
 
-* ``type`` - specifies the type (color) of the button, it can be one of the 
-  following text values:
+* ``btn_class`` - 按钮的样式类。
+
+* ``type`` - 指定按钮的类型（颜色），其值在下列文本值中：
   
   * primary
   * success
@@ -39,16 +38,16 @@ The ``options`` parameter is an object that may have following attributes:
   * warning
   * danger
   
-* ``image`` - an icon class, one of the icons by Glyphicons from http://getbootstrap.com/2.3.2/base-css.html
+* ``image`` - 一个图标样式类, 取值来自 Glyphicons 的图标样式库 http://getbootstrap.com/2.3.2/base-css.html
 
-* ``secondary``: if this attribute is set to true, the button will be right aligned if
-  **Buttons on top** attribute of the 
-  :doc:`View Form Dialog </admin/items/view_form_dialog>` is set, otherwise left aligned.
-  
-* ``expanded`` - if set to true the button will have class 'expanded-btn' and
-  that defines its min-width to 120px, default true
+* ``secondary``: 如果设置这个属性为 true ，那么在设置了 
+  :doc:`视图表单 </admin/items/view_form_dialog>` 的 
+  **按钮置顶(Buttons on top)** 属性时按钮将右对齐显示，否则将左对齐显示。
 
-The method returns a JQuery object of the button. 
+* ``expanded`` - 如果设置为 true ，按钮将具有类 “expanded btn” ，
+  并将其最小宽度定义为 120px，默认为 true .
+
+该方法返回按钮的一个 JQuery 对象。
 
 Examples
 ========

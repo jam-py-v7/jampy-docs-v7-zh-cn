@@ -13,15 +13,12 @@ on_view_form_shown(item)
 Description
 ===========
 
-The ``on_view_form_shown`` event is triggered by the 
-:doc:`view </refs/client/item/m_view>`
-method of the item when the form has been shown.
+在表单显示后， ``on_view_form_shown`` 事件由实体项的 :doc:`view </refs/client/item/m_view>` 方法触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发事件的实体项。
 
-This event, if defined, is triggered for every item of the group, whose 
-:doc:`view </refs/client/item/m_view>`
-method has been called.
+如果定义了这个事件，会为分组里的每个调用了 :doc:`view </refs/client/item/m_view>` 方法的实体项触发此事件，
+
 
 See also
 ========

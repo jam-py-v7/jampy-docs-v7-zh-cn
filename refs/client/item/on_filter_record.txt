@@ -13,17 +13,13 @@ The item parameter is the item that triggered the event.
 Description
 ===========
 
-Use an ``on_filter_record`` event to filter dataset records locally. 
-It is triggered when the cursor moves to another record and 
-:doc:`Filtered <at_filtered>`
-property is set to ``true``
+使用 ``on_filter_record`` 事件在本地过滤数据集记录。
 
-Write an ``on_filter_record`` event handler to specify for each record in a 
-dataset whether it should be visible to the application. To indicate that a 
-record passes the filter condition, the ``on_filter_record`` event handler must 
-return true. 
+当游标移动到另一个记录上时，并且 :doc:`Filtered <at_filtered>` 属性已被设置为 ``true`` ，会触发该事件。
 
-The ``item`` parameter is the item that triggered the event.
+编写 ``on_filter_record`` 事件处理程序，为数据集中的每条记录指定它是否应该对应用程序可见。为了表示记录通过了筛选条件， ``on_filter_record`` 事件处理程序必须返回 true 。
+
+``item`` 参数是触发了这个事件的实体项。
 
 Example
 =======

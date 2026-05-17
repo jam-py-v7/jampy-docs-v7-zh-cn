@@ -13,8 +13,8 @@ process_table_row(row, item)
 Description
 ===========
 
-The row_callback is a function, first parameter is JQuery object of the table row and item is the clone of the table item.
-
+这是一个分配给 row_callback 的函数。
+第一个参数是表格行的 JQuery 对象，而 item 参数是表格实体项的副本。
 
 Example
 =======

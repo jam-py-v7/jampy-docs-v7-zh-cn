@@ -13,13 +13,12 @@ Filtered
 Description
 ===========
 
-Specifies whether or not filtering is active for a dataset.
+指定一个数据集是否启用了过滤（筛选）。
 
-Check ``filtered`` to determine whether or not local dataset filtering is in 
-effect. If ``filtered`` is ``true``, then filtering is active. To apply filter 
-conditions specified in the 
-:doc:`on_filter_record <on_filter_record>`
-event handler, set ``filtered`` to ``true``. 
+检查 ``filtered`` 来确定本地的数据集筛选是否有效。
+如果 ``filtered`` 为 ``true`` ，那么筛选是激活的。 
+要应用 :doc:`on_filter_record <on_filter_record>` 事件处理程序中指定的筛选条件，
+请将 ``filtered`` 设置为 ``true`` 。
 
 See also
 ========

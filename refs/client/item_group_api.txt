@@ -8,13 +8,12 @@ Group class
 
 **language**: javascript
 
-Group class is used to create group objects of the 
-:doc:`task tree </programming/task_tree>`
 
-Below the events of the class are listed.
+Group 类用于创建 :doc:`任务树 </programming/task_tree>` 中的组对象。
 
-It, as well, inherits attributes and methods of its ancestor class
-:doc:`AbstractItem class <abstractitem_api>`
+下面列出了的这个类的属性、方法和事件。
+
+它同样继承了其祖先类 :doc:`AbstractItem class <abstractitem_api>` 的属性和方法
 
 Events
 ======

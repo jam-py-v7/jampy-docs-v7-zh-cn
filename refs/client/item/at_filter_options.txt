@@ -13,27 +13,23 @@ filter_options
 Description
 ===========
 
-Use the ``filter_options`` attribute to specify parameters of the modal filter form.
+使用 ``filter_options`` 属性指定过滤器模态表单窗体的参数。
 
-``filter_options`` is an object that has the following attributes:
+``filter_options`` 是一个有下列属性对象：
 
-* ``width`` - the width of the modal form, the default value is 560 px,
-* ``title`` - use it to get or set the title of the filter form,
-* ``close_button`` - if true, the close button will be created in the upper-right 
-  corner of the form, the default value is true,
-* ``close_caption`` - if true and close_button is true, will display 'Close - [Esc]'
-  near the button
-* ``close_on_escape`` - if true, pressing on the Escape key will trigger the 
-  :doc:`close_filter_form <m_close_filter_form>`
-  method.
-* ``close_focusout`` - if true, the 
-  :doc:`close_filter_form <m_close_filter_form>`
-  method will be called when a form loses focus
-* ``template_class`` - if specified, the div with this class will be searched in 
-  the task 
+* ``width`` - 模态表单窗体的宽度，默认值是 560 px 。
+* ``title`` - 使用这个属性来获取或设置过滤器表单窗体的标题。
+* ``close_button`` - 如果为 true ，关闭按钮将显示在窗体的右上角，默认为 true。
+* ``close_caption`` - 如果为 true ，同时 close_button 也为 true ，
+  在按钮旁显示  “Close - [Esc]”
+* ``close_on_escape`` 如果为 true ，按下 Escape 键，将触发 
+  :doc:`close_filter_form <m_close_filter_form>` 方法。
+* ``close_focusout`` - 如果为 true ，当表单窗体失去焦点时，会调用
+  :doc:`close_filter_form <m_close_filter_form>` 方法。
+* ``template_class`` - 如果指定，则将在任务 
   :doc:`templates </refs/client/task/at_templates>` 
-  attribute and used as a form html template when creating a form
-  
+  属性中搜索具有此类的 div，并在创建表单时用作表单 html 模板。
+
 
 Example
 =======
@@ -47,7 +43,7 @@ Example
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
 :doc:`create_filter_form <m_create_filter_form>`
 

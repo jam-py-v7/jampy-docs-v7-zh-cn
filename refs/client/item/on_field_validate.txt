@@ -13,20 +13,13 @@ on_field_validate(field)
 Description
 ===========
 
-Write an ``on_field_validate`` event handler to validate changes made to the 
-field data.
+编写 ``on_field_validate`` 事件处理程序来验证对字段数据所作的更改。
 
-The ``field`` parameter is the field whose data has been changed. To get the 
-item that owns the field, use the 
-:doc:`owner </refs/client/field/at_owner>` 
-attribute of the field.
+``field`` 参数是一个数据已经被更改的字段。要获取拥有该字段的实体项，请使用字段的 :doc:`owner </refs/client/field/at_owner>` 属性。
 
-The event handler must return a string if the field value is invalid. 
-When an event handler returns a string, the application throws an exception.
+如果字段值非法，该事件处理程序必须返回字符串。
 
-The event is triggered when the 
-:doc:`post <m_post>`
-method is called or when the user leaves the input used to edit the field value.
+当调用 :doc:`post <m_post>` 方法或者用户离开用于编辑字段值的输入框时，触发此事件。
 
 Example
 =======

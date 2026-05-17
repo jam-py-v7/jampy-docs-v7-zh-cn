@@ -9,8 +9,8 @@ Field class
 **language**: javascript
 
 
-Attributes and properties
-=========================
+属性与特性
+===============
 
 .. toctree::
     :maxdepth: 1
@@ -18,7 +18,7 @@ Attributes and properties
     
     field/at_*
 
-Methods 
+方法 
 =======
 
 .. toctree::

@@ -13,46 +13,37 @@ edit
 Description
 ===========
 
-Enables editing of data in the dataset.
+在数据集中，启用数据的编辑。
 
-After a call to edit, an application can enable users to change data in the 
-fields of the record, and can then post those changes to the item dataset using 
-:doc:`post <m_post>` method, and then apply them to database using 
-:doc:`apply <m_apply>` method. 
+调用 ``edit`` 之后，应用程序将允许用户变更记录的字段中的数据，稍后能使用 :doc:`post <m_post>` 方法将这些变更提交到实体项数据集，最后使用 :doc:`apply <m_apply>` 方法将变更保存到数据库。
 
-The ``edit`` method
+``edit`` 方法
 
-* checks if the item dataset is active, otherwise raises exception
+* 检查实体项数据集是否处于 **活动(active)* 状态。  如果不是，则引发异常。
 
-* checks if the item dataset is not empty, otherwise raises exception
+* 检查实体项数据集是否不为空。如果为空，则引发异常。
 
-* checks whether the item dataset is already in edit state, and if so, returns
+* 检查实体项数据集是否已处于 “编辑” 状态。如果是，则直接返回。
 
-* if item is a 
-  :doc:`detail </programming/data/details>`
-  , checks if the master item is in edit or insert 
-  :doc:`state <at_item_state>`
-  , otherwise raises exception
+* 如果实体项是一个 :doc:`明细项 </programming/data/details>` ，
+  那么检查其主实体项是否处于 “编辑” 或 “插入”  :doc:`状态 <at_item_state>` 。
+  如果不是，则引发异常。
 
-* if item is not a 
-  :doc:`detail </programming/data/details>`
-  , checks if it is in browse 
-  :doc:`state <at_item_state>`
-  , otherwise raises exception
+* 如果实体项不是 :doc:``明细项 </programming/data/details>` ，
+  那么检查它是否处于 “浏览”  :doc:`状态 <at_item_state>` 。
+  如果部不是，则引发异常。
 
-* triggers the 
-  :doc:`on_before_edit <on_before_edit>` 
-  event handler if one is defined for the item 
+* 触发已为实体项定义的
+  :doc:`on_before_edit <on_before_edit>` 事件处理程序。
 
-* puts the item into edit 
-  :doc:`state <at_item_state>`
-  , enabling the application or user to modify fields in the record
+* 将实体项置于 “编辑” :doc:`状态 <at_item_state>` ，
+  允许应用程序或用户修改记录中的字段的值。
 
-* triggers the 
-  :doc:`on_after_edit <on_after_edit>` 
-  event handler if one is defined for the item
+* 触发已为实体项定义的 
+  :doc:`on_after_edit <on_after_edit>` 事件处理程序。
+
 
 See also
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

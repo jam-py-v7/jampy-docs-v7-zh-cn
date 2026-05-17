@@ -13,51 +13,43 @@ close_filter_form
 Description
 ===========
 
-Use ``close_filter_form`` method to close the filter form of the item.
+使用 ``close_filter_form`` 方法关闭实体项的过滤器表单窗体。
+
+如果定义了 :doc:`on_filter_form_close_query <on_filter_form_close_query>`
+事件处理程序，那么 ``close_filter_form`` 方法会触发它。如果定义了事件处理程序，并且
+
+* 返回 ``true`` - 表单窗体被销毁，实体项的 :doc:`filter_form <at_filter_form>` 
+  属性被设置为 undefined ，然后退出方法。
+
+* 返回 ``false`` - 操作被终止，然后退出方法。
 
 
-The ``close_filter_form`` method triggers the 
-:doc:`on_filter_form_close_query <on_filter_form_close_query>`
-event handler of the item, if one is defined. If the event handler is defined 
-and 
+如果它不返回一个值（undefined），方法触发实体项所属的组的 
+:doc:`on_filter_form_close_query </refs/client/group/on_filter_form_close_query>` 
+事件处理程序（如果为组定义了它）。如果定义了这个事件处理程序，并且 
 
-* returns ````false```` - the form is destroyed, the item's 
-  :doc:`filter_form <at_filter_form>`
-  atrribute is set to undefined and the methods exits
+* 返回 ``true`` - 表单窗体被销毁，实体项的 :doc:`filter_form <at_filter_form>` 
+  属性被设置为 undefined ，然后退出方法。
 
-* return ``false`` - the operation is aborted and the methods exits,
+* 返回 ``false`` - 操作被终止，然后退出方法。
 
-If it don't return a value (undefined) the method triggers the 
-:doc:`on_filter_form_close_query </refs/client/group/on_filter_form_close_query>`
-of the group that owners the item, if one is defined for the group. If this 
-event handler is defined and 
 
-* returns ``true`` - the form is destroyed, the item's 
-  :doc:`filter_form <at_filter_form>`
-  atrribute is set to undefined and the methods exits
-
-* return ``false`` - the operation is aborted and the methods exits,
-
-If it don't return a value (undefined) the method triggers the 
+如果它不返回一个值（undefined），则触发 “任务” 的 
 :doc:`on_filter_form_close_query </refs/client/task/on_filter_form_close_query>`
-of the task. If this 
-event handler is defined and 
+事件处理程序。如果定义了这个事件处理程序，并且 
 
-* returns ``true`` - the form is destroyed, the item's 
-  :doc:`filter_form <at_filter_form>`
-  atrribute is set to undefined and the methods exits
+* 返回 ``true`` - 表单窗体被销毁，实体项的 :doc:`filter_form <at_filter_form>` 
+  属性被设置为 undefined ，然后退出方法。
 
-* return ``false`` - the operation is aborted and the methods exits,
+* 返回 ``false`` - 操作被终止，然后退出方法。
 
-If no event handler is defined or none of these event handlers return ``false``, the 
-form is destroyed and the item's 
-:doc:`filter_form <at_filter_form>`
-atrribute is set to undefined.
+
+如果未定义任何事件处理程序，或者这些事件处理程序都没有返回 ``false`` ，表单窗体将被销毁，并且实体项的 :doc:`filter_form <at_filter_form>` 属性被设置为 undefined 。
 
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
 :doc:`create_filter_form <m_create_filter_form>`
 

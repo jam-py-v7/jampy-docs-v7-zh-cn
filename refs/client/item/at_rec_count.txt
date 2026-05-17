@@ -13,17 +13,9 @@ rec_count
 Description
 ===========
 
-Read the ``rec_count`` property to get the number of records owned by 
-the item's dataset. 
+读取 ``rec_count`` 属性以获取实体项数据集所拥有的记录的数量。
 
-If the module declares an 
-:doc:`on_filter_record <on_filter_record>`
-event handler and the 
-:doc:`Filtered <at_filtered>` 
-attribute is set, this property calculates the 
-number of records that satisfy this filter, otherwise the 
-:doc:`record_count <m_record_count>`
-method is used to calculate the number of records.
+如果在模块中声明了一个 :doc:`on_filter_record <on_filter_record>` 事件处理程序，并且设置了 :doc:`Filtered <at_filtered>` 属性， ``rec_count`` 属性计算经过过滤后的记录的数量，否则使用 :doc:`record_count <m_record_count>` 方法计算记录的数量。
 
 See also
 ========

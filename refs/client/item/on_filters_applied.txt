@@ -13,8 +13,7 @@ on_filters_applied(item)
 Description
 ===========
 
-Write an ``on_filters_applied`` event handler to make special processing when 
-filters have been applied to the item dataset.
+编写 ``on_filters_applied`` 事件处理成，在过滤器已经被应用到实体项数据集时，进行特殊的处理。
 
 See also
 ========

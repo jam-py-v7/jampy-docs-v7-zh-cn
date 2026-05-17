@@ -13,121 +13,83 @@ table_options
 Description
 ===========
 
-The ``table_options`` attribute is a set of options that determine how the table
-of the view form of will be displayed. Options defined in it are used by the
-:doc:`create_table <m_create_table>`
-method if its options parameter don't override corresponding option.
+``table_options`` 属性一个选项的集合，它们决定了视图表单中的表格将如何显示。 
+如果 :doc:`create_table <m_create_table>` 的可选参数没有覆盖相关选项，那么它会使用定义在 ``table_options`` 里面的选项。
 
-These options are set in the **Layout** tab of the
-:doc:`View Form Dialog </admin/items/view_form_dialog>`
-in Application Builder.
+在应用程序构建器中，在 :doc:`视图表单对话框 </admin/items/view_form_dialog>` 的 **布局(Layout)** 选显卡中设置这些选项。
 
-You can change ``table_options`` in the 
-:doc:`on_view_form_created <on_view_form_created>`
-event handler of the item. See example.
+你可以在实体项的 :doc:`on_view_form_created <on_view_form_created>` 事件处理程序中更改 ``table_options`` ，请见示例。
 
-The ``table_options`` parameter is an object that may have the following attributes:
+``table_options`` 参数是一个有下列属性的对象：
 
 =================== ============================================================
-Option              Description
+选项                 描述
 =================== ============================================================
-row_count           specifies the number of rows displayed by the table
+row_count           指定表格显示的行数。
 
-height              if row_count is not specified, it determines the height of 
-                    the table, the default value is 480. The table at creation 
-                    calculates the number of rows displayed (row_count), 
-                    based on the value of this parameter.
+height              若未指定 row_count，则由该参数决定表格高度，默认值为 480。
+                    表格创建时会根据此参数值计算显示的行数（row_count）。
 
-fields              a list of field names. If specified, a column will be 
-                    created for each field whose name is in this list, if not 
-                    specified (the default) then the fields attribute of an 
-                    :doc:`view_options <at_view_options>`
-                    will be used 
-                    
-title_line_count    specifies the number of lines of text displayed in a 
-                    title row, if it is 0, the height of the row is determined 
-                    by the contents of the title cells                
+fields              字段名称的列表。若指定该参数，会为列表中的每个字段创建一列；
+                    若未指定（默认情况），则使用 
+                    :doc:`view_options <at_view_options>` 的 fields 属性。
 
-row_line_count      specifies the number of lines of text displayed in a 
-                    table row, if it is 0, the height of the row is determined 
-                    by the contents of the cells
+title_line_count    指定标题行显示的文本行数。若值为 0，行高由标题单元格的内容决定。
 
-expand_selected_row if row_line_count is set and expand_selected_row is 
-                    greater that 0, it specifies the minimal number of lines of 
-                    text displayed in the selected row of the table
+row_line_count      指定表格行显示的文本行数。若值为 0，行高由单元格的内容决定。
 
-title_word_wrap     specifies if the column title text can be wrapped.
+expand_selected_row 若已设置 row_line_count 且 expand_selected_row 大于 0，
+                    则指定表格选中行显示的最小文本行数。
 
-column_width        the width of the columns are calculated by a Web Browser. 
-                    You can use this option to force the width of columns. The option is an 
-                    object, key values of which are field names, the values are column widths
-                    as CSS units
+title_word_wrap     指定列标题文本是否允许自动换行。
+
+column_width        列宽默认由浏览器自动计算。可使用该选项强制指定列宽。
+                    该选项为一个对象，其键名为字段名，值为 CSS 单位格式的列宽。
   
-editable_fields     the list of field names could be edited in the table. 
+editable_fields      可在表格中编辑的字段名称的列表。
 
-selected_field      if editable_fields are set, specifies the name of the
-                    field whose column will be selected, when the selected row 
-                    is changed.
+selected_field      若设置了 editable_fields，指定当选中行发生变化时，
+                    会自动选中其对应列的字段名。
 
-sortable            if this option is specified, it is possible to sort the 
-                    records by clicking on the table column header. When a 
-                    sort_fields option is not specified (default), a user can 
-                    sort records on any field, otherwise, only on the fields 
-                    whose names are listed in this option.
+sortable            若指定该选项，可通过点击表格列标题对数据记录进行排序。
+                    若未指定 sort_fields 选项（默认），用户可按任意字段排序；
+                    否则，仅可按该选项中列出的字段排序。
 
-sort_fields         the list of field names on which the table can be sorted,
-                    by clicking on the corresponding table column header.
-                    If an item is a detail the operation is performed on the 
-                    client, otherwise sorting is performed on the server (the 
-                    :doc:`open <m_open>`
-                    method is used internally).
+sort_fields         可通过点击对应列标题进行排序的字段名称列表。
+                    若实体项为明细项，排序操作在客户端执行；
+                    否则在服务端执行（内部使用 :doc:`open <m_open>` 方法）
 
-summary_fields      a list of field names. When it is specified, the table 
-                    calculates sums for numeric fields and displays them in the 
-                    table footer, for not numeric fields it displays the number 
-                    of records.
+summary_fields      字段名称列表。指定后，表格会为数值型字段计算合计值并显示在表尾，
+                    非数值型字段则显示记录总数
 
-freeze_count        an integer value. If it is greater than 0, it specifies 
-                    number of first columns that become frozen - they will not 
-                    scroll when the table is scrolled horizontally.
+freeze_count        一个整数值。若大于 0，指定前几列固定显示 —— 表格水平滚动时，
+                    这些列不会跟随滚动。
  
-show_hints          if true, the tooltip will be displayed when the user hovers 
-                    the mouse over a table cell, and the cell text does not fit 
-                    in the cell size. The default value is true.
+show_hints          若为 true，当鼠标悬停在文本内容超出单元格尺寸的表格单元格上时，
+                    会显示提示框。默认值为 true。
   
-hint_fields         a list of field names. If it is specified, the tooltip will 
-                    be displayed only for fields from this list, regardless of 
-                    the value of show_hints option value.
+hint_fields         字段名称列表。若指定该参数，无论 show_hints 的值如何，
+                    仅会为列表中的字段显示提示框
 
-on_click            specifies the function, that will be executed when a user 
-                    click on a table row. The item will be passed as a parameter 
-                    to the function. 
+on_click            指定用户点击表格行时执行的函数。函数会将当前数据项作为参数传入。
 
-on_dblclick         specifies the function, that will be executed when a user 
-                    double click on a table row. The item will be passed as a 
-                    parameter to the function. 
+on_dblclick         指定用户双击表格行时执行的函数。函数会将当前数据项作为参数传入。
 
-dblclick_edit       if the value of the option is set to true and the 
-                    on_dblclick option is not set, the edit form will be shown 
-                    when a user double click on a table row. 
+dblclick_edit       若该选项值为 true 且未设置 on_dblclick，
+                    用户双击表格行时会显示编辑表单。
 
-multiselect         if this option is set, a leftmost column with check-boxes 
-                    will be created to select records. So, that when a user 
-                    clicks on the check-box, the value of the primary key field 
-                    of the record will be added to or deleted from the 
-                    :doc:`selections <at_selections>` attribute.
+multiselect         若设置该选项，会在最左侧生成一列复选框用于选择记录。
+                    用户点击复选框时，记录的主键字段值会添加至 
+                    :doc:`selections <at_selections>` 属性，或从中移除。
   
-select_all          if  true, the menu will appear in the leftmost column of 
-                    the table header, which will allow the user selects all 
-                    records that match the current filters and the search value.
+select_all          若为 true，表格表头最左侧会显示一个菜单，
+                    允许用户选中所有匹配当前筛选和搜索条件的记录
 
-row_callback        the callback functions called each time fields of the record
-                    are changed. Two parameters are passed to the function - 
-                    item, whose record has changed and JQuery object of the 
-                    corresponding row of the table. Please be careful - the 
-                    item passed to the function can be not item itself, but its 
-                    clone that share the same dataset.
-=================== ============================================================  
+row_callback        记录字段每次发生变化时调用的回调函数。
+                    函数接收两个参数：发生变化的数据项、对应表格行的 jQuery 对象。
+                    注意：传入函数的数据项可能不是原数据项本身，
+                    而是共享同一数据集的克隆对象。
+=================== ============================================================
 
 
 Example
@@ -140,7 +102,8 @@ Example
       item.table_options.expand_selected_row = 3;    
   }
 
-The code in the following two examples does the same:
+
+下来两个示例的代码作用一样：
 
 .. code-block:: js
 
@@ -159,7 +122,7 @@ The code in the following two examples does the same:
 See also
 ========
 
-:doc:`View Form Dialog </admin/items/view_form_dialog>`
+:doc:`视图表单对话框 </admin/items/view_form_dialog>`
 
 :doc:`on_view_form_created <on_view_form_created>`
 

@@ -13,17 +13,14 @@ on_before_field_changed(field)
 Description
 ===========
 
-Write an ``on_before_field_changed`` event handler to implement any special 
-processing before field’s data has been changed.
+编写 ``on_before_field_changed`` 事件处理程序，在字段数据更改之前执行任何特殊处理。
 
-The ``field`` parameter is the field whose data is about to be changed. To get the 
-item that owns the field, use the 
-:doc:`owner </refs/client/field/at_owner>` 
-attribute of the field.
+``field`` 参数是其数据设计到变更的字段。
 
-Before triggering this event handler the application assigns the new value that is 
-about to be set to the ``new_value`` attribute to of the field. You can change 
-the value of this attribute. This value will be used to change field’s data. 
+获取拥有字段的实体项，使用字段的 :doc:`owner </refs/client/field/at_owner>` 属性。
+
+在触发此事件处理程序之前，应用程序将要设置的新值分配给字段的 “new_value” 属性。
+您可以更改此属性的值。此值将用于更改字段的数据。 
 
 
 Example

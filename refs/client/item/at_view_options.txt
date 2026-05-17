@@ -13,71 +13,59 @@ view_options
 Description
 ===========
 
-The ``view_options`` attribute is a set of options that determine how the view  
-form of will be displayed on the browser page.
+``view_options`` 属性是一个选项的集合，它们决定视图表单在浏览器页面上将如何显示。
 
-These options are set in the
-:doc:`View Form Dialog </admin/items/view_form_dialog>`
-in Application Builder.
+在应用程序构建器的 :doc:`视图表单对话框 </admin/items/view_form_dialog>` 里面对这些选项进行设置。
 
-You can change view options in the 
-:doc:`on_view_form_created <on_view_form_created>`
-event handler of the item. See example.
+你可以在实体项的 :doc:`on_view_form_created <on_view_form_created>` 事件处理程序历更改 ``view_options`` ，请见示例。
 
-``view_options`` is an object that has the following attributes:
+``view_options`` 是一个有下列属性的对象：
 
 =================== ============================================================
 Option              Description
 =================== ============================================================
-width               the width of the modal form, the default value is 600 px
+width               模态表单窗体的宽度，默认值是 600 px 。
 
-title               the title of the form, the default value is the value of a
-                    :doc:`item_caption </refs/client/abstr_item/at_item_caption>`
-                    attribute,
-                    
-form_border         if true, the border will be displayed around the form            
+title               表单窗体的标题，其默认值是 :doc:`item_caption </refs/client/abstr_item/at_item_caption>` 属性的值。
 
-form_header         if true, the form header will be created and displayed
-                    containing form title and various buttons
-                    
-history_button      if true and 
-                    :doc:`saving change history is enabled </admin/saving_history>`, 
-                    the history button will be displayed in the form header
-                    
-refresh_button      if true, the refresh button will be created in the form 
-                    header, that will allow users to refresh the page by sending 
-                    request to the server
-                    
+form_border         如果为 true，表单窗体周围会显示边框。
+
+form_header         如果为 true，将创建包含表单窗体的标题和各种按钮的标题栏。
+
+history_button      如果为 true 并且 :doc:`启用保存变更历史 
+                    </admin/saving_history>` ，
+                    那么将在表单标题栏内显示 “保存变更历史按钮” 。
+
+refresh_button      如果为 true，那么将在表单标题栏内创建 “刷新按钮” ，
+                    这允许用户向服务端发送请求来刷新页面。
+
 enable_search       if true, the search input will be created in the form header
+                    如果为 true，那么将在表单标题栏内创建 “搜索输入框” 。
 
-search_field        the name of the field that will be the default search field
+search_field        默认的搜索字段的名称
 
-enable_filters      if true and there are visible filters, the filter button will 
-                    be created in the form header
+enable_filters      如果为 true 并且有可用的可见的过滤器，
+                    那么将在表单标题栏内创建 “搜过滤器按钮” 。
 
-close_button        if true, the close button will be created in the upper-right 
-                    corner of the form
+close_button        如果为 true，那么将在表单右上角创建 “关闭按钮” 。
   
-close_on_escape     if true, pressing on the Escape key will execute the 
-                    :doc:`close_view_form <m_close_view_form>`
-                    method to close the form
-  
-view_details        the list of detail names, that will be displayed
-                    in the view form, if view form template contains the div 
-                    with class 'view-detail' (the default view form template have 
-                    this div)
-                    
-detail_height       the height of the details displayed in the view form,
-                    if not specified the height of the detail table is 200px
+close_on_escape     如果为 true，按下 Escape 键会执行
+                    :doc:`close_view_form <m_close_view_form>` 来关闭表单窗体。
 
-modeless            if true, the form will be displayed as modeless
+view_details        明细项名称的列表，如果视图表单模板包含样式类为 
+                    'view-detail' 的 div （默认的视图表单模板已包含），
+                    它们将显示在视图表单中，
 
-template_class      if specified, the div with this class will be searched in 
-                    the task 
+detail_height       在视图表单中显示的明细表的高度，
+                    如果没有指定，那么明细表的高度是 200px。
+
+modeless            如果为 true，表单窗体将以非模态显示。
+
+template_class      如果指定，将在 “任务” 的 
                     :doc:`templates </refs/client/task/at_templates>` 
-                    attribute and used as a form html template when creating a 
-                    form. This attribute must be set before the form is created
-=================== ============================================================                    
+                    属性中搜索具有此类的 div ，并在创建表单时用作表单 html 模板。
+                    必须在创建表单之前设置此属性
+=================== ============================================================
 
 Example
 =======
@@ -93,6 +81,6 @@ Example
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
 :doc:`view <m_view>`

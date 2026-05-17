@@ -13,22 +13,18 @@ on_before_open(item, params)
 Description
 ===========
 
-Occurs before an application sends a request to the server for obtaining a 
-dataset.
+应用程序向服务端发送请求以获取数据集之前发生此事件。
 
-The ``item`` parameter is an item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-The ``params`` parameter is an object that has been passed to the
-:doc:`open <m_open>`
-method or an empty object if this object is undefined. 
-This object is passed to the server and can be used in the 
-:doc:`on_open </refs/server/item/on_open>`
-event handler to perform some actions when obtaining a dataset
+``params`` 参数是一个传递给 :doc:`open <m_open>` 方法的对象。
+如果未指定，则传递一个空对象。
+这个对象被传递到服务端，在 :doc:`on_open </refs/server/item/on_open>` 
+事件处理程序中使用它，当获取数据集时，能够执行一些操作。
 
-Write an on_before_open event handler to take specific action immediately 
-before an application obtains an dataset from the server. 
+编写一个 ``on_before_open`` 事件处理程序，在应用程序从服务端获取数据之前，立即执行指定的操作。
 
-``on_before_open`` is called by :doc:`open <m_open>` method. 
+``on_before_open`` 由 :doc:`open <m_open>` method 调用。
 
 See also 
 ========

@@ -13,13 +13,13 @@ on_after_post(item)
 Description
 ===========
 
-Occurs after an application posts a record to the item dataset.
+应用程序将一条记录提交到数据集之后发生此事件。
 
-The ``item`` parameter is an item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-Write an on_after_post event handler to take specific action immediately after 
-an application posts a record in the item dataset. on_after_post is called 
-by :doc:`post <m_post>` method.
+编写一个 ``on_after_post`` 事件处理程序，应用程序在将一条记录提交到数据集之后，立即执行指定的操作。
+
+``on_after_post`` 由 :doc:`post <m_post>` method 调用。
 
 See also
 ========

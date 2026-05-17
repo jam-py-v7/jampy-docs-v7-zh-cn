@@ -13,24 +13,19 @@ on_before_apply(item, params)
 Description
 ===========
 
-Occurs before an application saves dataset changes to the project 
-database.
+应用程序在项目数据库中保存数据集的变之前发生此事件。
 
-The ``item`` parameter is an item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-The ``params`` parameter is an object that has been passed to the
-:doc:`apply <m_apply>`
-method or an empty object if this object is undefined. 
-This object is passed to the server and can be used in the 
-:doc:`on_apply </refs/server/item/on_apply>` 
-event handler to perform some actions when saving changes to the database. 
+``params`` 参数是一个传递给 :doc:`apply <m_apply>` 方法的对象。
+如果未指定，则传递一个空对象。
+这个对象被传递到服务端，在 :doc:`on_apply </refs/server/item/on_apply>` 
+事件处理程序中使用它，当在数据库中保存变更时，能够执行一些操作。
 
-Write an on_before_apply event handler to take specific action immediately before 
-an application saves the change log to the project database.
+编写一个 ``an on_before_apply`` 事件处理程序，应用程序在项目数据库中保存变更日志之前，立即执行指定的操作。
 
-``on_before_apply`` is triggered by 
-:doc:`apply <m_apply>`
-method.
+``on_before_apply`` 方法由 :doc:`apply <m_apply>` 方法触发。
+
 
 See also
 ========

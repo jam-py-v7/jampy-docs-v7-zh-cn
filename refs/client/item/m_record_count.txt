@@ -15,6 +15,7 @@ Description
 
 Call ``record_count`` to get the total number of records owned by the item's 
 dataset.
+调用 ``record_count`` 方法获取实体项的数据集拥有的记录的总数。
 
 Example
 =======

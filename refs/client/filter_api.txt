@@ -9,8 +9,8 @@ Filter class
 **language**: javascript
 
 
-Attributes and properties
-=========================
+属性与特性
+==============
 
 .. toctree::
     :maxdepth: 1

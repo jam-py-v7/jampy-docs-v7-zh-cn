@@ -13,10 +13,8 @@ rec_no
 Description
 ===========
 
-Examine the ``rec_no`` property to determine the record number of the current 
-record in the item dataset. 
-``rec_no`` can be set to a specific record number to position the cursor on that 
-record.
+检查 ``rec_no`` 属性以确定实体项数据集中当前记录的记录号。 
+``rec_no`` 可以设置为特定的记录号，以将光标定位在该记录上。
 
 Example
 =======
@@ -60,9 +58,9 @@ Example
 See also
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`
 
 
 

@@ -13,13 +13,12 @@ on_before_edit(item)
 Description
 ===========
 
-Occurs before an application enables editing of the active record.
+在应用程序启用编辑记录功能之前发生此事件。
 
-The ``item`` parameter an the item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-Write an on_before_edit event handler to take specific action immediately 
-before an application enables editing of the active record in an item dataset. 
-on_before_edit is called by :doc:`edit <m_edit>` method. 
+编写一个 ``on_before_edit`` 事件处理程序，应用程序在启用编辑记录功能之前，立即执行指定的操作。
+``on_before_edit`` 由 by :doc:`edit <m_edit>` 调用。
 
 See also
 ========

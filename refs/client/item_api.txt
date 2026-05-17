@@ -8,16 +8,13 @@ Item class
 
 **language**: javascript
 
-Item class is used to create item objects of the 
-:doc:`task tree </programming/task_tree>` that may have an associated database 
-table. 
+Item 类用于创建 :doc:`任务树 </programming/task_tree>` 中的实体项对象，这些对象可能有一个关联的数据库表。
 
-Below the attributes, methods and events of the class are listed.
+下面列出了的这个类的属性、方法和事件。
 
-It, as well, inherits attributes and methods of its ancestor class
-:doc:`AbstractItem class <abstractitem_api>`
+它同样继承了其祖先类 :doc:`AbstractItem class <abstractitem_api>` 的属性和方法
 
-Attributes and properties
+属性与特性
 =========================
 
 .. toctree::

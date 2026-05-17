@@ -13,18 +13,16 @@ read_only
 Description
 ===========
 
-Read the ``read_only`` property to determines whether the data can be modified in 
-data-aware controls.
+``read_only`` 属性决定了是否可以修改数据感知控件中的数据。
 
 Set ``read_only`` property to ``true`` to prevent data from being modified in 
 data-aware controls.
+设置 ``read_only`` 属性为 ``true`` 以保护数据在数据感知控件中不被修改。
 
-When you assign a value to the read_only property, the application sets the 
-read_only property of all the details and the 
-:doc:`read_only </refs/client/field/at_read_only>`
-property of each field to that value.
+当为 read_only 属性赋值时，应用程序会将所有明细的 read_only 属性和字段的 :doc:`read_only </refs/client/field/at_read_only>` 属性的都设置为相同的值。
 
-If the user role prohibits editing of the record, ``read_only`` always returns ``true``. 
+
+如果用户角色禁止编辑记录， 那么 ``read_only`` 返回 ``true`` 。
 
 See also
 ========
@@ -34,9 +32,7 @@ See also
 Example
 =======
 
-In this example we first set ``read_only`` attribute of the invoices item
-to ``true``. It makes all fields and invoice_table detail read only. After that
-we allow a user to edit customer field and invoice_table detail.
+在这个例子中，我们首先将发票实体项的 ``read_only`` 属性设置为 ``true`` 。这将使所有字段和 invoice_table 明细都是只读的。然后，我们运行一个用户编辑 customer 字段和 invoice_table 明细表。
 
 .. code-block:: js
 

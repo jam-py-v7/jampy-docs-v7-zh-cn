@@ -14,16 +14,16 @@ Description
 ===========
 
 Use each method to iterate over records of an item dataset.
+使用 ``each`` 方法来迭代访问一个实体项所拥有的记录。
 
-The each() method specifies a function to run for each record.
-You can break the each loop at a particular iteration by making the callback 
-function return ``false``. 
+``each`` 方法指定了一个函数，这个函数会为每条记录执行。
+
+通过使回调函数返回 ``false`` ，你能在一个特定的迭代中终止 each 循环。
 
 Example
 =======
 
-In the example below the **t** and **item.invoice_table** are pointers to the
-same object:
+下面的示例中， **t** 和 **item.invoice_table** 都指向了同一个对象。
 
 .. code-block:: js
 
@@ -39,4 +39,4 @@ same object:
 See also
 ========
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`

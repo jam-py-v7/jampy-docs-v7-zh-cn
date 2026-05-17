@@ -13,27 +13,21 @@ active
 Description
 ===========
 
-Specifies whether or not an item dataset is open.
+指明实体项的数据集是否已经被打开。
 
-Use ``active`` read only property to determine whether an item dataset is open. 
+使用 ``active`` 只读属性来确定实体项的数据集是否已经打开。
 
-The 
-:doc:`open <m_open>` 
-method changes the value of ``active`` to ``true``. The
-:doc:`close <m_close>`
-method sets it to ``false``.
+:doc:`open <m_open>` 方法将 ``active`` 的值更改为 ``true`` ，
+:doc:`close <m_close>` 方法将 ``active`` 的值更改为 ``false`` ，
 
-
-When the dataset is 
-open its records can be navigated and its data can be modified and the changes 
-saved in the item database table.
+当数据集打开时，可以浏览其记录，修改其数据，并将更改保存在实体项的数据库表中。
 
 See also
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`浏览数据集 </programming/data/navigating_datasets>`
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 

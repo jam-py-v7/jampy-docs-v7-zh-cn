@@ -13,13 +13,12 @@ details
 Description
 ===========
 
-Lists all 
-:doc:`detail </refs/client/detail_api>`
-objects of the item.
+列举出实体项的全部 :doc:`明细 </refs/client/detail_api>` 对象。
+
 
 See also
 ========
 
-:doc:`Details </programming/data/details>`
+:doc:`明细 </programming/data/details>`
 
 :doc:`each_detail <m_each_detail>`

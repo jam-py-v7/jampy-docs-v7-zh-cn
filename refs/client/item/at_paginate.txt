@@ -13,20 +13,14 @@ paginate
 Description
 ===========
 
-The ``paginate`` attribute determines the behavior of a table created by the
-:doc:`create_table <m_create_table>`
-method
+``paginate`` 属性决定了由 :doc:`create_table <m_create_table>` 方法创建的表格的分页行为。
 
-When ``paginate`` is set to ``true``, a paginator is created, and the table 
-calculates the number of the rows displayed, based on its height. The table will 
-internally manipulate the
-``limit`` and ``offset``  parameters of the 
-:doc:`open <m_open>` 
-method, depending on its height and current page, reopening the dataset when
-page changes.
+当设置 ``paginate`` 为 ``true`` 时，将创建一个分页器，表格将基于自身的高度计算每页显示的行数。
 
-If ``paginate`` value is ``false``, the table will displays all available
-records of the dataset.
+该表将根据自身的高度和当前显示的页面，在内部操纵 :doc:`open <m_open>` 方法的 ``limit`` 和 ``offset`` 参数，在页面更改时重新打开数据集。
+
+
+如果 ``paginate`` 为 ``false`` 时，表格将显示出数据集中所有可用的记录。
 
 See also
 ========

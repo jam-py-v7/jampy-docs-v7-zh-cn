@@ -13,13 +13,13 @@ on_before_delete(item)
 Description
 ===========
 
-Occurs before an application deletes a record.
+应用程序删除一条记录之前发生此事件。
 
-The ``item`` parameter is an item that triggered the event.
+``item`` 参数是触发了这个事件的实体项。
 
-Write an on_before_delete event handler to take specific action immediately 
-before an application deletes the active record in an item. on_before_delete is 
-called by :doc:`delete <m_delete>` method before it deletes the record. 
+编写一个 ``on_before_delete`` 事件处理程序，应用程序删除实体项的活动记录之前，立即执行指定的操作。
+
+``on_before_delete`` 在删除记录后由 :doc:`delete <m_delete>` 调用。
 
 See also
 ========

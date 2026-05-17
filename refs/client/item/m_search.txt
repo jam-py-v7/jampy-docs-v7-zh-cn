@@ -13,22 +13,23 @@ search
 Description
 ===========
 
-Call ``search`` to send to the server a request to generate and execute 
-an sql query to get all records which satisfy the search condition for the field. 
-The query will also satisfy currently set filteres or where condition for an item. 
-The existing visual controls will be update with the returned dataset.
+调用 ``search`` 方法，向服务器发送一个请求，生成并执行一个 SQL 查询语句，
+以获取满足字段查询条件的所有记录。
 
-Parameters:
+查询也将满足当前设置的过滤器或实体项的 where 条件。
 
-* ``field_name`` - name of the field
+将使用返回的数据集更新已有的可视化控件中的内容。
 
-* ``value`` - value of the condition
+参数如下:
 
-* ``search_type`` - type of search as a string, see Filter symbol in 
-  :doc:`Filtering records </programming/data/filtering_records>`
+* ``field_name`` - 字段的名称
 
-* ``callback`` - a callback function that will be executed after search is 
-  executed
+* ``value`` - 满足条件的字段的值
+
+* ``search_type`` - 字符串格式的搜索类型， 参见 
+  :doc:`Filtering records </programming/data/filtering_records>` 中的过滤符号
+
+* ``callback`` - 一个回调函数，将在执行搜索后被执行
   
 See also
 ========

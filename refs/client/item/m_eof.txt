@@ -13,23 +13,24 @@ eof
 Description
 ===========
 
-Test ``eof`` (end-of-file) to determine if the cursor is positioned at the last 
-record in an item dataset. If eof returns ``true``, the cursor is unequivocally on 
-the last row in the dataset. eof returns ``true`` when an application:
+调用 ``eof`` (end-of-file) 来确定游标是否指向一个实体项数据集的最后一条记录。 
+如果 eof 返回 ``true``, 游标就明确地位于数据集中的最后一行上。
 
-* Opens an empty dataset.
-* Calls an item's :doc:`last <m_last>` method.
-* Call an item's :doc:`next <m_next>` method, and the method fails (because the 
-  cursor is already on the last row in the dataset).
+eof 返回 true ，当应用程序：
 
-eof returns false in all other cases.
+* 打开一个空数据集。.
+* 调用了实体项的 :doc:`last <m_last>` 方法。
+* 调用了实体项的  :doc:`next <m_next>` 方法，并且执行失败
+  （因为游标已经在数据集的最后一行上）。
+
+在其它情况下， eof 返回 false 。
 
 .. note::
-    If both eof and :doc:`bof <m_bof>` return ``true``, the item dataset is empty.
+    如果 eof 和 :doc:`bof <m_bof>` 都返回 ``true``, 则实体项数据集是空的。
     
 See also
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`

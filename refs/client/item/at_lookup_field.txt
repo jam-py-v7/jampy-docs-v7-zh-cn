@@ -13,8 +13,8 @@ lookup_field
 Description
 ===========
 
-Use ``lookup_field`` to check if the item was created to select a value for
-the lookup field. See :doc:`Lookup fields </programming/data/lookup_fields>`
+使用 ``lookup_field`` 检查是否创建了实体项来为查找字段选择值。
+请参阅： :doc:`Lookup fields </programming/data/lookup_fields>`
 
 Example
 =======

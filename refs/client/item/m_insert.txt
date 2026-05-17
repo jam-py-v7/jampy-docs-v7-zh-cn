@@ -13,48 +13,35 @@ insert
 Description
 ===========
 
-Inserts a new, empty record in the item dataset.
+在实体项的数据集中插入一个新的空记录。
 
-After a call to ``insert``, an application can enable users to enter data in the 
-fields of the record, and can then post those changes to the item dataset using 
-:doc:`post <m_post>` 
-method, and then apply them to the item database table, using 
-:doc:`apply <m_apply>` 
-method. 
+在调用 ``insert`` 后，应用程序让用户在记录的字段中输入数据，
+然后使用 :doc:`post <m_post>` 方法将这些更改提交到实体项数据集，
+并使用 :doc:`apply <m_apply>` 方法将它们应用到实体项数据库表。
 
-The ``insert`` method
+``insert`` 方法
 
-* checks if item dataset is 
-  :doc:`active <at_active>`
-  , otherwise raises exception
+* 检查实体项数据集是否处于 :doc:`active <at_active>` 状态，否则引发异常
 
-* if the item is a 
-  :doc:`detail </programming/data/details>`
-  , checks if the master item is in edit or insert 
-  :doc:`state <at_item_state>`
-  , otherwise raises exception
+* 如果实体项是 :doc:`detail </programming/data/details>` ，
+  则检查主实体项是否处于编辑或插入 :doc:`state <at_item_state>` ，
+  否则引发异常
 
-* if the item is not a 
-  :doc:`detail </programming/data/details>`
-  checks if it is in browse 
-  :doc:`state <at_item_state>`
-  , otherwise raises exception
+* 如果实体项不是 :doc:`detail </programming/data/details>` ，
+  则检查它是否处于 “浏览” :doc:`state <at_item_state>` ，
+  否则引发异常
 
-* triggers the 
-  :doc:`on_before_append <on_before_append>` 
-  event handler if one is defined for the item 
+* 如果为实体项定义了 :doc:`on_before_append <on_before_append>` 
+  事件处理程序，则触发
 
-* inserts a new, empty record in the item dataset.
+* 在实体项数据集中插入一个新的空记录。
 
-* puts the item into insert 
-  :doc:`state <at_item_state>`
+* 将实体项置于插入 :doc:`state <at_item_state>`
 
-* triggers the 
-  :doc:`on_after_append <on_after_append>` 
-  event handler if one is defined for the item.
+* 如果为项目定义了 :doc:`on_after_append <on_after_append>` 
+  事件处理程序，则触发。
 
-* updates 
-  :doc:`data-aware controls </programming/interface/data_controls>`
+* 更新 :doc:`data-aware controls </programming/interface/data_controls>` 。
 
 See also
 ========

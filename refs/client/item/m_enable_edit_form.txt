@@ -13,8 +13,8 @@ enable_edit_form
 Description
 ===========
 
-Call ``enable_edit_form`` to re-enable edit form after prior call to 
-:doc:`disable_edit_form <m_disable_edit_form>` 
+在调用 :doc:`disable_edit_form <m_disable_edit_form>` 方法之后，
+调用 ``enable_edit_form`` 方法以重新启用编辑表单窗体，
 
 Example
 =======
@@ -31,7 +31,7 @@ Example
                   if (error) {
                       item.alert_error(error);
                   }
-                  item.edit();                
+                  item.edit();
                   item.enable_edit_form();
               });
           }

@@ -13,120 +13,80 @@ open
 Description
 ===========
 
-Call ``open`` to sends a request to the server for obtaining an item dataset. 
+调用 ``open`` 向服务端发送请求以获取实体项的数据集。
 
-The ``open`` method can have the following parameters:
+``open`` 方法可以有以下参数：
 
-* ``options`` - an object that specifies the parameters of the request sent to 
-  the server
-* ``callback``: if the parameter is not present, the request is sent to the 
-  server synchronously, otherwise, the request is executed asynchronously and 
-  after the dataset is received, the callback is executed
-* ``async``: if its value is true, and callback parameter is missing, the request 
-  is executed asynchronously 
+* ``options`` - 一个对象，指定发送到服务端的请求参数
+* ``callback``：如果参数不存在，则同步向服务端发送请求，
+  否则，异步执行请求，并在收到数据集后执行回调
+* ``async``：如果其值为 true，且缺少 callback 参数，则异步执行请求
   
-The order of parameters doesn't matter.
+参数的顺序无关紧要。
 
-The method initializes the item 
-:doc:`fields <at_fields>`,
-formulates parameters of a request, based on the ``options`` and triggers the 
-:doc:`on_before_open <on_before_open>` event 
-handler if one is defined for the item.
+该方法根据 ``options`` 初始化实体项的 :doc:`fields <at_fields>` 并制定请求参数，
+如果为实体项定义了 :doc:`on_before_open <on_before_open>` 事件处理程序，则触发 。
 
-After that it sends the request to the server. If ``callback`` 
-parameter-function is specified, the request is executed asynchronously, 
-otherwise - synchronouslly. 
+之后，它向服务端发送请求。如果指定了 ``callback`` 参数对应的函数，
+则异步执行请求，否则同步执行。
 
-The server, after recieving the request, checks if the corresponding item on the 
-server (item of the 
-:doc:`task tree </programming/task_tree>` 
-with the same ID attribute) has the
+服务端在收到请求后，检查服务端上相应的实体项（具有相同 ID 属性的 
+:doc:`task tree </programming/task_tree>` 中的实体项）是否具有
 :doc:`on_open </refs/server/item/on_open>`
-event handler. If so it executes this event handler and returns the result of 
-the execution to the client, otherwise generates a SELECT SQL query, based on 
-parameters of the request, executes this query and returns the result to the client.
+事件处理程序。如果有，它执行此事件处理程序并将执行结果返回给客户端；否则，根据请求参数生成 SELECT SQL 查询语句，执行此查询并将结果返回给客户端。
 
-The client, after receiving the result of the request, changes its dataset and
-sets :doc:`active <at_active>`
-to true, the
-:doc:`item_state <at_item_state>` 
-to browse mode, goes to the first record of the dataset, triggers 
-:doc:`on_after_open <on_after_open>` 
-and 
-:doc:`on_filters_applied <on_filters_applied>`
-event handlers (if they are defined for the item), and updates controls.
+客户端在收到请求结果后，更改其数据集，将 :doc:`active <at_active>` 设置为 true，
+将 :doc:`item_state <at_item_state>` 设置为 “浏览” 模式，转到数据集的第一条记录，
+触发 :doc:`on_after_open <on_after_open>` 和 
+:doc:`on_filters_applied <on_filters_applied>` 
+事件处理程序（如果为实体项定义了），并更新控件。
 
-Then it calls ``callback`` function if it was specified.
+然后，如果指定了 ``callback`` 参数，则调用对应的函数。
 
 Options
 -------
 
-The ``options`` object parameter can have the following attributes:
+``options`` 对象参数可以具有以下属性：
 
-* ``expanded`` - if the value of this attribute is true, the SELECT query, generated
-  on the server, will have JOIN clauses to get lookup values of the 
-  :doc:`lookup fields </programming/data/lookup_fields>`
-  , otherwise no lookup values will be returned. The default value if ``true``.
+* ``expanded`` - 如果此属性的值为 true，则在服务端生成的 SELECT 查询语句将具有 JOIN 
+  子句以获取 :doc:`lookup fields </programming/data/lookup_fields>` 的查找值，
+  否则不会返回查找值。默认值为 ``true``。
   
-* ``fields`` - use this parameter to specify the WHERE clause of the SELECT 
-  query. This parameter is a list of field names. If it is omitted, the fields 
-  defined by the
-  :doc:`set_fields <m_set_fields>`
-  method will be used. If the
-  :doc:`set_fields <m_set_fields>`
-  method was not called before the ``open`` method execution, all the fields 
-  created by a developer will be used.
+* ``fields`` - 使用此参数指定 SELECT 查询的 WHERE 子句。此参数是字段名称列表。
+  如果省略，则使用 :doc:`set_fields <m_set_fields>` 方法定义的字段。
+  如果在 ``open`` 方法执行之前未调用 :doc:`set_fields <m_set_fields>` 方法，
+  则使用开发者创建的所有字段。
 
-* ``where`` - use this parameter to specify how records will be filtered in the 
-  SQL query. This parameter is an object of key-value pairs, where keys are
-  field names, that are followed, after double underscore, by a filtering symbols
-  (see
-  :doc:`Filtering records </programming/data/filtering_records>`
-  ). If this parameter is omitted, values
-  defined by the
-  :doc:`set_where <m_set_where>`
-  method will be used. If the
-  :doc:`set_where <m_set_where>`
-  method was not called before the ``open`` method execution, and ``where`` 
-  parameter is omitted, then the values of 
-  :doc:`filters </programming/data/filters>` 
-  defined for the item will be used to filter records.
+* ``where`` - 使用此参数指定如何在 SQL 查询中过滤记录。此参数是 “键值对” 对象，
+  其中键是字段名称，后跟双下划线，然后是过滤符号
+  （请参阅 :doc:`过滤记录 </programming/data/filtering_records>` ）。
+  如果省略，则使用 :doc:`set_where <m_set_where>` 方法定义的值。
+  如果在 ``open`` 方法执行之前未调用 :doc:`set_where <m_set_where>` 方法，
+  且省略了 ``where`` 参数，则使用为项目定义的 
+  :doc:`filters </programming/data/filters>` 的值来过滤记录。
   
-* ``order_by`` - use ``order_by`` to specify sort order of the records. This 
-  parameter is a list of field names. If there is a sign '-' before the field 
-  name, then on this field records will be sorted in decreasing order. If this 
-  parameter is omitted, a list defined by the   
-  :doc:`set_order_by <m_set_order_by>`
-  method will be used.
+* ``order_by`` - 使用 ``order_by`` 指定记录的排序顺序。此参数是字段名称列表。
+  如果字段名称前有 '-' 符号，则在此字段上按降序排序记录。
+  如果省略，则使用 :doc:`set_order_by <m_set_order_by>` 方法定义的列表。
 
-* ``offset`` -  use ``offset`` to specify the offset of the first row to return.
+* ``offset`` - 使用 ``offset`` 指定要返回的第一行记录的偏移量。
 
-* ``limit`` - use ``limit`` to limit the output of a SQL query to the first 
-  so-many rows.
+* ``limit`` - 使用 ``limit`` 限制 SQL 查询语句的输出 “前几行” 。
 
-* ``funcs`` - this parameter can be a an object of key-value pairs, where key is 
-  a field name and value is function name that will be applied to the field in
-  the SELECT Query
+* ``funcs`` - 此参数可以是 “键值对” 对象，其中键是字段名称，值是将在 SELECT 查询中应用于字段的函数名称。
 
-* ``group_by`` - use ``group_by`` to specify fields to group the result of the 
-  query by. This parameter must be a list of field names.
+* ``group_by`` - 使用 ``group_by`` 指定用于对查询结果进行分组的字段。此参数必须是字段名称列表。
 
-* ``open_empty`` - if this parameter is set to ``true``, the application does 
-  not send a request to the server but just initializes an empty dataset. 
-  The default value  if ``false``.
+* ``open_empty`` - 如果此参数设置为 ``true``，应用程序不会向服务端发送请求，而是仅仅初始化一个空的数据集。默认值为 ``false``。
 
-* ``params`` - use the parameter to pass some user defined options to be used in
-  the 
-  :doc:`on_open </refs/server/item/on_open>`
-  event handler on the server. This parameter must be an object of key-value pairs
+* ``params`` - 使用此参数传递一些用户定义的选项，以在服务端的 
+  :doc:`on_open </refs/server/item/on_open>` 事件处理程序中使用。
+  此参数必须是 “键值对” 对象。
 
 .. note::
-    When the 
-    :doc:`paginate <at_paginate>`
-    attribute of the item is set to ``true`` and a table is created by the
-    :doc:`create_table <m_create_table>`
-    method, the ``limit`` and ``offset``  parameters are set internally by the
-    table depending on its row number and current page.
+    当实体项的 :doc:`paginate <at_paginate>` 属性设置为 ``true`` 
+    且通过 :doc:`create_table <m_create_table>` 方法创建表时，
+    ``limit`` 和 ``offset`` 参数由表根据其行数和当前页面在内部设置。
 
 Examples
 ========

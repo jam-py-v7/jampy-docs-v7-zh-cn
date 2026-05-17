@@ -13,18 +13,13 @@ on_field_get_html(field)
 Description
 ===========
 
-Write an ``on_field_get_html`` event handler to specify the ``html`` that will be 
-inserted in the table cell for the field.
+编写 ``on_field_get_html`` 事件处理程序来指定在表格中将插入到该字段的单元格中的 ``html`` ，
 
-If the event handler does not return a value, the application checks if 
-the :doc:`on_field_get_text <on_field_get_text>` event handler is defined and it
-returns a value, otherwise the :doc:`display_text </refs/client/field/at_display_text>`
-property value will be used to display the field value in the cell.
+如果事件处理程序没有返回任何值，应用程序检查是否定义了 :doc:`on_field_get_text <on_field_get_text>` 事件处理程序；如果返回了一个值，将使用 :doc:`display_text </refs/client/field/at_display_text>` 属性的值在单元格中来显示该字段的值。
 
-The ``field`` parameter is the field whose 
-:doc:`display_text </refs/client/field/at_display_text>`
-is processed. To get the item that owns the field, use the
-:doc:`owner </refs/client/field/at_owner>` attribute of the field.
+``field`` 参数是一个字段，
+它的 :doc:`display_text </refs/client/field/at_display_text>` 已经被处理。
+要获取拥有此字段的实体项，请使用字段的 :doc:`owner </refs/client/field/at_owner>` 属性。
 
 Example
 =======

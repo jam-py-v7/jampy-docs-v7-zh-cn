@@ -13,13 +13,10 @@ on_filter_changed(filter, lookup_item)
 Description
 ===========
 
-Write an ``on_filter_changed`` event handler to respond to any changes in the 
-filter’s data.
+编写一个 ``on_filter_changed`` 事件处理程序，以响应过滤器数据中的任何更改。
 
-The ``filter`` parameter is the filter whose data has been changed. To get the 
-item that owns the filter, use the 
-:doc:`owner </refs/client/filter/at_owner>` 
-attribute of the filter.
+``filter`` 参数时那个数据已经被更改的过滤器。
+要获取拥有这个过滤器的实体项，请使用过滤器的 :doc:`owner </refs/client/filter/at_owner>` 属性。
 
 See also
 ========

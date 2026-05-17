@@ -13,10 +13,10 @@ is_new
 Description
 ===========
 
-Checks if an item is in insert state and returns ``true`` if it is.
+检查一个实体项是否处于 “插入” 状体。 如果是，则返回 ``true`` 。
 
-An application calls :doc:`append <m_append>` or :doc:`insert <m_insert>` methods 
-to put an item into insert state.
+应用程序通过调用 :doc:`append <m_append>` 或者 :doc:`insert <m_insert>` 方法
+可以将一个实体项置于 “插入” 状态。
 
 See also
 ========

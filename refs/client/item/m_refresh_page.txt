@@ -13,13 +13,9 @@ refresh_page
 Description
 ===========
 
-Call ``refresh_page`` to send to the server a request to get current data of 
-the current page and refresh existing visual controls.
+调用 ``refresh_page`` 向服务器发送请求，以获取当前页面的当前数据并刷新现有的可视化控件。
 
-The ``refresh_page`` method can have the following parameters:
+``refresh_page`` 方法有以下参数：
 
-* ``callback``: if the parameter is not present, the request is sent to the 
-  server synchronously, otherwise, the request is executed asynchronously and 
-  after that the callback is executed
-* ``async``: if its value is true, and callback parameter is missing, the request 
-  is executed asynchronously 
+* ``callback``: 如果参数不存在，则同步向服务器发送请求，否则异步执行请求，然后执行回调
+* ``async``: 如果其值为 true ，并且缺少回调参数，则异步执行请求

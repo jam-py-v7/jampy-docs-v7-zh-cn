@@ -13,8 +13,7 @@ assign_filters
 Description
 ===========
 
-Use ``assign_filters`` to set filter values of the item to values of filters of 
-the ``item`` parameter.
+使用 ``assign_filters`` 将 ``item`` 参数的过滤器的值设置为实体项的过滤器的值。
 
 Example
 =======
@@ -42,6 +41,6 @@ Example
 See also
 ========
 
-:doc:`Filtering records </programming/data/filtering_records>`
+:doc:`过滤记录 </programming/data/filtering_records>`
 
-:doc:`Filters </programming/data/filters>`
+:doc:`过滤器 </programming/data/filters>`

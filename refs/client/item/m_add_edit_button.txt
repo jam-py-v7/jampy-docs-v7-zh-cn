@@ -11,8 +11,6 @@ add_edit_button
 Description
 ===========
 
-Use ``add_edit_button`` to dynamically add a button in the edit form.
+使用 ``add_edit_button`` ，可以在编辑表单窗体中动态地添加一个按钮。
 
-This method have the same parameters as the 
-:doc:`add_view_button <m_add_view_button>`
-method
+这个方法与 :doc:`add_view_button <m_add_view_button>` 方法有相同地参数。

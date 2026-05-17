@@ -13,14 +13,12 @@ on_view_form_keydown(item, event)
 Description
 ===========
 
-The ``on_view_form_keydown`` event is triggered when the keydown event 
-occurs for the 
-:doc:`view_form </refs/client/item/at_view_form>`
-of the item.
+当按键的 keydown 事件发生在实体项的 :doc:`view_form </refs/client/item/at_view_form>` 表单上时，会触发 ``on_view_form_keydown``  事件。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是触发事件的实体项。
 
-The ``event`` is JQuery event object.
+``event`` 是 JQuery 事件对象。
+
 
 See also
 ========

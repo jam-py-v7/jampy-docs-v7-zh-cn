@@ -13,71 +13,51 @@ edit_record
 Description
 ===========
 
-Puts the current record in edit 
-:doc:`state <at_item_state>`
-and creates an 
-:doc:`edit_form <at_edit_form>`
-for visual editing of the record.
+将当前记录置于 “编辑” :doc:`状态 <at_item_state>` ，
+并且创建一个 :doc:`edit_form <at_edit_form>` 用于记录的可视化编辑。
 
+如果指定了 ``container`` 参数（DOM 元素的 JQuery 对象），编辑表单窗体的 html 模板将被插入到 container 中。
 
-If ``container`` parameter (Jquery object of the DOM element) is specified the
-edit form html template is inserted in the container.
+如果未指定 ``container`` 参数，但在 :doc:`编辑表单对话框 
+</admin/items/edit_form_dialog>` 中设置了 **无模式表单(Modeless form)** 属性，
+或者以编程方式设置了 :doc:`edit_options <at_edit_options>` 的无模式属性，并且
+设置了任务的  :doc:`forms_in_tabs </refs/client/task/at_forms_in_tabs>` 属性，
+而应用程序没有模式表单，则将在任务的 
+:doc:`forms_container </refs/client/task/at_forms_container>` 
+对象的新选项卡中创建无模式编辑表单。
 
-If ``container`` parameter is not specified but **Modeless form** attribute is 
-set in the 
-:doc:`Edit Form Dialog </admin/items/edit_form_dialog>` or modeless attribute 
-of the 
-:doc:`edit_options <at_edit_options>` is set programmatically and task has the
-:doc:`forms_in_tabs </refs/client/task/at_forms_in_tabs>`
-attribute set and the application doesn't have modal forms, the 
-modeless edit form will be created in the new tab of the
-:doc:`forms_container </refs/client/task/at_forms_container>` object of the task.
+在其它情况下，将创建模态表单窗体。
 
-In all other cases the modal form will be created.
+如果在非模态模式下允许编辑记录，那么用户能同时（在提交保存之前）编辑多条记录。
+在这种情况下，应用程序会调用 :doc:`copy <m_copy>` 方法创建实体项的一个副本。
+这个副本用来编辑记录。
+应用程序将调用 :doc:`open <m_open>` 方法，以主键字段的值作为筛选条件，从服务器中获取相应的记录。
 
-If editing is allowed in modeless mode, the user can edit several records at 
-the same time. In this case the application calls the 
-:doc:`copy <m_copy>`
-method to create a copy of the item. This copy will be used to edit the record. 
-The application will call its
-:doc:`open <m_open>`
-method to get the record from the server by using the value of the primary key 
-field as a filter.
+在模态编辑的情况下，应用程序执行 :doc:`refresh_record <m_refresh_record>` 方法从服务器获取记录的最新数据。 
 
-In case of modal editing the application executes 
-:doc:`refresh_record <m_refresh_record>` methods to get from the server
-the latest data of the record.
+如果为实体项启用了 :doc:`record locking </admin/record_locking>` ，并且从服务器接收记录数据，则应用程序将接收记录的版本。
 
-If a :doc:`record locking </admin/record_locking>` is enabled for the item, along 
-with receiving the record data from the server the application receives the 
-version of the record.
+然后 ``edit_record`` 方法
 
-Then the ``edit_record`` method 
+* 调用 :doc:`can_edit <m_can_edit>` 方法检查一个用户是否有权限编辑此记录
 
-* calls the 
-  :doc:`can_edit <m_can_edit>`
-  method to check whether a user have a right to edit the record,
-  
-* if the user have a right to edit the record, checks whether the item is in edit 
-  or insert
-  :doc:`state <at_item_state>`
-  , and if not, calls the 
-  :doc:`edit <m_edit>`
-  method to edit the record
-  
-* calls the
-  :doc:`create_edit_form <m_create_edit_form>`
-  method to create a form for visual editing of the record
+* 如果用户有权限编辑此记录，检查实体项是否处于 “编辑” 或 “插入” 
+  :doc:`状态 <at_item_state>` ，如果不是，则调用
+  :doc:`edit <m_edit>`方法类编辑记录。
+
+* 调用 :doc:`create_edit_form <m_create_edit_form>` 方法
+  创建一个表单窗体以用于记录的可视化编辑。
+
 
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 :doc:`edit <m_edit>`
 
 :doc:`can_create <m_can_create>`
 
-:doc:`Record locking </admin/record_locking>`
+:doc:`记录锁定 </admin/record_locking>`

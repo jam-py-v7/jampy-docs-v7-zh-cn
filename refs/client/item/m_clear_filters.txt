@@ -13,11 +13,11 @@ clear_filters
 Description
 ===========
 
-Use ``clear_filters`` to set filter values of the item to ``null``.
+使用 ``clear_filters`` 方法以将实体项的过滤器的值设置为 ``null`` 。
 
 See also
 ========
 
-:doc:`Filtering records </programming/data/filtering_records>`
+:doc:`过滤记录 </programming/data/filtering_records>`
 
-:doc:`Filters </programming/data/filters>`
+:doc:`过滤器 </programming/data/filters>`

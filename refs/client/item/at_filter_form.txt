@@ -15,20 +15,19 @@ Description
 
 Use ``filter_form`` attribute to get access to a Jquery object representing the 
 filter form of the item. 
+使用 ``filter_form`` 属性获取对一个表示为实体项的过滤器窗体的 JQuery 对象的访问权限。
 
-It is created by the 
-:doc:`create_filter_form <m_create_filter_form>`
-method.
+它由 :doc:`create_filter_form <m_create_filter_form>` 方法创建。
 
-The 
-:doc:`close_filter_form <m_close_filter_form>`
-method sets the ``filter_form`` value to undefined.
+:doc:`close_filter_form <m_close_filter_form>` 方法将 ``filter_form`` 的值设置为 undefined 。
 
 Example
 =======
 
 In the following example the button defined in the item filter html template is 
 assigned a click event:
+
+在以下示例中，实体项过滤器的 html 模板中定义的按钮被分配了一个点击事件：
 
 .. code-block:: js
 
@@ -41,7 +40,7 @@ assigned a click event:
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
 :doc:`create_filter_form <m_create_filter_form>`
 

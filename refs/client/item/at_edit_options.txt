@@ -13,65 +13,51 @@ edit_options
 Description
 ===========
 
-The ``edit_options`` attribute is a set of options that determine how the edit  
-form will be displayed on the browser page.
+``edit_options`` 属性是一些选项的集合，这些选项决定着编辑表单将在浏览器页面中如何显示。
 
-These options are set in the
-:doc:`Edit Form Dialog </admin/items/edit_form_dialog>`
-in Application Builder.
+这些选项在应用程序构建器里的 :doc:`标记表达对话框 </admin/items/edit_form_dialog>` 里面进行设置。
 
-You can change ``edit options`` in the 
-:doc:`on_edit_form_created <on_edit_form_created>`
-event handler of the item. See example.
+你可以在实体项的 :doc:`on_edit_form_created <on_edit_form_created>` 事件处理程序中修改  ``edit_options`` 。
 
-``edit_options`` is an object that has the following attributes:
+``edit_options`` 是一个有下列属性的对象：
 
 =================== ============================================================
-Option              Description
+选项                 描述
 =================== ============================================================
-width               the width of the modal form, the default value is 600 px,
+width               模态表单窗体的宽度，默认值是 600 px 。
 
-title               the title of the form, the default value is the value of a
-                    :doc:`item_caption </refs/client/abstr_item/at_item_caption>`
-                    attribute,
+title               窗体的标题，其默认值是 
+                    :doc:`item_caption </refs/client/abstr_item/at_item_caption>` 属性的值。
   
-form_border         if true, the border will be displayed around the form
+form_border         如果为 true ， 窗体周围将显示边框。
 
-form_header         if true, the form header will be created and displayed
-                    containing form title and various buttons
+form_header         如果为 true ，将创建并显示窗体的包含标题和各种按钮的标题栏。
 
-history_button      if true and 
-                    :doc:`saving change history is enabled </admin/saving_history>`, 
-                    the history button will be displayed in the form header
+history_button      如果为 true ，并且
+                    :doc:`启用了保存变更历史 </admin/saving_history>` ， 
+                    历史按钮将显示在窗体的标题栏中。
 
-close_button        if true, the close button will be created in the upper-right 
-                    corner of the form
+close_button        如果为 true ，关闭按钮将显示在窗体的右上角。
   
-close_on_escape     if true, pressing on the Escape key will execute the 
-                    :doc:`close_edit_form <m_close_edit_form>`
-                    method to close the form
+close_on_escape     如果为 true ， 按下 Escape 键，将执行  
+                    :doc:`close_edit_form <m_close_edit_form>` 
+                    方法以关闭窗体。
   
-edit_details        the list of the detail names, that will be available for 
-                    editing in the edit form, if edit form template contains the 
-                    div with class 'edit-detail' (the default edit form template 
-                    have this div)
+edit_details        明细名称的列表，如果编辑表单模板包含类为 “edit-detail” 的 div
+                    （默认编辑表单模板具有此div），则可以在编辑表单中对其进行编辑。
 
-detail_height       the height of the detail displayed in the view form,
-                    if not specified the height of the detail table is 200px
+detail_height       显示在视图表单中的明细内容的高度，
+                    如果不指定，明细表格的高度则是 200 px。
 
-fields              specify the list of field names that the 
-                    :doc:`create_inputs <m_create_inputs>`
-                    method will use, if fields attribute of its options 
-                    parameter is not specified
+fields              如果未指定其 options 参数的 fields 属性，则指定
+                    :doc:`create_inputs <m_create_inputs>` 方法将使用的字段名列表
 
-template_class      if specified, the div with this class will be searched in 
-                    the task 
+template_class      如果指定，则将在任务 
                     :doc:`templates </refs/client/task/at_templates>` 
-                    attribute and used as a form html template when creating a 
-                    form. This attribute must be set before creating the form
-                    
-modeless            if set the edit forms will be created modeless, otherwise - 
-                    modal                    
+                    属性中搜索具有此类的 div，并在创建表单时用作表单 html 模板。
+                    必须在创建表单之前设置此属性
+
+modeless            如果设置，则编辑表单将以非模态方式创建，否则将以模态方式创建
 =================== ============================================================
 
 Example
@@ -87,7 +73,7 @@ Example
 See also
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单 </programming/interface/forms>`
 
 :doc:`create_edit_form <m_create_edit_form>`
 

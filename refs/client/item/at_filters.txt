@@ -13,9 +13,8 @@ filters
 Description
 ===========
 
-Lists all 
-:doc:`filter </refs/client/filter_api>`
-objects of the item.
+列举出了实体项的所有的 :doc:`过滤器 </refs/client/filter_api>` 。
+
 
 Example
 =======
@@ -31,7 +30,7 @@ Example
 See also
 ========
 
-:doc:`Filters </programming/data/filters>`
+:doc:`过滤器 </programming/data/filters>`
 
 :doc:`Filter class </refs/client/filter_api>`
 

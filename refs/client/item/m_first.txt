@@ -13,13 +13,12 @@ first
 Description
 ===========
 
-Call ``first`` to position the cursor on the first record in the item dataset and 
-make it the active record. ``First`` posts any changes to the active record.
-
+调用 ``first`` 将光标定位在实体项数据集中的第一条记录上，并使其成为活动记录。
+``first`` 会将任何更改提交到活动的记录中。
 
 See also
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`
