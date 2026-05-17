@@ -30,8 +30,7 @@ Description
   中已定义的 ``fields`` 属性，否则，将创建在应用程序构建器的 
   :doc:`编辑表单对话框 </admin/items/edit_form_dialog>` 中的设置布局。
 
-* ``col_count`` - 为可视化控件创建的列数，其默认值是 1 。
-
+* ``col_count`` - 为可视化控件创建的列数，其默认值是 1 (1,2,3,4,6,12)。
 
 在创建空间之前，应用程序将清空  ``container`` 。
 

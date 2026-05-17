@@ -27,14 +27,19 @@ https://jampy-docs.readthedocs.io/projects/V7/zh-cn/latest/llms.txt
 
 ```
 pip install jam.py-v7
-jam-project.py
+git clone https://github.com/jam-py-v7/jampy-docs-v7/
+cd demo_zh_CN
 server.py
 ```
+
+
+[![Jam.py 演示](https://github.com/platipusica/jampy-docs-v7-zh-cn/blob/main/_static/demo_zh_cn.png?raw=true)](https://northwind.pythonanywhere.com)
+
+业务应用程序构建器 ：
 
 [![Jam.py 演示](https://github.com/platipusica/jampy-docs-v7-zh-cn/blob/main/_static/builder_animation.gif?raw=true)](https://github.com/platipusica/jampy-docs-v7-zh-cn/blob/main/_static/builder_animation.gif)
 
 
-[![Jam.py 演示](https://github.com/platipusica/jampy-docs-v7-zh-cn/blob/main/_static/demo_zh_cn.png?raw=true)](https://northwind.pythonanywhere.com)
 
 
 
