@@ -4,24 +4,24 @@ each_field
 
 .. js:function:: each_field(function(field))
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 
-使用 ``each_field`` 方法来迭代访问一个实体项所拥有的 :doc:`字段 <at_fields>` 。
+使用 ``each_field`` 方法来迭代访问一个实体项所拥有的 :doc:`fields <at_fields>` 。
 
 ``each_field`` 方法指定了一个函数，这个函数会为实体项的每个字段执行。
 （当前字段作为参数传递给该方法）
 
 通过使回调函数返回 ``false`` ，你能在一个特定的迭代中终止 each_field 循环。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -35,7 +35,7 @@ Example
     
 :doc:`字段 </programming/data/fields>`
 
-:doc:`Field class </refs/client/field_api>`
+:doc:`Field 类 </refs/client/field_api>`
 
 
 

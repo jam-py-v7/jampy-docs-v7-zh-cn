@@ -4,13 +4,13 @@ on_field_get_summary
 
 on_field_get_summary(field, value)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 编写 ``on_field_get_summary`` 事件处理程序，
@@ -18,7 +18,7 @@ Description
 
 ``field`` 参数是一个字段，它的 :doc:`on_field_get_summary </refs/client/item/on_field_get_summary>` 已经被处理。要获取拥有此字段的实体项，请使用字段的 :doc:`owner </refs/client/field/at_owner>` 属性。
  
-Example
+示例
 =======
 
 .. code-block:: js
@@ -38,10 +38,10 @@ Example
             }
         }
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`on_field_get_text <on_field_get_text>`
 

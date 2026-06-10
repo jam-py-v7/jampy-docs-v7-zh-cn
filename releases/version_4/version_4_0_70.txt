@@ -8,7 +8,7 @@ Jam.py 库：
 
 * 修复了与表格页脚相关的错误。
  
-* 添加了 :doc:`Field class </refs/client/field_api>` 的 :doc:`lookup_type </refs/client/field/at_lookup_type>` 属性
+* 添加了 :doc:`Field 类 </refs/client/field_api>` 的 :doc:`lookup_type </refs/client/field/at_lookup_type>` 属性
     
 * 现在，在为可编程单元格指定值时，当开发者忘记为字段添加值属性时，会引发异常。
 

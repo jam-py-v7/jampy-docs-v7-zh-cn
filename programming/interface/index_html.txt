@@ -27,7 +27,7 @@ Index.html
 
     <script src="static/js/Chart.min.js"></script>
 
-关于表单模板，请参阅 :doc:`表单 <forms>` 和 :doc:`表单模板 <form_templates>` 以获取详细信息。
+关于表单模板，请参阅 :doc:`表单窗体 <forms>` 和 :doc:`表单窗体模板 <form_templates>` 以获取详细信息。
 
 在文件末尾，有以下脚本：
 

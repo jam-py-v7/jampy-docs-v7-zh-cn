@@ -4,13 +4,13 @@ on_field_changed
 
 on_field_changed(field, lookup_item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 编写一个 ``on_field_changed`` 事件处理程序，以响应字段数据中的任何更改。
@@ -18,9 +18,9 @@ Description
 ``field`` 参数时那个数据已经被更改的字段。
 要获取拥有这个字段的实体项，请使用过滤器的 :doc:`owner </refs/client/field/at_owner>` 属性。
 
-当字段是 :doc:`lookup field </programming/data/lookup_fields>` 并且当用户从查找项数据集中选择记录后发生了变化时， ``lookup_item`` 参数不是 ``undefined`` 。
+当字段是 :doc:`查找字段 </programming/data/lookup_fields>` 并且当用户从查找项数据集中选择记录后发生了变化时， ``lookup_item`` 参数不是 ``undefined`` 。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -37,10 +37,10 @@ Example
     }
 
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`value </refs/client/field/at_value>`
 

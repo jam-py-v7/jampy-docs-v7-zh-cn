@@ -4,20 +4,20 @@ item_name
 
 .. py:attribute:: item_name
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Specifies the name of the item as referenced in code.
+指定在代码中引用的实体项的名称。
 
-Use ``item_name`` to refer to the item in code.
+使用``item_name`` 在代码中引用该实体项。
 
-See also
+另请参见
 ========
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`

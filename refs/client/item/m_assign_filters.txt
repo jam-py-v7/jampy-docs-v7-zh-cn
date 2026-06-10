@@ -4,18 +4,18 @@ assign_filters
 
 .. js:function:: assign_filters(item) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``assign_filters`` 将 ``item`` 参数的过滤器的值设置为实体项的过滤器的值。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -38,7 +38,7 @@ Example
         );
     }
 
-See also
+另请参见
 ========
 
 :doc:`过滤记录 </programming/data/filtering_records>`

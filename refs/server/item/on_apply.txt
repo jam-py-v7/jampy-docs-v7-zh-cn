@@ -4,76 +4,63 @@ on_apply
 
 on_apply(self, delta, params, connection)
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Please see :doc:`verson 7 </releases/version_7/index>`  ``on_before_apply_record``
-and ``on_after_apply_record``, for before and after events.
+在 on_apply 事件前后的事件，请参阅 doc:`verson 7 </releases/version_7/index>` 
+中的 ``on_before_apply_record`` 和 ``on_after_apply_record`` 。
 
-Write ``on_apply`` event handler when you need to override the standard data saving 
-procedure during the execution of the apply method on the
-:doc:`client </refs/client/item/m_apply>`
-or
-:doc:`server <m_apply>`.
+当你需要在 :doc:`client </refs/client/item/m_apply>` 
+或 :doc:`server <m_apply>` 上的 apply 方法执行中重写标准的数据保存过程时，
+请编写 ``on_apply`` 事件处理程序。
 
-See
-:doc:`on_apply events </programming/server/on_apply_events>`
-to understand how on_apply events are triggered.
+请参阅 :doc:`on_apply events </programming/server/on_apply_events>` 
+来理解如何触发 ``on_apply`` 事件。
 
-The ``on_apply`` event handler has the following parameters:
+``on_apply`` 事件处理程序有下列参数：
 
-* ``item`` - a reference to the item,
-* ``delta`` - a delta containing item change log (discussed in more detail below),
-* ``params`` - the parameters passed to the server by apply method,
-* ``connection`` - the connection that will be used to save changes to the database.
+* ``delta`` - 一个包含数据项变更日志的增量（delta）数据（下文将详细讨论）
+* ``params`` - 通过 apply 方法传递到服务端的参数
+* ``connection`` - 用于将更改保存到数据库的连接
 
-The delta parameter contains changes that must be saved in the database. 
-By itself, this option is an item's copy, and its dataset is the item's change 
-log. The nature of the record change can be obtained by using following methods: 
+必须将 ``delta`` 参数包含的变更保存在数据库里。
+
+就其本身而言，此选项是实体项的副本，其数据集是项目的更改日志。
+记录更改的性质可以通过以下方法获得：
 
 * ``rec_inserted``
 * ``rec_modified`` 
 * ``rec_deleted``
-  
-each of which returns a value of ``True``, if the record is added, modified or 
-deleted, respectively. 
 
-If the item has a detail items, delta also has a corresponding detail items, 
-storing detail changes. 
+如果添加了、修改了、删除了记录，它们将分别返回 ``True`` 
+
+如果实体项有一个明细项，那么 delta 参数也有一个与之对应的明细项，用来存储实体明细项的更改。
 
 .. note::
-    Please note that when a record is deleted from an item and this record has 
-    detail records, the change log will just keep this deleted record, 
-    information about the deleted records of the details is not stored. 
-    To add this deleted detail records, call delta's ``update_deleted`` method. 
+    请注意，当从实体项中删除一个含有明细项记录的记录时，
+    变更日志将仅仅保存那个被删除的主记录，不会存储明细项中被删除的记录信息。
+    要添加这些被删除的明细项的记录，请调用 delta 的 ``update_deleted`` 方法。 
 
-    You do not need to open delta detail after the cursor has been moved to 
-    another record.
+    光标移动到另一条记录后，您不需要打开增量（delta）明细信息。
 
-Delta dataset fields have an old_value attribute that can be used to get the 
-value of a field before changes have been made.
+增量（delta）数据集的字段含有一个 ``on_apply`` 属性，
+此属性能用来获取发生变更之前时字段的值。
 
+如果没有定义 ``on_apply`` 事件处理程序，
+那么将执行 ``apply_delta`` 方法来生成并执行 SQL 查询语句。
+之后，将返回相关的处理结果信息，其中也存储着新记录的 id 。
+客户端根据这些信息更新实体项的变更日志和新记录的主键字段的值。
 
-Fields of the delta dataset have an ``old_value`` attribute that can be used to 
-get the value of a field before changes have been made.
+当 ``on_apply`` 事件处理程序返回 ``None`` 时，就会执行 ``apply_delta`` 方法。
 
-when the ``on_apply`` event handler is not defined the ``apply_delta`` method
-is executed, that generates SQL queries and executes them. After that it
-returns the information about the result of processing, that stores the
-id's of the new records as well. The client based on this information updates the 
-item's change log and values of the primary fields of new records.
-
-When ``on_apply`` event handler returns ``None`` the ``apply_delta`` is executed.
-
-You can make some additional processing of the delta. In the following code, the
-a value of the date field is set to the current date before changes are applied 
-to the database table.
+你能对 delta 进行一些额外的处理过程。
+在下面的代码中，在变更应用到数据库表中之前， date 字段的值被设置为当前的日期。
 
 .. code-block:: py
 
@@ -86,22 +73,21 @@ to the database table.
           d.post()
 
 .. note::
-    Please note that changes made this way are not reflected in the item dataset
-    on the client. You can use the item client methods
-    :doc:`refresh_record </refs/client/item/m_refresh_record>` or
-    :doc:`refresh_page </refs/client/item/m_refresh_page>` to display these
-    changes.
+    请注意，使用这种方法产生的变更不会反映在客户端的实体项数据集中。
+    你能够使用客户端的 
+    :doc:`refresh_record </refs/client/item/m_refresh_record>` 或
+    :doc:`refresh_page </refs/client/item/m_refresh_page>` 方法来显示这些变更。
 
-In the following code for Jam.py V5, while saving the changes made to the invoices, the 
-application will update the value of the ``tracks_sold`` field for tracks and current 
-invoice. All this is done in one transaction.
+在 Jam.py V5 的以下代码中，在保存对发票所做的更改时，
+应用程序会同时更新曲目（tracks）的 ``tracks_sold`` 字段值以及当前发票的相关值。
+所有这些都是在一个事务中完成的。
 
 .. code-block:: py
 
   def on_apply(item, delta, params, connection): 
       tracks = item.task.tracks.copy()
       changes = {}
-      delta.update_deleted()    
+      delta.update_deleted()
       for d in delta:
           for t in d.invoice_table:
               if not changes.get(t.track.value):
@@ -109,11 +95,11 @@ invoice. All this is done in one transaction.
               if t.rec_inserted():
                   changes[t.track.value] += t.quantity.value
               elif t.rec_deleted():
-                  changes[t.track.value] -= t.quantity.value                
+                  changes[t.track.value] -= t.quantity.value
               elif t.rec_modified():
                   changes[t.track.value] += t.quantity.value - t.quantity.old_value
       ids = list(changes.keys())
-      tracks.set_where(id__in=ids)                
+      tracks.set_where(id__in=ids)
       tracks.open()
       for t in tracks:
           q = changes.get(t.id.value)
@@ -123,11 +109,11 @@ invoice. All this is done in one transaction.
               t.post()
       tracks.apply(connection)
 
-In the previous examples the ``on_apply`` event handler returns ``None`` so after 
-that the ``apply_delta`` method is executed by the application.
+在前面的示例中， ``on_apply`` 事件处理程序返回 ``None`` 。
+在此之后，应用程序将执行 ``apply_delta`` 方法。
 
-In the following code for Jam.py V7 we do the same and much more as the Server side calculation.
-Note ``calc_track`` function on Details:
+在 Jam.py V7 的以下代码中，我们执行了与服务器端计算相同且更多的操作。
+注意明细项的 ``calc_track`` 函数：
 
 .. code-block:: py
 
@@ -151,7 +137,7 @@ Note ``calc_track`` function on Details:
         invoice.apply(connection=connection)
         delta.copy_record_fields(invoice, copy_system_fields=True)
 
-On Invoices Detail ``Server Module``, there is:
+在发票详细项的 ``Server Module`` 上，有：
 
 .. code-block:: py
 
@@ -161,10 +147,7 @@ On Invoices Detail ``Server Module``, there is:
         item.total.value = item.amount.value + item.tax.value
         item.paid.value = item.master.paid.value
 
-
-
-
-The more general case is: 
+更一般的情况是： 
 
 .. code-block:: py
 
@@ -178,13 +161,13 @@ The more general case is:
     
     return result
 
-See also
+另请参见
 ========
 
-:doc:`Server side programming </programming/server/index>`
+:doc:`服务器端编程 </programming/server/index>`
 
 :doc:`on_apply events </programming/server/on_apply_events>`
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 

@@ -4,13 +4,13 @@ clone
 
 .. js:function:: clone(keep_filtered)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``clone`` 方法来创建一个与其共享数据集的实体项的副本。
@@ -19,7 +19,7 @@ Description
 
 如果你希望副本有与实体项一样的本地过滤器，请将 ``keep_filtered`` 参数设置为 true 。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -33,7 +33,7 @@ Example
         return result;
     }
 
-See also
+另请参见
 ========
 
 :doc:`on_filter_record <on_filter_record>`

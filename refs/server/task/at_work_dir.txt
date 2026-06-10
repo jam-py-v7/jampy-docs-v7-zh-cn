@@ -4,18 +4,18 @@ work_dir
 
 .. py:attribute:: work_dir
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class**: :doc:`Task class </refs/server/task_api>` 
+**类**: :doc:`Task 类 </refs/server/task_api>` 
 
-Description
+描述说明
 ===========
 
-Returns the real absolute path to the project directory.
+返回指向项目目录的真实的绝对路径。
 
-See also
+另请参见
 ========
 
-:doc:`Workflow </programming/workflow>`
+:doc:`工作流 </programming/workflow>`

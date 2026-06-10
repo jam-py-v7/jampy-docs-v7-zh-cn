@@ -4,29 +4,23 @@ rec_no
 
 .. py:attribute:: rec_no
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Examine the ``rec_no`` property to determine the record number of the current 
-record in the item dataset. 
+检查 ``rec_no`` 属性来确定实体项数据集中当前记录的记录号。
 
-``rec_no`` can be set to a specific record number to position the cursor on that 
-record.
+可以将 ``rec_no`` 设置为一个指定的记录号，以将数据游标定位到那条记录上。
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
-
-
-
-
+:doc:`导航数据集 </programming/data/navigating_datasets>`
 

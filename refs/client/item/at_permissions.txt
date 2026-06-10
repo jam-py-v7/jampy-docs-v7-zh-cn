@@ -4,13 +4,13 @@ permissions
 
 .. js:attribute:: permissions
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 设置 ``permissions`` 属性以禁止更改可视化控件中的实体项。
@@ -31,7 +31,7 @@ By default theses attributes are set to true.
 * :doc:`can_delete <m_can_delete>` 
 
 
-See also 
+另请参见 
 ========
 
 :doc:`如何禁止修改记录 </how_to/how_to_prohibit_changing_record>`

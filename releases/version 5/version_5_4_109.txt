@@ -3,12 +3,12 @@
 ===============
 
 * 字段值的转义清理工作已完成。
-  请参阅 :doc:`Sanitizing </admin/sanitizing>`
+  请参阅 :doc:`清理转义 </admin/sanitizing>`
 
 * 为 TEXT 字段在 :doc:`编辑表单对话框 </admin/items/edit_form_dialog>` 的 **界面选项卡** 中添加了 **TextArea** 属性
   
 * 在 :doc:`编辑表单对话框 </admin/items/edit_form_dialog>` 的 **Interface Tab** 中添加了 **不转义清理** 属性。
-  请参阅 :doc:`Sanitizing </admin/sanitizing>`
+  请参阅 :doc:`清理转义 </admin/sanitizing>`
 
 * 现在，在 :doc:`编辑表单对话框 </admin/items/edit_form_dialog>` 的 **界面选项卡** 中，用于 FILE 字段的 **Accept** 属性是必需的。
   上传的文件在服务器上根据此属性进行检查。  

@@ -4,9 +4,8 @@ on_logout
 
 on_logout(task, request)
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
-
+**类**: :doc:`Task 类 </refs/server/task_api>`

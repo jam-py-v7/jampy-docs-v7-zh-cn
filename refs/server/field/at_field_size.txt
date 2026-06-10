@@ -4,20 +4,20 @@ field_size
 
 .. py:attribute:: field_size
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
-Description
+描述说明
 ===========
 
-Identifies the size of the text field object.
+指明文本字段对象的大小。
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`

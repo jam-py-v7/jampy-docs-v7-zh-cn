@@ -4,35 +4,33 @@ locate
 
 .. py:method:: locate(self, fields, values)
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Implements a method for searching an item dataset for a specified record and 
-makes that record the active record.
+实现一种在实体项数据集中搜索指定记录的方法，并使该记录成为活动记录。
 
-Arguments:
+参数：
 
-* ``fields``: a field name, or list of field names
-* ``values``: a field value of list of field values
+* ``fields``: 一个字段的名称，或多个字段名称组成的列表
+* ``values``: 字段列表中的字段的值
 
-This method locates the record where the fields specified by ``fields`` parameter 
-have the values specified by ``values`` parameter.
+该方法定位通过 ``fields`` 参数指定的字段且具有 ``values`` 参数指定字段对应的值的记录。
 
-``locate`` returns true if a record is found that matches the specified criteria and 
-the cursor repositioned to that record.
+如果找到匹配指定条件的记录，那么 ``locate`` 返回 true，并使游标指向那条记录。
 
+如果未找到匹配的记录，或游标定位失败，那么该方法返回 false 。
 If a matching record was not found and the cursor is not repositioned, this 
 method returns false.
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`

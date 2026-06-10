@@ -4,13 +4,13 @@ append_record
 
 .. js:function:: append_record(container) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 在数据集末尾，打开一个新的空记录，并创建一个 :doc:`edit_form <at_edit_form>` 用于记录的可视化编辑。
@@ -40,7 +40,7 @@ Description
 * 调用 :doc:`create_edit_form <m_create_edit_form>` 方法
   创建一个用于记录的可视化编辑的表单窗体。
 
-See also
+另请参见
 ========
 
 :doc:`修改数据集 </programming/data/modifying_datasets>`

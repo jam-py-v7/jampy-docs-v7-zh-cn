@@ -4,13 +4,13 @@ each
 
 .. js:function:: each(function(item))
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 Use each method to iterate over records of an item dataset.
@@ -20,7 +20,7 @@ Use each method to iterate over records of an item dataset.
 
 通过使回调函数返回 ``false`` ，你能在一个特定的迭代中终止 each 循环。
 
-Example
+示例
 =======
 
 下面的示例中， **t** 和 **item.invoice_table** 都指向了同一个对象。
@@ -36,7 +36,7 @@ Example
         total += t.total.value;
     });
 
-See also
+另请参见
 ========
 
 :doc:`导航数据集 </programming/data/navigating_datasets>`

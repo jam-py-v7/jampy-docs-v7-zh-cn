@@ -1,27 +1,25 @@
 =============
-Reports class
+Reports 类
 =============
 
 .. py:class:: Reports
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-Reports class is used to create the group object of the 
-:doc:`task tree </programming/task_tree>` 
-that owns the reports of a project.
+Reports 类被用来创建 :doc:`task 树 </programming/task_tree>` 
+的 “组(group)” 对象，该对象拥有项目的报告。
 
-Below the events of the class are listed.
+下面列举了该类的事件。
 
-It, as well, inherits attributes and methods of its ancestor class
-:doc:`AbstractItem class <abstractitem_api>`
+该类同样继承了祖先类 :doc:`AbstractItem 类 <abstractitem_api>` 的属性、方法。
 
-Events
+事件
 ======
 
 .. toctree::
     :maxdepth: 1
     :glob:
-    
+
     reports/on_*

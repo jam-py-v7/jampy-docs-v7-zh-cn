@@ -4,29 +4,23 @@ load
 
 .. js:function:: load(callback)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-``Load`` method loads the project :doc:`task tree </programming/task_tree>` from
-the server and initilizes it.
+当浏览器加载 index.html 文件中的 jam.js 库时， jam.js 会创建一个空的 “任务” 对象。
+``Load`` 方法从服务器加载项目的 :doc:`任务树 </programming/task_tree>` ，并对其进行初始化。之后，应用程序会触发 :doc:`on_page_loaded <on_page_loaded>` 事件。
+(参考 :doc:`工作流程 </programming/workflow>`) 
 
-When a Web browser loads the jam.js library in index.html file, jam.js creates an 
-empty task object. The ``load`` method loads the project 
-:doc:`task tree </programming/task_tree>` from the server and
-initilizes it (see :doc:`workflow </programming/workflow>`). 
-After that the application triggers 
-:doc:`on_page_loaded <on_page_loaded>` event.
-
-Example
+示例
 =======
 
-The following code is from the project index.html file. 
+以下代码来自项目的 index.html 文件。
 
 .. code-block:: html
 
@@ -39,7 +33,7 @@ The following code is from the project index.html file.
       });
     </script>
 
-See also
+另请参见
 ========
 
 :doc:`login <m_login>`
@@ -48,6 +42,6 @@ See also
 
 :doc:`user_info <at_user_info>`
 
-:doc:`Users </admin/users>`
+:doc:`用户 </admin/users>`
 
-:doc:`Roles </admin/roles>`
+:doc:`角色 </admin/roles>`

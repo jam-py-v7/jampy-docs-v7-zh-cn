@@ -4,13 +4,13 @@ can_modify
 
 .. js:attribute:: active
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 把 ``can_modify`` 属性设置为 false ，可以禁止在可视化控件中修改实体项。

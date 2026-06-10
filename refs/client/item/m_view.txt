@@ -4,18 +4,18 @@ view
 
 .. js:function:: view(container)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``view`` 方法创建实体项的一个视图表单窗体。
 
-该方法会检查实体项及其父项的 javascript 模块是否已被加载，如果没有（:doc:`parameter of the project </admin/project/parameters>` 中设置了  “动态加载 JS 模块” ），就加载它们。
+该方法会检查实体项及其父项的 javascript 模块是否已被加载，如果没有（:doc:`项目的参数 </admin/project/parameters>` 中设置了  “动态加载 JS 模块” ），就加载它们。
 
 如果指定了 ``container`` 参数（ DOM 元素的 Jquery 对象），视图表单窗体的 html 模板将被插入到容器（conainer）中。
 
@@ -24,7 +24,7 @@ Description
 
 以上完成以后，将调用 :doc:`create_view_form <m_create_view_form>` 方法。
 
-Example
+示例
 =======
 
 In the following code the view for of the **Tasks** journal is created in the
@@ -53,10 +53,10 @@ on_page_loaded event handler:
         });
     } 
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`view_form <at_view_form>`
 

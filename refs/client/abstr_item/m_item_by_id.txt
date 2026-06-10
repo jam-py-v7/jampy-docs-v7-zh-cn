@@ -4,13 +4,13 @@ item_by_ID
 
 .. js:function:: item_by_ID(ID)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 item_by_ID 在项目的 :doc:`任务树 </programming/task_tree>` 的所有实体项中进行搜索，

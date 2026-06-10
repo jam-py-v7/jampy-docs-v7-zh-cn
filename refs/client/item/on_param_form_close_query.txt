@@ -6,4 +6,4 @@ on_param_form_close_query
 请见
 ====
 
-:doc:`Report class </refs/client/task/on_param_form_close_query>`
+:doc:`Report 类 </refs/client/task/on_param_form_close_query>`

@@ -4,29 +4,30 @@ on_filter_form_shown
 
 on_filter_form_shown(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task class </refs/client/task_api>`
+**类**: :doc:`Task 类 </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``on_filter_form_shown`` event is triggered by the 
+当表单窗体显示后，实体项的 
+:doc:`create_filter_form </refs/client/item/m_create_filter_form>` 
+的方法会触发 ``on_filter_form_shown`` 事件。
+
+``item`` 参数是那个触发事件的实体项。
+
+如果定义了该事件，会为任务中调用了 
 :doc:`create_filter_form </refs/client/item/m_create_filter_form>`
-method of the item when the form has been shown.
+方法的每个实体项触发此事件。
 
-The ``item`` parameter is the item that triggered the event.
 
-This event, if defined, is triggered for every item of the task, whose 
-:doc:`create_filter_form </refs/client/item/m_create_filter_form>`
-method has been called.
-
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_filter_form </refs/client/item/m_create_filter_form>`
 

@@ -4,13 +4,13 @@ is_modified
 
 .. js:function:: is_modified() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 Checks if the current record of an item dataset has been modified during edit or
@@ -19,7 +19,7 @@ insert opertaions. The method returns ``false`` after the
 检查实体项数据集的当前记录在 “编辑” 或 “插入” 操作时是否被修改了。
 在执行 :doc:`post <m_post>` 方法之后， is_modified 方法返回 ``false`` 。
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

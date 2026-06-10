@@ -4,35 +4,32 @@ init_tabs
 
 .. js:function:: init_tabs(container, tabs_position)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``init_tabs`` method initializes tabs for a container. 
+``init_tabs`` 方法为 “容器(container)” 参数初始化选项卡。
 
-The ``container`` is JQuery object for a container element.
+``container`` 是 “容器(container)” 元素的一个 JQuery 对象。
 
-The ``tabs_position``
-parameter specifies where tabs, created by the 
-:doc:`add_tab <m_add_tab>`
-method will be positioned. It is string that can be one of the following values:
+``tabs_position`` 参数指定由 :doc:`add_tab <m_add_tab>` 创建的选项卡的位置。
+它是字符串，其值是下列值中的一个：
 
 * tabs-below
 * tabs-left
 * tabs-right
 
 If this parameter is omitted tabs will be positioned at the top of the container.
+如果省略这个参数，选项卡将被放置在 “容器” 的顶部。
 
-After this method is called you can use the
-:doc:`add_tab <m_add_tab>`
-method to create tabs.
+调用此方法后，你就能使用 :doc:`add_tab <m_add_tab>` 方法来创建选项卡。
 
-See also
+另请参见
 ========
 
 :doc:`add_tab <m_add_tab>`

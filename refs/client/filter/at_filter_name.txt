@@ -4,26 +4,26 @@ filter_name
 
 .. js:attribute:: filter_name
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Filter class </refs/client/filter_api>`
+**类**: :doc:`Filter 类 </refs/client/filter_api>`
 
 
-Description
+描述说明
 ===========
 
 指定在代码中引用过滤器的名称。在代码中，使用 **filter_name** 来引用字段的过滤器。
 
-See also
+另请参见
 ========
 
 :doc:`过滤器 </programming/data/filters>`
 
 :doc:`filter_caption <at_filter_caption>`
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
 
 

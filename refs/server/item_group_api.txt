@@ -1,16 +1,14 @@
 ===========
-Group class
+Group 类
 ===========
 
 .. py:class:: Group
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-Group class is used to create group objects of the 
-:doc:`task tree </programming/task_tree>`
+Group 类被用于创建 :doc:`task 树 </programming/task_tree>` 
+的 “组(group)” 对象。
 
-It, as well, inherits attributes and methods of its ancestor class
-:doc:`AbstractItem class <abstractitem_api>`
-
+该类同样继承了祖先类 :doc:`AbstractItem 类 <abstractitem_api>` 的属性、方法。

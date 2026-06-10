@@ -4,11 +4,11 @@ create_detail_views
 
 .. js:function:: create_detail_views(container) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
 使用 ``create_detail_views`` 方法创建实体项的明细项的视图表单窗体。
@@ -24,10 +24,10 @@ The following parameters are passed to the method:
 
 如果有多个明细项，该方法将在窗体的不同选项卡里创建视图表单。
 
-如果明细项没处于 :doc:`活动 <at_active>` 状体，
+如果明细项没处于 :doc:`active <at_active>` 状体，
 该方法会调用它们的 :doc:`open <m_open>` 方法来激活明细项。
 
-Example
+示例
 =======
 
 .. code-block:: js

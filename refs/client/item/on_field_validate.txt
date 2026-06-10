@@ -4,13 +4,13 @@ on_field_validate
 
 on_field_validate(field)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 编写 ``on_field_validate`` 事件处理程序来验证对字段数据所作的更改。
@@ -21,7 +21,7 @@ Description
 
 当调用 :doc:`post <m_post>` 方法或者用户离开用于编辑字段值的输入框时，触发此事件。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -33,13 +33,13 @@ Example
     }
 
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`value </refs/client/field/at_value>`
 
-:doc:`How to validate field value </how_to/how_to_validate_field_value>`
+:doc:`如何验证字段的值 </how_to/how_to_validate_field_value>`
 
 

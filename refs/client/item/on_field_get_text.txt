@@ -4,13 +4,13 @@ on_field_get_text
 
 on_field_get_text(field)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 编写 ``on_field_get_text`` 事件处理程序，
@@ -22,7 +22,7 @@ Description
 
 该函数用于连接两个或多个字段进行显示。这些字段可以是其他表中的任何可以访问的字段。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -34,9 +34,9 @@ Example
     }
 
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`on_field_get_html <on_field_get_html>`

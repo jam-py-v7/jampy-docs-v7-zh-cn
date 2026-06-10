@@ -4,42 +4,33 @@ upload
 
 .. js:function:: upload(options)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-Use the ``upload`` method to select a file in the File open dialog box and 
-upload it to the *static/files* directory in the server folder. 
+使用 ``upload`` 方法在 “打开文件对话框” 中选择一个文件，
+并将其上传到服务端的 *static/files* 目录中。
 
-When saving the file on the server, the file name is changed by the Werkzeug 
-secure_filename function and then the current date is added to it. See
-http://werkzeug.pocoo.org/docs/0.14/utils/
+当在服务端保存文件时， Werkzeug secure_filename 函数会更改该文件的名称，
+并将当前日期添加到名称中。
+请参考 http://werkzeug.pocoo.org/docs/0.14/utils/
 
-The ``options`` parameter is an object that may have the following attributes:
+``options`` 参数是一个可以有下列属性的对象：
 
-* ``callback`` - is a callback function that is executed when the file is 
-  downloaded. It is passed, as parameters, the name of the file stored on the 
-  server, the name of the downloaded file and the path to the folder where 
-  the file was saved.
+* ``callback`` - 是一个当文件被下载时执行的回调函数，指定了该参数，文件的名称被存储在服务端， 它将存储在服务器上的文件名、下载文件的名称以及保存文件的文件夹的路径作为参数传递。
 
-* ``show_progress`` - if true and the uploaded file is large, the progress bar 
-  will be displayed. the defaul value is true
+* ``show_progress`` - 如果为 true ，且上传的文件很大，将显示进度条。默认值是 true 。
 
-* ``accept`` - the attribute specifies the types of files that can be submitted 
-  through a file upload, see :doc:`Accept string </admin/accept_string>` 
-  
+* ``accept`` - 该属性指定通过文件上传可以提交的文件类型。参考 :doc:`可接受字符串 </admin/accept_string>` 
 
 .. note::
 
-  Please note that the ``accept`` attribute specifies only types of files that 
-  can be picked up by the user in the browser.
-  
-  The server checks all uploaded files for compliance with the **Upload file extensions** 
-  attribute of the :doc:`Project parameters </admin/project/parameters>`.	
+  请注意， ``accept`` 属性仅仅是指定用户在浏览器中弹出的文件对话框里能够选择的文件类型。
 
-	
+  服务端会检查所有上传的文件是否符合 :doc:`项目参数 </admin/project/parameters>` 的 **上传文件扩展名** 属性。
+

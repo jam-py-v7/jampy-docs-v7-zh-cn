@@ -4,52 +4,42 @@ create_param_inputs
 
 .. js:function:: create_param_inputs(container, options) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
-Use ``create_param_inputs`` to create data-aware visual controls (inputs, 
-cheboxes) for editing of report parameters.
+使用 ``create_param_inputs`` 方法，为编辑报表参数创建数据感知控件（输入框、复选框等）。
 
-This method is usually used in ``on_param_form_created`` events triggered by
-:doc:`create_param_form <m_create_param_form>`
-method, that, usually, is called by then
-:doc:`print <m_print>` 
-method.
+该方法经常用在 ``on_param_form_created`` 事件中，这个事件由 :doc:`print <m_print>` 经常调用的 :doc:`create_param_form <m_create_param_form>` 方法触发。
 
-The following parameters are passed to the method:
+下面的参数将传递给该方法：
 
-* ``container`` - a JQuery object that will contain visual controls, if 
-  container length is 0 (no container), the method returns.
+* ``container`` - 一个包含可视化控件的 JQuery 对象。
+  如果该参数长度是 0 （即，没有容器），那么该方法将直接返回。
 
-* ``options`` - options that specify how controls are displayed
+* ``options`` - 指定控件如何显示的选项参数。
 
-The ``options`` parameter is an object that may have following attributes:
+`options`` 参数是一个有下列属性的对象：
 
-* ``params`` - a list of param names. If specified, a visual control will be 
-  created for each param whose name is in this list, if not specified 
-  (the default) then control will be created for all visible params specified in the 
-  Application builder
+* ``params`` - 参数名称的列表。
+  如果指定了此参数，那么将为这个列表中的每个参数创建一个可视化控件。
+  如果未指定（默认值），那么将为应用程序构建器中指定的所有可视化参数创建控件。
 
-* ``col_count`` - the number of columns that will be created for visual controls, 
-  the default value is 1
+* ``col_count`` - 为可视化控件创建的列的数量，默认是 1 。
   
-* ``label_on_top``: the default value is false. If this value is false, the 
-  labels are placed to the left of controls, otherwise the are created above the
-  controls
+* ``label_on_top``: 默认值是 false 。
+  如果值为 false ，用于提示内容的标签将位于控件的左边，否则位于控件的上边。
   
-* ``tabindex`` - if tabindex is specified, it will the tabindex of the first 
-  visual control, tabindex of all subsequent controls will be increased by 1.
-  
-* ``autocomplete`` - the default value is false. If this attribute is set to 
-  true, the autocomplete attribute of controls is set to "on"   
+* ``tabindex`` - 如果指定了此参数，它将是首个可视化控件的 tab 按键的索引值。
+  所有后续控件的索引值将依次加 1。
+* ``autocomplete`` - 默认值是 false 。如果将其设置为 true，控件的自动完成属性将被设置为 “on” 。
 
-Before creating controls the application empties the container.
+应用程序会在创建控件之前清空指定的容器。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -64,7 +54,7 @@ Example
         });
     }
 
-See also
+另请参见
 ========
 
 :doc:`create_param_form <m_create_param_form>`

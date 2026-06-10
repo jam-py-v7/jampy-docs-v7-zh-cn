@@ -6,11 +6,11 @@ on_filter_record(item)
 
 The item parameter is the item that triggered the event.
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
 使用 ``on_filter_record`` 事件在本地过滤数据集记录。
@@ -21,7 +21,7 @@ Description
 
 ``item`` 参数是触发了这个事件的实体项。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -40,7 +40,7 @@ Example
         item.filtered = false;
     }
 
-See also
+另请参见
 ========
 
 :doc:`Filtered <at_filtered>`

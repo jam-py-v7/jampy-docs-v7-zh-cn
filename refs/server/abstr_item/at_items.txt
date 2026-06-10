@@ -4,21 +4,21 @@ items
 
 .. py:attribute:: items
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Lists all items owned by the item.
+列举出该实体项拥有的所有实体项。
 
-Use ``items`` to access any of the item owned by this object. 
+使用 ``items`` 属性来访问当前对象拥有的任何一个实体项。
 
-See also
+另请参见
 ========
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`
 

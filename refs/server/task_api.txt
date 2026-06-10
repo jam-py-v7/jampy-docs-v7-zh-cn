@@ -1,23 +1,20 @@
 ==========
-Task class
+Task 类
 ==========
 
 .. py:class:: Task
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-Task class is used to create the root of the 
-:doc:`Task tree </programming/task_tree>`
-of the project.
+Task 类被用于创建项目的 :doc:`Task 树 </programming/task_tree>` 的根节点。
 
-Below the attributes, methods and events of the class are listed.
+下面列举了该类的属性、方法和事件。
 
-It, as well, inherits attributes and methods of its ancestor class
-:doc:`AbstractItem class <abstractitem_api>`
+该类同样继承了祖先类 :doc:`AbstractItem 类 <abstractitem_api>` 的属性、方法。
 
-Attributes
+属性
 ==========
 
 .. toctree::
@@ -26,7 +23,7 @@ Attributes
     
     task/at_*
 
-Methods 
+方法 
 =======
 
 .. toctree::
@@ -35,7 +32,7 @@ Methods
     
     task/m_*
 
-Events
+事件
 ======
 
 .. toctree::

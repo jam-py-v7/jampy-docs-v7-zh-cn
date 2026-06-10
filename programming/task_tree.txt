@@ -6,7 +6,7 @@
 
 树中的所有实体项都有一个共同的祖先类 ``AbstractItem`` 
 ( :doc:`客户端参考 </refs/client/abstractitem_api>`
-/ :doc:`服务器端参考 </refs/server/abstractitem_api>`
+/ :doc:`服务端参考 </refs/server/abstractitem_api>`
 )，并具有以下共同属性：
 
 * ``ID`` - 标识实体项的 ID ，在框架内唯一
@@ -107,7 +107,7 @@ Journal/Invoices 下的明细表以及 Catalogs/Tracks 下的明细表。
 例如，实体项（item）的一些方法在执行时，会按顺序为任务（task）、实体组（group）和实体项（item）生成事件。
 
 借助这种机制，我们可在任务的事件处理器中为所有实体项定义基础行为；该基础行为可在实体组的事件处理器中进行扩展；最终，若有需要，还可在实体项自身的事件处理器中对其进行定制化调整。
-更多详细信息，请参阅 :doc:`表单事件 <interface/form_events>`
+更多详细信息，请参阅 :doc:`表单窗体事件 <interface/form_events>`
 
 视频
 --------

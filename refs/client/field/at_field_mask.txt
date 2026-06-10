@@ -4,14 +4,14 @@ field_mask
 
 .. js:attribute:: field_mask
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 您可以使用 **field_mask** 属性来指定要显示的字段名称。
@@ -26,7 +26,7 @@ Description
 * `*` - 表示一个字母或数字字符 (A-Z,a-z,0-9)
 
 
-Example
+示例
 =======
 
 .. code-block:: js

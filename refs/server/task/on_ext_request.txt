@@ -4,27 +4,25 @@ on_ext_request
 
 on_ext_request(task, request, params)
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``on_ext_request`` to send a request to the server for processing.
+使用 ``on_ext_request`` 事件将请求发送到服务器中进行处理。
 
-The ``task`` parameter is a reference to the 
-:doc:`task tree </programming/task_tree>`
-The ``request`` is a string that must starts with '/ext'
-There could be a list of parameters.
+``task`` 参数是指向 :doc:`task 树 </programming/task_tree>` 的一个引用。
 
-Example
+``request`` 参数是一个必须以 “/ext” 开始的字符串。可以有一个参数列表。
+
+示例
 =======
 
-The following application will send every 60 seconds a request to the server of Demo 
-application
+下面，应用程序会每隔 60 秒向 Demo 应用程序的服务端发送一个请求。
 
 .. code-block:: py
 
@@ -52,8 +50,7 @@ application
             time.sleep(60)
 
 
-The server will process this request and return the sum of parameters. The 
-``on_ext_request`` must be declared in task server module:
+服务端将处理这个请求并返回参数的和。必须在任务服务端模块中声明 ``on_ext_request`` 方法：
 
 .. code-block:: py
 
@@ -64,12 +61,12 @@ The server will process this request and return the sum of parameters. The
             return params[0] + params[1] + params[2] 
 
 
-See also
+另请参见
 ========
 
 :doc:`on_request <on_request>`
 
-:doc:`How to create registration form </how_to/authentication/how_to_create_registration_form>`
+:doc:`如何创建注册表单窗体 </how_to/authentication/how_to_create_registration_form>`
 
-:doc:`How I can process a request or get some data from other application or service </how_to/how_to_request_from_other_application>`
+:doc:`如何处理请求或从其他应用程序及服务获取数据 </how_to/how_to_request_from_other_application>`
 

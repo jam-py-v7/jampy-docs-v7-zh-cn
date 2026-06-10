@@ -5,4 +5,4 @@ on_before_print_report
 请见
 ====
 
-:doc:`Report class </refs/client/report/on_before_print_report>`
+:doc:`Report 类 </refs/client/report/on_before_print_report>`

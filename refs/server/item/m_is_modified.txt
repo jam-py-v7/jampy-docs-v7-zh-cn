@@ -4,20 +4,19 @@ is_modified
 
 .. py:function:: is_modified(self) 
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Checks if the current record of an item dataset has been modified during edit or
-insert opertaions. The method returns ``false`` after the
-:doc:`post <m_post>` method is executed.
+该方法检查实体项数据集的当前记录在编辑或插入操作时是否已被修改。
+在执行 :doc:`post <m_post>` 方法后，该方法返回 ``false`` 。
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

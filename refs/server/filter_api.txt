@@ -1,14 +1,14 @@
 ============
-Filter class
+Filter 类
 ============
 
 .. py:class:: Filter
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-Attributes and properties
+属性和特性
 =========================
 
 .. toctree::

@@ -4,14 +4,14 @@ ID
 
 .. js:attribute:: ID
 
-**范围**: client 
+**使用范围**: client 
 
 **语言**: javascript
 
 **所属类** :doc:`AbstractItem </refs/client/abstractitem_api>`
 
 
-Description
+描述说明
 ===========
 
 ID 属性在项目的框架里的所有 id 中是唯一的。

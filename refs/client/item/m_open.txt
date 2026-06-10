@@ -4,13 +4,13 @@ open
 
 .. js:function:: open(options, callback, async)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 调用 ``open`` 向服务端发送请求以获取实体项的数据集。
@@ -31,7 +31,7 @@ Description
 则异步执行请求，否则同步执行。
 
 服务端在收到请求后，检查服务端上相应的实体项（具有相同 ID 属性的 
-:doc:`task tree </programming/task_tree>` 中的实体项）是否具有
+:doc:`task 树 </programming/task_tree>` 中的实体项）是否具有
 :doc:`on_open </refs/server/item/on_open>`
 事件处理程序。如果有，它执行此事件处理程序并将执行结果返回给客户端；否则，根据请求参数生成 SELECT SQL 查询语句，执行此查询并将结果返回给客户端。
 
@@ -49,7 +49,7 @@ Options
 ``options`` 对象参数可以具有以下属性：
 
 * ``expanded`` - 如果此属性的值为 true，则在服务端生成的 SELECT 查询语句将具有 JOIN 
-  子句以获取 :doc:`lookup fields </programming/data/lookup_fields>` 的查找值，
+  子句以获取 :doc:`查找字段 </programming/data/lookup_fields>` 的查找值，
   否则不会返回查找值。默认值为 ``true``。
   
 * ``fields`` - 使用此参数指定 SELECT 查询的 WHERE 子句。此参数是字段名称列表。
@@ -63,7 +63,7 @@ Options
   如果省略，则使用 :doc:`set_where <m_set_where>` 方法定义的值。
   如果在 ``open`` 方法执行之前未调用 :doc:`set_where <m_set_where>` 方法，
   且省略了 ``where`` 参数，则使用为项目定义的 
-  :doc:`filters </programming/data/filters>` 的值来过滤记录。
+  :doc:`过滤器 </programming/data/filters>` 的值来过滤记录。
   
 * ``order_by`` - 使用 ``order_by`` 指定记录的排序顺序。此参数是字段名称列表。
   如果字段名称前有 '-' 符号，则在此字段上按降序排序记录。

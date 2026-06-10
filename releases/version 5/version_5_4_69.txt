@@ -60,4 +60,4 @@
 
 * 重写了与服务器 on_apply 和 on_open 事件相关的主题
  
-* 添加了新主题 :doc:`How to prohibit changing record </how_to/how_to_prohibit_changing_record>` 
+* 添加了新主题 :doc:`如何禁止更改记录 </how_to/how_to_prohibit_changing_record>` 

@@ -4,27 +4,25 @@ app
 
 .. py:attribute:: app
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class**: :doc:`Task class </refs/server/task_api>` 
+**类**: :doc:`Task 类 </refs/server/task_api>` 
 
-Description
+描述说明
 ===========
 
-Returns a reference to WSGI 
-:doc:`application object </refs/server/app_api>`.
+返回对 WSGI :doc:`应用程序对象 </refs/server/app_api>` 的引用
 
-
-The Framework uses Werkzeug_ WSGI Utility Library.
+该框架使用 Werkzeug_ WSGI Utility Library 。
 
 .. _Werkzeug: http://werkzeug.pocoo.org/
 
-See also
+另请参见
 ========
 
-:doc:`Workflow </programming/workflow>`
+:doc:`工作流 </programming/workflow>`
 
 
 

@@ -4,13 +4,13 @@ virtual_table
 
 .. js:attribute:: virtual_table
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用只读的 ``virtual_table`` 属性找出对应的实体项在项目数据库中是否有相应的数据表。

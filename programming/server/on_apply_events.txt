@@ -3,7 +3,7 @@ on_apply 事件
 ===============
 
 当在 :doc:`客户端 </refs/client/item/m_apply>` 或
-:doc:`服务器端 </refs/server/item/m_apply>` 调用项目的 ``apply`` 方法时，
+:doc:`服务端 </refs/server/item/m_apply>` 调用项目的 ``apply`` 方法时，
 服务器应用程序默认会根据对数据集所做的更改生成 SQL 查询语句并执行。
 
 可以通过在实体项的服务端模块中编写 :doc:`on_apply </refs/server/item/on_apply>` 事件处理程序来更改此行为。

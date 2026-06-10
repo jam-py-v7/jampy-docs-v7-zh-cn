@@ -4,13 +4,13 @@ refresh_page
 
 .. js:function:: refresh_page(callback, async) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 调用 ``refresh_page`` 向服务器发送请求，以获取当前页面的当前数据并刷新现有的可视化控件。

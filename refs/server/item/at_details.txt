@@ -4,20 +4,19 @@ details
 
 .. py:attribute:: details
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Lists all 
-:doc:`detail </refs/client/detail_api>`
-objects of the item.
+该属性列举出一个实体项的所有 
+:doc:`明细项 </refs/client/detail_api>` 对象。
 
-See also
+另请参见
 ========
 
-:doc:`Details </programming/data/details>`
+:doc:`明细项 </programming/data/details>`

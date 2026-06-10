@@ -4,19 +4,19 @@ field_name
 
 .. js:attribute:: field_name
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 指定字段在代码中被引用的名称。在代码中使用 **field_name** 来引用字段。
 
-See also
+另请参见
 ========
 
 :doc:`数据集 </programming/data/dataset>`

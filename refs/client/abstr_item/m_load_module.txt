@@ -4,13 +4,13 @@ load_module
 
 .. js:function:: load_module(callback)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 
@@ -22,7 +22,7 @@ Description
 
 发送到服务端的请求使被异步执行的。
 
-Example
+示例
 =======
 
 
@@ -38,7 +38,7 @@ Example
         // some code
     }
 
-See also
+另请参见
 ========
 
 :doc:`使用模块 </programming/modules>`

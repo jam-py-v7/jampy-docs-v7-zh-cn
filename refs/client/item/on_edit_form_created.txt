@@ -4,13 +4,13 @@ on_edit_form_created
 
 on_edit_form_created(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 ``on_edit_form_created`` 事件，在表单窗体被创建但还未显示之前，由实体项的 
@@ -18,7 +18,7 @@ Description
 
 ``item`` 参数是触发了这个事件的实体项。
 
-:doc:`Demo project </intro/demo_project>` 使用下面的代码将 “发票(Invoices)” 数据表的 read_only 字段设置为 ``paid`` 字段的值，并删除页脚：
+:doc:`演示项目 </intro/demo_project>` 使用下面的代码将 “发票(Invoices)” 数据表的 read_only 字段设置为 ``paid`` 字段的值，并删除页脚：
 
 .. code-block:: js
 
@@ -28,10 +28,10 @@ Description
     }
  
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_edit_form <m_create_edit_form>`
 

@@ -4,13 +4,13 @@ can_view
 
 .. js:function:: can_view()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 在勾选了项目的 :doc:`安全模式参数 </admin/project/parameters>` 后，
@@ -20,7 +20,7 @@ Description
 
 用户权限是项目树中 :doc:`角色节点 </admin/roles>` 的子集。
 
-Example
+示例
 =======
 
 .. code-block:: js

@@ -4,32 +4,27 @@ on_created
 
 on_created(task)
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``on_created`` to initialize the application on the server side.
+在服务端，使用 ``on_created`` 事件初始化应用程序。
 
-The event is triggered when the project 
-:doc:`task tree </programming/task_tree>`
-has just been created. See
-:doc:`Workflow </programming/workflow>`
+当项目的 :doc:`task 树 </programming/task_tree>` 刚刚被创建后，会触发该事件。
+请见 :doc:`工作流 </programming/workflow>` 
 
-The ``task`` parameter is a reference to the 
-:doc:`task tree </programming/task_tree>`
-
+``task`` 参数是指向 :doc:`task 树 </programming/task_tree>` 的一个引用。
 
 .. note::
 
-	The execution time of the code in this handler must be very short because of 
-	detrimental effects to the end user's experience. 
-	
-Example
+    在这个事件处理程序里的代码的执行时间必须非常短，因为这对最终用户的体验有很大影响。
+
+示例
 =======
 
 .. code-block:: py
@@ -37,10 +32,10 @@ Example
     def on_created(task):
         # some code
 
-See also
+另请参见
 ========
 
-:doc:`Workflow </programming/workflow>`
+:doc:`工作流 </programming/workflow>`
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`
 

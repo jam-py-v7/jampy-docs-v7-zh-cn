@@ -4,20 +4,20 @@ abort
 
 .. js:function:: abort(message)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 使用 **abort** 方法来抛出异常。
 
 当你需要中止某些 “on_before” 事件的执行时，它会很有用。
 
-Example
+示例
 =======
 
 下面的代码会抛出带有文本内容的异常：

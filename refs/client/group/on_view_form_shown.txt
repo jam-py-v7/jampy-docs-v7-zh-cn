@@ -4,13 +4,13 @@ on_view_form_shown
 
 on_view_form_shown(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Group class </refs/client/item_group_api>`
+**类**: :doc:`Group 类 </refs/client/item_group_api>`
 
-Description
+描述说明
 ===========
 
 在表单显示后， ``on_view_form_shown`` 事件由实体项的 :doc:`view </refs/client/item/m_view>` 方法触发。
@@ -20,9 +20,9 @@ Description
 如果定义了这个事件，会为分组里的每个调用了 :doc:`view </refs/client/item/m_view>` 方法的实体项触发此事件，
 
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`view </refs/client/item/m_view>`

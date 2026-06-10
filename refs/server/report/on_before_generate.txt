@@ -4,24 +4,23 @@ on_before_generate
 
 .. py:function:: on_before_generate(report)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Report class </refs/server/report_api>`
+**类**: :doc:`Report 类 </refs/server/report_api>`
 
-Description
+描述说明
 ===========
 
-The **on_before_generate** event is triggered by the 
-:doc:`generate <m_generate>` 
-method, before generating the report. 
+在生成报表之前， :doc:`generate <m_generate>`  方法会触发 
+**on_before_generate** 事件。
 
-The **report** parameter is the report that triggered the event.
+**report** 参数是触发该事件的报表。
 
-See also
+另请参见
 ========
 
-:doc:`Programming reports </programming/reports/index>`
+:doc:`报表编程 </programming/reports/index>`
 
 :doc:`generate <m_generate>`

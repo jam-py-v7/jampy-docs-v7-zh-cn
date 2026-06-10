@@ -4,22 +4,20 @@ extension
 
 .. js:attribute:: extension
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Report class </refs/client/report_api>`
+**类**: :doc:`Report 类 </refs/client/report_api>`
 
-Description
+描述说明
 ===========
 
-Use ``extension`` attribute to specify a report type. The server, based on the 
-report template, first generates **ods** file. And if report extension is other 
-that **ods** performs conversion using the LibreOffice.
+使用 ``extension`` 属性来指定一个报表类型。服务端基于报表模板先生成 **ods** 文件。如果报表的扩展名不是 **ods** ，，则使用 Libre Office 执行转换。
 
-The attribute value can be any extension that LibreOffice supports conversion to.
+该属性值可以是任何 Libre Office 支持转换为的任何扩展名。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -28,12 +26,12 @@ Example
          report.extension = 'html';
     }
 
-See also
+另请参见
 ========
 
-:doc:`Client-side report programming </programming/reports/client_side_programming>`
+:doc:`客户端报表编程 </programming/reports/client_side_programming>`
 
-:doc:`Server-side report programming </programming/reports/server_side_programming>`
+:doc:`报表的服务器端编程 </programming/reports/server_side_programming>`
 
 :doc:`print <m_print>`
 

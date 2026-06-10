@@ -4,19 +4,19 @@ details
 
 .. js:attribute:: details
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 列举出实体项的全部 :doc:`明细 </refs/client/detail_api>` 对象。
 
 
-See also
+另请参见
 ========
 
 :doc:`明细 </programming/data/details>`

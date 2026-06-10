@@ -4,24 +4,20 @@ task
 
 .. py:attribute:: task
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Indicates the root of the 
-:doc:`task tree </programming/task_tree>` 
-that owns this item. 
+该属性表示拥有当前实体项的 :doc:`task 树 </programming/task_tree>` 的根节点。
 
-Use ``task`` attribute to find the root of the 
-:doc:`task tree </programming/task_tree>` 
-of which the item is a member.
+使用 ``task`` 属性来查找当前实体项所属的 :doc:`task 树 </programming/task_tree>` 的根节点。
 
-See also
+另请参见
 ========
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`

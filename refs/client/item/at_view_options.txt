@@ -4,13 +4,13 @@ view_options
 
 .. js:attribute:: view_options
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 ``view_options`` 属性是一个选项的集合，它们决定视图表单在浏览器页面上将如何显示。
@@ -67,7 +67,7 @@ template_class      如果指定，将在 “任务” 的
                     必须在创建表单之前设置此属性
 =================== ============================================================
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -78,9 +78,9 @@ Example
         item.view_options.close_on_escape = false;    
     }
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`view <m_view>`

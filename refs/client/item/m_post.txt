@@ -4,13 +4,13 @@ post
 
 .. js:function:: post()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 将修改后的记录写入实体项的数据集。调用 ``post`` 以保存在调用 
@@ -36,8 +36,8 @@ Description
 * 触发为实体项已经定义的 :doc:`on_after_post <on_after_post>` 事件处理程序。
 
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 

@@ -4,11 +4,11 @@ on_filter_form_close_query
 
 on_filter_form_close_query(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
 ``on_filter_form_close_query`` 事件由实体项的 
@@ -16,10 +16,10 @@ Description
 
 ``item`` 参数是触发了这个事件的实体项。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_filter_form <m_create_filter_form>`
 

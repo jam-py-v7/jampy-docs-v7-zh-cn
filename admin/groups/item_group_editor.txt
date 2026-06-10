@@ -22,7 +22,7 @@
 
 在 **实体项的组编辑器(Item Group Editor)** 对话框的中心部分有一个表格，
 其中包含为该组内的实体项定义的字段列表。对于该组将拥有的所有实体项，
-这些字段都是 :doc:`公共的(common) </programming/data/common_fields>`。
+这些字段都是 :doc:`公共的 </programming/data/common_fields>`。
 
 要添加、修改或删除字段，请使用以下按钮：
 

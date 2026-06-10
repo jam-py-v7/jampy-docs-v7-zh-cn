@@ -4,13 +4,13 @@ search
 
 .. js:function:: search(field_name, value, search_type, callback) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 调用 ``search`` 方法，向服务器发送一个请求，生成并执行一个 SQL 查询语句，
@@ -27,14 +27,14 @@ Description
 * ``value`` - 满足条件的字段的值
 
 * ``search_type`` - 字符串格式的搜索类型， 参见 
-  :doc:`Filtering records </programming/data/filtering_records>` 中的过滤符号
+  :doc:`过滤记录 </programming/data/filtering_records>` 中的过滤符号
 
 * ``callback`` - 一个回调函数，将在执行搜索后被执行
   
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Filtering records </programming/data/filtering_records>`
+:doc:`过滤记录 </programming/data/filtering_records>`
 

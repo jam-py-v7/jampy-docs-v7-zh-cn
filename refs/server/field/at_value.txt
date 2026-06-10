@@ -4,56 +4,54 @@ value
 
 .. py:attribute:: value
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
-Description
+描述说明
 ===========
 
-Use ``value`` property to get or set the value of the field. 
+使用 ``value`` 属性来获取或设置字段的值。
 
-Getting value
+获取值
 -------------
 
-When field data is ``null``, the field converts it to ``0``, if 
-the field_type is "integer", "float" or "currency", or to empty string if 
-field_type is "text".
+如果字段的类型是 “integer”， “float” 或 “currency”, 
+那么字段将 ``null`` 转换为 ``0`` 作为 ``value`` 的值；
+而字段类型是  "text" 时，会将 ``null``转换为空字符串 ``value`` 的值。
 
-For 
-:doc:`lookup fields </programming/data/lookup_fields>` the value of this 
-property is an integer that is the value of the id field of the corresponding 
-record in the lookup item. To get lookup value of the field use the 
-:doc:`lookup_value <at_lookup_value>`
-property.
+对于 :doc:`查找字段 </programming/data/lookup_fields>` ，
+这个属性的值是一个整数，它是查找实体项中的对应记录的 id 字段的值。
+要获取字段的查找值，请使用 :doc:`lookup_value <at_lookup_value>` 属性。
 
-Setting value
+设置值
 -------------
 
 When a new value is assigned, the field checks if the current value is not equal
 to the new one. If so it 
+当指定了一个新值，字段将检查其当前值是否不等于新值。
+如果当前值不等于新值：
 
-* sets its ``new_value`` attribute to this value, 
-* triggers the
+* 将新值分配给 ``new_value`` 属性
+* 触发为字段定义的
   :doc:`on_before_field_changed </refs/client/item/on_before_field_changed>`
-  event if one is defined for the field, 
-* changes the field data to the ``new_value`` attribute and sets it to ``null``, 
-* mark item as modified, so the 
-  :doc:`is_modified </refs/client/item/m_is_modified>`
-  method will return ``true``
-* triggers the
-  :doc:`on_field_changed </refs/client/item/on_field_changed>`
-  event if one is defined for the field 
-* updates data-aware controls
+  事件
+* 将 ``new_value`` 属性的值分配给字段数据，再将其设为 ``null``
+* 将实体项标记为已修改，所以 
+  :doc:`is_modified </refs/client/item/m_is_modified>` 方法会返回  ``true``
+
+* 触发为字段定义的
+  :doc:`on_field_changed </refs/client/item/on_field_changed>` 事件
+* 更新数据感知控件的内容。
   
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
-:doc:`Lookup fields </programming/data/lookup_fields>`
+:doc:`查找字段 </programming/data/lookup_fields>`
 
 :doc:`lookup_value <at_lookup_value>`
 

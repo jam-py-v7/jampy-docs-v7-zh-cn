@@ -4,13 +4,13 @@ eof
 
 .. js:function:: eof() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 调用 ``eof`` (end-of-file) 来确定游标是否指向一个实体项数据集的最后一条记录。 
@@ -28,7 +28,7 @@ eof 返回 true ，当应用程序：
 .. note::
     如果 eof 和 :doc:`bof <m_bof>` 都返回 ``true``, 则实体项数据集是空的。
     
-See also
+另请参见
 ========
 
 :doc:`数据集 </programming/data/dataset>`

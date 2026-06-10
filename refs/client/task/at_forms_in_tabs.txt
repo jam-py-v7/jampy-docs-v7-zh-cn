@@ -4,18 +4,15 @@ forms_in_tabs
 
 .. js:attribute:: forms_in_tabs
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-If the ``forms_in_tabs`` attribute is set and 
-:doc:`forms_container <at_forms_container>` is specified the application will 
-create forms in tabs.
+如果设置了 ``forms_in_tabs`` 属性，并且指定了 :doc:`forms_container <at_forms_container>` 属性，应用程序将在选项卡中创建表单窗体。
 
-This attribute can be set in the **Interface** tab of
-:doc:`Parameters </admin/project/parameters>`.
+可以在 :doc:`参数 </admin/project/parameters>` 的 **界面(Interface)** 选项卡中设置这个属性的值。

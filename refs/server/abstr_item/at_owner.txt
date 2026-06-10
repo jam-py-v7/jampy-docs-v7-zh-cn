@@ -6,18 +6,18 @@ Indicates the item that owns this item.
 
 .. py:attribute:: owner
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Use ``owner`` to find the owner of an item. 
+使用 ``owner`` 属性来找到一个实体项的拥有者(父项)。
 
-See also
+另请参见
 ========
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`

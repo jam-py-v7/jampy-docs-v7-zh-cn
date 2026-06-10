@@ -38,7 +38,7 @@
 
 .. note::
 
-    当使用 :doc:`客户端 </refs/client/item/m_apply>` / :doc:`服务器端 </refs/server/item/m_apply>` 的 apply 方法将对数据集的更改应用到数据库时，会保存更改历史。
+    当使用 :doc:`客户端 </refs/client/item/m_apply>` / :doc:`服务端 </refs/server/item/m_apply>` 的 apply 方法将对数据集的更改应用到数据库时，会保存更改历史。
 
     通过自定义 SQL 请求对数据库所做的更改不会保存在历史记录中。
     

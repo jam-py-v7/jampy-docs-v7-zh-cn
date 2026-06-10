@@ -4,20 +4,20 @@ fields
 
 .. py:attribute:: fields
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Lists all 
-:doc:`field </refs/client/field_api>`
-objects of the item dataset.
 
-Example
+该属性列举出一个实体项数据集的所有 
+:doc:`字段 </refs/client/field_api>` 对象。
+
+示例
 =======
 
 .. code-block:: py
@@ -27,10 +27,10 @@ Example
         for f in customers.fields:
             print f.field_caption, f.display_text
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 

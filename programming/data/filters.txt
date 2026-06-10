@@ -13,7 +13,7 @@
 * ``owner`` — 拥有此过滤器的实体，
 * ``filter_name`` — 过滤器的名称，可在编程代码中使用
 * ``filter_caption`` — 过滤器的标题，用于客户端应用程序中的可视化表示
-* ``filter_type`` — 过滤器的类型，请参阅  :doc:`筛选记录 <filtering_records>`
+* ``filter_type`` — 过滤器的类型，请参阅  :doc:`过滤记录 <filtering_records>`
 * ``visible`` — 如果此属性的值为 ``true`` ，当未指定 ``filters`` 选项时， :doc:`create_filter_inputs </refs/client/item/m_create_filter_inputs>` 方法将为此过滤器创建可视化表示
 * ``value`` — 过滤器的值
 
@@ -33,7 +33,7 @@
 另请参阅
 ----------
 
-:doc:`数据集 <dataset>` ， :doc:`筛选记录 <filtering_records>`
+:doc:`数据集 <dataset>` ， :doc:`过滤记录 <filtering_records>`
 
 客户端
 -------

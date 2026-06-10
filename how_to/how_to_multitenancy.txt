@@ -64,4 +64,4 @@
                           if d.user_id.old_value != user_id:
                               raise Exception('You are not allowed to delete record.')
 
-用户还可以将上述方法与 :doc:`authentication </how_to/authentication/index>` 结合使用。
+用户还可以将上述方法与 :doc:`认证 </how_to/authentication/index>` 结合使用。

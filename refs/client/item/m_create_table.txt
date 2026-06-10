@@ -4,11 +4,11 @@ create_table
 
 .. js:function:: create_table(container, options) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
 使用 ``create_table`` 方法创建一个表格来显示实体项数据集的记录。
@@ -47,9 +47,9 @@ Examples
             });
     }
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`数据感知控件 </programming/interface/data_controls>`

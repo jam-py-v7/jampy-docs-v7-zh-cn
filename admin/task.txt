@@ -12,7 +12,7 @@
 
 * 项目根文件夹中包含项目页面的 ``index.html [F10]`` 文件
 
-*  表单的 ``模板(templates [F9])`` 文件，请参阅 :doc:`表单 </programming/interface/forms>` 和 :doc:`代码编辑器 <code_editor>`
+*  表单的 ``模板(templates [F9])`` 文件，请参阅 :doc:`表单窗体 </programming/interface/forms>` 和 :doc:`代码编辑器 <code_editor>`
 
 * 项目根文件夹中 **css** 目录下的 ``project.css [F11]`` 文件，请参阅
   :doc:`代码编辑器 <code_editor>`

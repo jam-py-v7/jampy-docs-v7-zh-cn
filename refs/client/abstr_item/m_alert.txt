@@ -4,13 +4,13 @@ alert
 
 .. js:function:: alert(mess, options)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
  使用 ``alert`` 方法，创建一个显示在应用程序右上角的消息弹出框，用鼠标在页面上任意地方单击后，它会消失。
@@ -38,7 +38,7 @@ The ``options`` parameter is an object with the following attributes:
 
 ``alert_error`` 和 ``alert_success`` 和  ``alert`` 相同，它们自身就有相应的 ``type`` 类型。
 
-Example
+示例
 =======
 
 .. code-block:: js

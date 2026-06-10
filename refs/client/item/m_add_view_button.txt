@@ -4,11 +4,11 @@ add_view_button
 
 .. js:function:: add_view_button(text, options) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
 使用 ``add_view_button`` ，可以在视图表单窗体上动态地添加一个按钮。
@@ -41,7 +41,7 @@ Description
 * ``image`` - 一个图标样式类, 取值来自 Glyphicons 的图标样式库 http://getbootstrap.com/2.3.2/base-css.html
 
 * ``secondary``: 如果设置这个属性为 true ，那么在设置了 
-  :doc:`视图表单 </admin/items/view_form_dialog>` 的 
+  :doc:`视图表单窗体 </admin/items/view_form_dialog>` 的 
   **按钮置顶(Buttons on top)** 属性时按钮将右对齐显示，否则将左对齐显示。
 
 * ``expanded`` - 如果设置为 true ，按钮将具有类 “expanded btn” ，

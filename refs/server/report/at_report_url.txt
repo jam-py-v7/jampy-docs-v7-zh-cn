@@ -4,31 +4,25 @@ report_url
 
 .. py:attribute:: report_url
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Report class </refs/server/report_api>`
+**类**: :doc:`Report 类 </refs/server/report_api>`
 
-Description
+描述说明
 ===========
 
-The 
-:doc:`generate <m_generate>` 
-method sends to the client the value that is stored in this attribute as url of 
-the generated file.
+:doc:`generate <m_generate>` 方法向客户端发送存储在该属性里的值，这个值是已生成文件的 url 。
 
-When the 
-:doc:`template <at_template>`
-attribute of the report is specified, this value is set by the 
-:doc:`generate <m_generate>` 
-method after it save generated content. Otherwise a developer must set it 
-himself.
+当指定了报表的 :doc:`template <at_template>` 属性时，
+:doc:`generate <m_generate>` 方法会，在保存已生成的内容后，设置该属性的值。
+否则，开发人员必须自己设置该属性的值。
 
-See also
+另请参见
 ========
 
-:doc:`Server-side report programming </programming/reports/server_side_programming>`
+:doc:`报表的服务器端编程 </programming/reports/server_side_programming>`
 
 :doc:`generate <m_generate>`
 

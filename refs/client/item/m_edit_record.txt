@@ -4,13 +4,13 @@ edit_record
 
 .. js:function:: edit_record(container) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 将当前记录置于 “编辑” :doc:`状态 <at_item_state>` ，
@@ -49,10 +49,10 @@ Description
   创建一个表单窗体以用于记录的可视化编辑。
 
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`修改数据集 </programming/data/modifying_datasets>`
 

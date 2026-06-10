@@ -4,25 +4,24 @@ field_caption
 
 .. py:attribute:: field_caption
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
 
-Description
+描述说明
 ===========
 
-``Field_caption`` attribute specifies the name of the field that appears to 
-users.
+``Field_caption`` 属性指定了向用户显示的字段的名称。
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`field_name <at_field_name>`
 

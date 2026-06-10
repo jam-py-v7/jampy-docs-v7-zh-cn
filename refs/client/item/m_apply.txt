@@ -4,13 +4,13 @@ apply
 
 .. js:function:: apply(callback, params, async) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 将所有已更新的、已插入的、已删除的记录从实体项数据集发送到应用程序服务端，以写入数据库。
@@ -73,7 +73,7 @@ Description
     更改了其他字段的值，这些更改不会反映在客户端上。
     您可以自己使用像 :doc:`refresh_record <m_refresh_record>`这样的方法更新它们。
 
-Example
+示例
 =======
 
 
@@ -91,7 +91,7 @@ Example
 
 
 
-See also
+另请参见
 ========
 
 :doc:`修改数据集 </programming/data/modifying_datasets>`

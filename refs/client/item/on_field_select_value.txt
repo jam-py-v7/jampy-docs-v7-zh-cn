@@ -4,13 +4,13 @@ on_field_select_value
 
 on_field_select_value(field, lookup_item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 当用户点击字段输入框右侧的按钮或使用与输入时，应用程序将创建该字段查找项的一个副本，
@@ -23,7 +23,7 @@ Description
 
 ``lookup_item`` 参数是字段的查找项的副本。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -59,11 +59,11 @@ Or, generic code with different ID for each table:
 
 
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
-:doc:`Lookup fields </programming/data/lookup_fields>`
+:doc:`查找字段 </programming/data/lookup_fields>`
 
 

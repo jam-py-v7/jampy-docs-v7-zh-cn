@@ -4,22 +4,21 @@ can_view
 
 .. py:method:: can_view(self) 
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Use the ``can_view`` method to determine whether a user of the current session 
-can view records if a data item or print a report.
+使用 ``can_view`` 方法来判断当前会话中的用户是否能浏览一个数据项的记录，或打印一个报表。
 
-See also
+另请参见
 ========
 
-:doc:`Roles </admin/roles>`
+:doc:`角色 </admin/roles>`
 
 :doc:`session <at_session>`
 

@@ -127,7 +127,7 @@
 
 :doc:`on_edit_form_close_query </refs/client/item/on_edit_form_close_query>`
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_edit_form </refs/client/item/m_create_edit_form>`
 

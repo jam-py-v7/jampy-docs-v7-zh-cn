@@ -4,13 +4,13 @@ on_before_cancel
 
 on_before_cancel(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 应用程序取消对实体项数据集的修改之前发生此事件。
@@ -19,7 +19,7 @@ Description
 
 编写一个 ``on_before_cancel`` 事件处理程序，应用程序在取消对实体项数据集的修改之前，立即执行指定的操作。
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

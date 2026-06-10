@@ -4,29 +4,22 @@ param_form
 
 .. js:attribute:: param_form
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Report class </refs/client/report_api>`
+**类**: :doc:`Report 类 </refs/client/report_api>`
 
-Description
+描述说明
 ===========
 
-Use ``param_form`` attribute to get access to a Jquery object representing the 
-param form of the report. 
+使用 ``param_form`` 属性访问表示报表表单窗体的 JQuery 对象。
 
-It is created by the 
-:doc:`create_param_form <m_create_param_form>`
-method, that, usually, is called by then
-:doc:`print <m_print>` 
-method.
+它由经常被 :doc:`print <m_print>` 调用的 :doc:`create_param_form <m_create_param_form>` 方法创建。
 
-The 
-:doc:`close_param_form <m_close_param_form>`
-method sets the ``param_form`` value to undefined.
+:doc:`close_param_form <m_close_param_form>` 方法将 ``param_form`` 的值设置为 undefined 。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -41,10 +34,10 @@ Example
         });
     }
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`print <m_print>`
 

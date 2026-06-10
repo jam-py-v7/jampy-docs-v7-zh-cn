@@ -4,13 +4,13 @@ log_changes
 
 .. js:attribute:: log_changes
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 指明是否记录数据变更的日志。
@@ -19,7 +19,7 @@ Description
 当 ``log_changes`` 为 ``true`` （这是默认值），所由更改都被记录下来。以后，可以通过调用 :doc:`apply <m_apply>` 方法，在应用程序服务器上使用它们。
 当 ``log_changes`` 为 `false`` ，所做的更改不被记录，也不可以在应用程序服务器上使用它们。
 
-See also
+另请参见
 ========
 
 :doc:`修改数据集 </programming/data/modifying_datasets>`

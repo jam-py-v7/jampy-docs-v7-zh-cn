@@ -4,23 +4,22 @@ ID
 
 .. py:attribute:: ID
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
 
-Description
+描述说明
 ===========
 
-The ``ID`` attribute is the unique in the framework id of the item
+``ID``  属性在实体项的框架 ID 中是唯一的、
 
-The ``ID`` attribute is most useful when referring to the item by number rather than 
-name. It is also used internally.
+当按数字而不是名称引用项目时， ``ID`` 属性最有用。它也在内部使用。
 
-See also
+另请参见
 ========
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`
 

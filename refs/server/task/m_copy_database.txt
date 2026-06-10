@@ -1,29 +1,29 @@
 =============
 copy_database
 =============
-TBA - changed from Jam.py v5.
+
+待公布(TBA) - 自 Jam.py v5 后，有更改
 
 .. py:method:: copy_database(self, dbtype, database=None, user=None, password=None, host=None, port=None, encoding=None, server=None)
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``copy_database`` to copy database data when migrating to another database.
+当迁移到另一个数据库时，请使用 ``copy_database`` 方法来复制数据库中的数据。
 
-See :doc:`How to migrate to another database </how_to/how_to_migrate_to_another_database>`
+请参阅 :doc:`如何迁移到另一个数据库 </how_to/how_to_migrate_to_another_database>`
 
 
-Example
+示例
 =======
 
-in the following code when the project task tree is created the application
-copies the data from the demo.sqlite database to the project database:
+在下面的代码中，当创建项目的任务树后，应用程序从 demo.sqlite 数据库中复制数据到项目的数据库里：
 
 .. code-block:: py
 

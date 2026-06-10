@@ -4,23 +4,22 @@ select
 
 .. py:method:: select(self, sql) 
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``select`` to execute select ``SELECT`` SQL query. To execute the query the 
-connection pool is used. 
+使用 ``select`` 方法来执行 SELECT SQL 查询语句。为了执行查询，使用了连接池。
 
-The ``sql`` parameter is a query to execute.
+``sql`` 参数是一个要执行的查询语句。
 
-The method returns a list of records.
+该方法返回由记录组成的一个列表。
 
-Example
+示例
 =======
 
 .. code-block:: py
@@ -29,7 +28,7 @@ Example
     for r in rec:
         print(r)
 
-See also
+另请参见
 ========
 
 :doc:`execute <m_execute>`

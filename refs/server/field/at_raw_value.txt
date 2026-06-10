@@ -4,31 +4,28 @@ raw_value
 
 .. py:attribute:: raw_value
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
-Description
+描述说明
 ===========
 
-Represents the data in a field object.
+表示一个字读对象中的数据。
 
-Use ``raw_value`` read only property to read data directly from the item dataset.
-Other properties such as 
-:doc:`value <at_value>`
-and
-:doc:`text <at_text>`
-use conversion.
-So the
-:doc:`value <at_value>`
-property converts the ``null`` value to ``0`` for the numeric fields. 
+使用 ``raw_value`` 只读属性直接从实体项数据集读取数据。
 
-See also
+像 :doc:`value <at_value>` 和 :doc:`text <at_text>` 等其它属性
+将对字段的数据进行转换。
+
+因此，数值字段的 :doc:`value <at_value>` 属性，会将 ``null`` 值转换为 ``0`` 。
+
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`value <at_value>`
 

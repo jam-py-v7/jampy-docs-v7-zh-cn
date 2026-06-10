@@ -4,23 +4,23 @@ on_filter_form_close_query
 
 on_filter_form_close_query(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Group class </refs/client/item_group_api>`
+**类**: :doc:`Group 类 </refs/client/item_group_api>`
 
-Description
+描述说明
 ===========
 
 ``on_filter_form_close_query`` 事件由实体项的 :doc:`close_filter_form </refs/client/item/m_close_filter_form>`方法触发。
 
 ``item`` 参数是触发事件的实体项。
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`close_filter_form </refs/client/item/m_close_filter_form>`
 

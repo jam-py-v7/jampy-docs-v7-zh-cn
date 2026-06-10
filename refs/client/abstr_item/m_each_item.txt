@@ -4,13 +4,13 @@ each_item
 
 .. js:function:: each_item(function(item))
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 使用 each_item 方法来迭代访问某个实体项的  :doc:`items <at_items>` 属性中的实体项。
@@ -19,7 +19,7 @@ each_item() 可以指定一个函数来对每个子项进行处理（子项作�
 
 通过使回调函数返回 false，你能在某个特定的迭代内中断 each_item 方法的循环，
 
-Example
+示例
 =======
 
 以下代码将在浏览器的命令行中输出项目的全部主表目录（catalogs）：

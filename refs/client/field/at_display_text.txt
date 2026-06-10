@@ -4,14 +4,14 @@ display_text
 
 .. js:attribute:: display_text
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 将字段的值表示为字符串。
@@ -20,12 +20,12 @@ Description
 
 如果指定了 :doc:`on_field_get_text </refs/client/item/on_field_get_text>` 事件处理程序，
 **display_text** 将是这个事件处理程序返回的值。否则， **display_text** 是 :doc:`查找字段 </programming/data/lookup_fields>` 的 :doc:`lookup_text <at_lookup_text>` 属性的值；
-其他情况下， **display_text** 是字段的 :doc:`text <at_text>` 属性值，会根据 :doc:`language locale </admin/language_support>` 的设置对其进行转换。
+其他情况下， **display_text** 是字段的 :doc:`text <at_text>` 属性值，会根据 :doc:`语言区域设置 </admin/language_support>` 的设置对其进行转换。
 
 
 当不是编辑状态时， **display_text** 是字段值的字符串形式的表示。当字段处于编辑状态时，使用 :doc:`text <at_text>` 属性的值。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -37,7 +37,7 @@ Example
     }
 
 
-See also
+另请参见
 ========
 
 :doc:`字段 </programming/data/fields>`

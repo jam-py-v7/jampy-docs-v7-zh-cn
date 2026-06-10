@@ -4,27 +4,26 @@ on_param_form_close_query
 
 on_param_form_close_query(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Reports class </refs/client/report_group_api>`
+**类**: :doc:`Reports 类 </refs/client/report_group_api>`
 
-Description
+描述说明
 ===========
 
-The ``on_param_form_close_query`` event is triggered by the 
-:doc:`close_param_form </refs/client/report/m_close_param_form>`
-method.
+``on_param_form_close_query`` 事件由 
+:doc:`close_param_form </refs/client/report/m_close_param_form>` 方法触发。
 
-The ``report`` parameter is the report that triggered the event.
+``report`` 参数是触发该事件的报表。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
-:doc:`Client-side report programming </programming/reports/client_side_programming>`
+:doc:`客户端报表编程 </programming/reports/client_side_programming>`
 
 :doc:`print </refs/client/report/m_print>`
 

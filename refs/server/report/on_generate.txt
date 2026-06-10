@@ -4,35 +4,31 @@ on_generate
 
 .. py:function:: on_generate(report)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Report class </refs/server/report_api>`
+**类**: :doc:`Report 类 </refs/server/report_api>`
 
-Description
+描述说明
 ===========
 
-The **on_generate** event is triggered by the 
-:doc:`generate <m_generate>` 
-method.
+**on_generate** 事件由 :doc:`generate <m_generate>` 方法触发。
 
-Write the on_generate event handler to generate the content of the report.
-Use the 
-:doc:`print_band <m_print_band>`
-method to print bands, defined in the report 
-:doc:`template </programming/reports/templates>`.
+编写 **on_generate** 事件处理程序来生成报表的内容。
+使用 :doc:`print_band <m_print_band>` 方法来打印在报表的 
+:doc:`模板 </programming/reports/templates>` 中定义的区域。
 
-The **report** parameter is the report that triggered the event.
+**report** 参数是触发该事件的报表。
 
-See also
+另请参见
 ========
 
-:doc:`Programming reports </programming/reports/index>`
+:doc:`报表编程 </programming/reports/index>`
 
-:doc:`Server-side report programming </programming/reports/server_side_programming>`
+:doc:`报表的服务器端编程 </programming/reports/server_side_programming>`
 
-:doc:`Report templates </programming/reports/templates>`
+:doc:`报表模板 </programming/reports/templates>`
 
 :doc:`generate <m_generate>`
 

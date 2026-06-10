@@ -4,13 +4,13 @@ table_options
 
 .. js:attribute:: table_options
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 ``table_options`` 属性一个选项的集合，它们决定了视图表单中的表格将如何显示。 
@@ -92,7 +92,7 @@ row_callback        记录字段每次发生变化时调用的回调函数。
 =================== ============================================================
 
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -119,7 +119,7 @@ Example
   item.invoice_table.create_table(item.view_form.find('.view-detail'));
 
 
-See also
+另请参见
 ========
 
 :doc:`视图表单对话框 </admin/items/view_form_dialog>`

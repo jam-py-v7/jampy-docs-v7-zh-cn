@@ -4,22 +4,21 @@ can_edit
 
 .. py:method:: can_edit(self) 
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Use the ``can_edit`` method to determine whether a user of the current session 
-have a right to edit a record. 
+使用 ``can_edit`` 方法以确定当前会话的用户是否有权限编辑记录。
 
-See also
+另请参见
 ========
 
-:doc:`Roles </admin/roles>`
+:doc:`角色 </admin/roles>`
 
 :doc:`session </refs/server/abstr_item/at_session>`
 

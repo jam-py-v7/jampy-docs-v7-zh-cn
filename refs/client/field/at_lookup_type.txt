@@ -4,21 +4,21 @@ lookup_type
 
 .. js:attribute:: lookup_type
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 对于 :doc:`查找字段 </programming/data/lookup_fields>`，
 获取的是 :doc:`lookup_value <at_lookup_value>` 的类型；
 否则，返回 :doc:`field_type <at_field_type>` 属性的值。
 
-See also
+另请参见
 ========
 
 :doc:`数据集 </programming/data/dataset>`

@@ -4,20 +4,19 @@ filters
 
 .. py:attribute:: filters
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Lists all 
-:doc:`filter </refs/server/filter_api>`
-objects of the item dataset.
+该属性列举出一个实体项数据集的所有 
+:doc:`过滤器 </refs/server/filter_api>` 对象。
 
-Example
+示例
 =======
 
 .. code-block:: py
@@ -26,9 +25,9 @@ Example
         for f in invoices.filters:
             print f.filter_name, f.value
 
-See also
+另请参见
 ========
 
-:doc:`Filters </programming/data/filters>`
+:doc:`过滤器 </programming/data/filters>`
 
-:doc:`Filter class </refs/server/filter_api>`
+:doc:`Filter 类 </refs/server/filter_api>`

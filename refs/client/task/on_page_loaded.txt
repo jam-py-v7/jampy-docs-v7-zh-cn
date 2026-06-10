@@ -4,26 +4,25 @@ on_page_loaded
 
 on_page_loaded(task)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task class </refs/client/task_api>`
+**类**: :doc:`Task 类 </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``on_page_loaded`` event is the first event triggered on the client. See
-:doc:`Workflow </programming/workflow>`.
+在客户端， ``on_page_loaded`` 事件是第一个被触发的事件。
+参考 :doc:`工作流 </programming/workflow>`
 
-Use it to initialize the client.
+使用该事件来初始化客户端。
 
-The ``task`` parameter is the root of the client
-:doc:`task tree </programming/task_tree>`.
+``task`` 参数时客户端中 :doc:`任务树 </programming/task_tree>` 的根节点。
 
-See also
+另请参见
 ========
 
-:doc:`Workflow </programming/workflow>`
+:doc:`工作流 </programming/workflow>`
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`

@@ -4,22 +4,21 @@ first
 
 .. py:method:: first(self)
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Call ``first`` to position the cursor on the first record in the item dataset and 
-make it the active record. ``First`` posts any changes to the active record.
+调用 ``first`` 方法将游标定位到实体项数据集中的第一条记录上，并使其成为活动记录。
+``first`` 方法会提交对活动记录的任何更改。
 
-
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`

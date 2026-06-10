@@ -4,19 +4,19 @@ value
 
 .. js:attribute:: value
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Filter class </refs/client/filter_api>`
+**类**: :doc:`Filter 类 </refs/client/filter_api>`
 
 
-Description
+描述说明
 ===========
 
 使用 **value** 属性来获取或设置过滤器的值。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -26,12 +26,12 @@ Example
     }
 
 
-See also
+另请参见
 ========
 
 :doc:`过滤器 </programming/data/filters>`
 
 :doc:`visible <at_visible>`
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 

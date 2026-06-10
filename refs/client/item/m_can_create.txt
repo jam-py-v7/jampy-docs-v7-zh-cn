@@ -4,13 +4,13 @@ can_create
 
 .. js:function:: can_create()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item </refs/client/item_api>`
+**类**: :doc:`实体项 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``can_create`` 方法确定一个用户是否有权限创建一个新记录。
@@ -18,7 +18,7 @@ Description
 当设置了项目 :doc:`安全模式参数 </admin/project/parameters>` 以及 :doc:`permissions <at_permissions>` 属性和 :doc:`can_modify <at_can_modify>` 属性的值时，此方法考虑了在应用程序生成器的 :doc:`角色节点 </admin/roles>` 中设置的用户权限。
 
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -34,7 +34,7 @@ Example
         item.view_form.find("#new-btn").prop("disabled", true);
     }
 
-See also
+另请参见
 ========
 
 :doc:`参数 </admin/project/parameters>`

@@ -4,23 +4,22 @@ connect
 
 .. py:method:: connect(self) 
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``connect`` to procure a connection from the SQLAlchemy connection pool.
+使用 ``connect`` 方法从 SQLAlchemy 连接池中取出一个连接。
 
-The return value of this method is a DBAPI connection.
+该方法的返回值是一个 DBAPI 连接。
 
-A developer must return a connection to the connection poll when it is no 
-longer needed by calling ``close`` method of the connection.
+当不再需要连接时，开发者必须通过调用连接的 ``close`` 方法将它放回连接池中。
 
-Example
+示例
 =======
 
 .. code-block:: py

@@ -4,13 +4,13 @@ apply_record
 
 .. js:function:: apply_record() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 将更改写入应用程序的数据集。
@@ -21,7 +21,7 @@ Description
 
 * 调用 :doc:`close_edit_form <m_close_edit_form>` 方法销毁 edit_form
 
-See also
+另请参见
 ========
 
 :doc:`修改数据集 </programming/data/modifying_datasets>`

@@ -4,44 +4,39 @@ on_login
 
 on_login(task, form_data, info)
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``on_login`` to override default login procedure using Application
-Builder Users table.
+通过应用程序构建器的 “用户表(Users table)”，
+使用 ``on_login`` 事件重写默认的登录过程，
 
-``task`` parameter is a reference to the 
-:doc:`task tree </programming/task_tree>`.
+``task`` 参数是指向 :doc:`task 树 </programming/task_tree>` 的一个引用。
 
-``form_data`` is a dictionary containing the values that the user entered in 
-the inputs in the login form. The keys of the dictionary are name attributes
-of the inputs.
+``form_data`` 是一个字典，里面包含用户在登录表单窗体的输入框里输入的数据。
+字典的 “键” 是输入框的 name 属性值。
 
-``info`` parameter is a dictionary with the following attributes: 
+``info`` 参数一个字典，它有下列属性: 
 
-* ``ip`` is the ip address of the request 
-* ``session_uuid`` is uuid of the session that will be created.
+* ``ip`` 是请求的 ip 地址。
+* ``session_uuid`` 是将被创建的会话的唯一标识符（uuid）。
 
-The event handler must return the dictionary with the following attributes:
+该事件处理程序必须返回有下列属性的字典：
 
-* ``user_id`` - the unique id of the user
-* ``user_name`` - user name
-* ``role_id`` - ID of the role defined in the 
-  :doc:`Roles </admin/roles>`
-* ``role_name`` - role name
+* ``user_id`` - 用户的唯一表示
+* ``user_name`` - 用户名
+* ``role_id`` - 在 :doc:`角色 </admin/roles>` 中定义的莫格角色的 ID
+* ``role_name`` - 角色名
 
-The login form as a template is located in the Jam.py ``login.html``
-file. 
-You can add your own
-custom file with inputs and get their values using form_data parameter.
+作为模板的登录表单窗体位于在 Jam.py 的 ``login.html`` 文件中。
+你能添加你自己定义的含有输入框的文件，并用 form_data 参数获取它们的值。
 
-The custom ``login.html`` in the project folder will override the default file.
+在项目文件夹里的自定义 ``login.html`` 会覆盖默认的登录模板文件。
 
 .. code-block:: html
 
@@ -53,16 +48,16 @@ The custom ``login.html`` in the project folder will override the default file.
                         <input type="text" class="form-control" name="login" id="login" placeholder="%(login_text)s" value="%(login)s" required>
                     </div>
                 </div>
-				
-				<div class="my-1 mx-4 row">
+                
+                <div class="my-1 mx-4 row">
                     <label for="password" class="col-sm-3 col-form-label">%(password_text)s</label>
                     <div class="col-sm-9">
-					<div class="input-group">
+                    <div class="input-group">
                         <input type="password" class="form-control" name="password" id="password" placeholder="%(password_text)s" value="%(password)s">
-						<button class="btn btn-outline" type="button" id="togglePassword">
-							<i class="bi bi-eye-fill"></i>
-						</button>
-					</div>
+                        <button class="btn btn-outline" type="button" id="togglePassword">
+                            <i class="bi bi-eye-fill"></i>
+                        </button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -72,11 +67,10 @@ The custom ``login.html`` in the project folder will override the default file.
         </form>
 
 
-Example
+示例
 =======
 
-In this example user information is stored in the table of the **Users** item in the
-project database:
+在此示例中，用户信息存储在项目数据库中的 **Users** 实体项对应的表中：
 
 .. code-block:: py
 
@@ -93,19 +87,18 @@ project database:
                   'role_name': users.role.display_text
               }
 
-       
-Adding a Reset Password
+
+添加 “重置按钮”
 =======================
 
-To add a reset password option, create a custom ``login.html`` file with i.e. below link, 
-develop a custom ``reset_pass.html`` file, and develop ``on_ext_request`` logic and ``on_request`` routing:
+要创建一个重置密码选项，像下面那样创建一个自定义的 ``login.html`` 文件，增加一个自定义的 ``reset_pass.html`` 文件，并开发 ``on_ext_request`` 事件逻辑和 ``on_request`` 路由：
 
 .. code-block:: html
 
-		<div class="modal-footer">
-			<a href="/reset_pass.html" class="button" target="_blank">Forgotten password?</a>
-			<button class="btn btn-lg btn-primary w-100 mt-3" type="submit">Login</button>
-		</div>
+        <div class="modal-footer">
+            <a href="/reset_pass.html" class="button" target="_blank">Forgotten password?</a>
+            <button class="btn btn-lg btn-primary w-100 mt-3" type="submit">Login</button>
+        </div>
 
 .. code-block:: py
 
@@ -130,7 +123,7 @@ develop a custom ``reset_pass.html`` file, and develop ``on_ext_request`` logic 
             .
 
 
-See also
+另请参见
 ========
 
 :doc:`session </refs/server/abstr_item/at_session>`

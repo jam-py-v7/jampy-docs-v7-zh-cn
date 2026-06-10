@@ -4,40 +4,36 @@ add_tab
 
 .. js:function:: add_tab(container, tab_name, options)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``add_tab`` method creates a tab for a container. 
+``add_tab`` 方法为 container 创建一个选项卡。
 
-The ``container`` is JQuery object for a container element.
+``container`` 是一个容器（container）元素的 JQuery 对象。
 
-The ``tab_name`` is the name of the tab.
+``tab_name``要创建的选项卡的名称。
 
-Use can use the ``options`` to specify optional parameters. It is the object that
-can have the following attributes:
+用户能使用 ``options`` 指定可选参数。
+``options`` 是一个有下列属性的对象：
 
-* ``tab_id`` - a unique string identifing the tab
-* ``show_close_btn`` - if it is set to ``true`` the close tab button will appear 
-  that can be used to close the tab
-* ``set_active`` - if it is set to ``true`` the new tab will became active
-* ``on_close`` - a callback function that will be called when the close tab button
-  is clicked
+* ``tab_id`` - 标识选项卡的唯一字符串
+* ``show_close_btn`` - 如果将其设置为 ``true`` ，将出现能够用来关闭这个选项卡的 “关闭按钮” 。 
+* ``set_active`` -  如果将其设置为 ``true`` ，那么将激活新创建的选项卡（显示其内容）。
+* ``on_close`` - 一个可以在单击关闭按钮时调用的回调函数。
 
-The function returns the JQuery object of the div with ``tab-pane`` class that 
-will be displayed when tab became active.
+该函数返回 JQuery 对象，它是带有 ``tab-pane`` 样式类的 div ，当选项卡被激活时，将显示其内容。
 
-Example
+示例
 =======
 
-The following code will create tabs for editing Customers catalog. It uses 
-:doc:`create_inputs </refs/client/item/m_create_inputs>`
-method:
+下面的代码将为编辑 “客户主表(Customers catalog)” 创建一个选项卡。
+代码中使用了 :doc:`create_inputs </refs/client/item/m_create_inputs>` 方法。
 
 .. code-block:: js
 
@@ -55,7 +51,7 @@ method:
     	);
     }
 
-Below is the edit html template for Customers catalog:
+下面是 “客户主表(Customers catalog)” 的编辑 html 的模板
 
 .. code-block:: html
 
@@ -74,7 +70,7 @@ Below is the edit html template for Customers catalog:
         </div>
     </div>
 
-See also
+另请参见
 ========
 
 :doc:`init_tabs <m_init_tabs>`

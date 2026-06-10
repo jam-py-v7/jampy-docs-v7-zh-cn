@@ -2,7 +2,7 @@
 on_open_events
 ==============
 
-当在 :doc:`客户端 </refs/client/item/m_open>` 或 :doc:`服务器端 </refs/server/item/m_open>` 调用实体项的 ``open`` 方法时，服务器应用程序执行以下代码：
+当在 :doc:`客户端 </refs/client/item/m_open>` 或 :doc:`服务端 </refs/server/item/m_open>` 调用实体项的 ``open`` 方法时，服务器应用程序执行以下代码：
 
 .. code-block:: py
 

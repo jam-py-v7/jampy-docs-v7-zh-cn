@@ -4,13 +4,13 @@ insert_record
 
 .. js:function:: insert_record(container) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 打开数据集开头的一个新的空记录，并创建一个 
@@ -20,7 +20,7 @@ Description
 如果指定了 ``container`` 参数（DOM 元素的 Jquery 对象），则编辑表单的 HTML 模板将插入到该容器中。
 
 如果未指定 ``container`` 参数，
-但在 :doc:`Edit Form Dialog </admin/items/edit_form_dialog>` 中设置了 
+但在 :doc:`编辑表单对话框 </admin/items/edit_form_dialog>` 中设置了 
 **Modeless form** 属性，或者通过编程设置了 
 :doc:`edit_options <at_edit_options>` 的 modeless 属性，并且任务具有 
 :doc:`forms_in_tabs </refs/client/task/at_forms_in_tabs>`
@@ -44,12 +44,12 @@ Description
 * 调用 :doc:`create_edit_form <m_create_edit_form>` 
   方法创建用于记录可视化编辑的表单。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 :doc:`insert <m_insert>`
 

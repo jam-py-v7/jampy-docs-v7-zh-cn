@@ -4,13 +4,13 @@ edit_form
 
 .. js:attribute:: edit_form
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 
@@ -21,7 +21,7 @@ Description
 :doc:`close_edit_form <m_close_edit_form>` 方法将 ``edit_form`` 的值设置为 undefined。
 
 
-Example
+示例
 =======
 
 在以下示例中，实体项编辑表单的 html 模板中定义的按钮被分配了一个点击事件：
@@ -34,10 +34,10 @@ Example
         }
     );
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_edit_form <m_create_edit_form>`
 

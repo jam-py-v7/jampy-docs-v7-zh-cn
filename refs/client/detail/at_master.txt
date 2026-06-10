@@ -4,19 +4,19 @@ master
 
 .. js:attribute:: master
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Detail class </refs/client/detail_api>`
+**类**: :doc:`Detail 类 </refs/client/detail_api>`
 
 
-Description
+描述说明
 ===========
 
 使用 ``master`` 属性来获取对明细项的 *主表(master)* 的引用。
 
-See also
+另请参见
 ========
 
-:doc:`Details </programming/data/details>`
+:doc:`明细项 </programming/data/details>`

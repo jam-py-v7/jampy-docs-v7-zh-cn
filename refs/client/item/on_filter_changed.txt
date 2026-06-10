@@ -4,13 +4,13 @@ on_filter_changed
 
 on_filter_changed(filter, lookup_item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 编写一个 ``on_filter_changed`` 事件处理程序，以响应过滤器数据中的任何更改。
@@ -18,10 +18,10 @@ Description
 ``filter`` 参数时那个数据已经被更改的过滤器。
 要获取拥有这个过滤器的实体项，请使用过滤器的 :doc:`owner </refs/client/filter/at_owner>` 属性。
 
-See also
+另请参见
 ========
 
-:doc:`Filters </programming/data/filters>`
+:doc:`过滤器 </programming/data/filters>`
 
 :doc:`value </refs/client/filter/at_value>`
 

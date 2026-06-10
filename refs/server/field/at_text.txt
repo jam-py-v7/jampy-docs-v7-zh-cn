@@ -4,36 +4,33 @@ text
 
 .. py:attribute:: text
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
-Description
+描述说明
 ===========
 
-Use ``text`` property to get or set the text value of the field. 
+使用 ``text`` 属性来获取或色湖之字段的文本值（text value）。
 
-Getting text property value
+获取文本属性值
 ---------------------------
 
-Gets the value of the 
-:doc:`value <at_value>`
-property and converts it to text.
+获取 :doc:`value <at_value>` 属性的值，并将其转换为文本。
 
-Setting text property value
+获取文本属性值
 ---------------------------
 
-Converts the text to the type of the field and assigns its :doc:`value <at_value>`
-property to this value
+将文本值转换为字段的类型，并将其 :doc:`value <at_value>` 属性设置为转换后的值。
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
-:doc:`Lookup fields </programming/data/lookup_fields>`
+:doc:`查找字段 </programming/data/lookup_fields>`
 
 :doc:`lookup_value <at_lookup_value>`
 

@@ -4,23 +4,23 @@ filter_caption
 
 .. js:attribute:: filter_caption
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Filter class </refs/client/filter_api>`
+**类**: :doc:`Filter 类 </refs/client/filter_api>`
 
 
-Description
+描述说明
 ===========
 
 用 **Filter_caption** 属性指定过滤器显示给用户的标题。
 
-See also
+另请参见
 ========
 
 :doc:`过滤器 </programming/data/filters>`
 
 :doc:`filter_name <at_filter_name>`
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`

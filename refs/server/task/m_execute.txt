@@ -4,27 +4,23 @@ execute
 
 .. py:method:: execute(self, sql) 
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``execute`` to execute an SQL query (except SELECT queries) using 
-multiprocessing connection pool. For SELECT queries use the
-:doc:`select <m_select>`
-method.
+通过多进程连接池，使用 ``execute`` 方法来执行一条 SQL 查询语句（不包括 SELECT 查询）。 :doc:`select <m_select>` 方法适用于 SELECT 查询语句。
 
-The ``sql`` parameter can be a query string, a list of query strings, a list of
-lists and so on.
+``sql`` 参数可以是一个查询字符串、一个由查询字符串组成的列表、一个由列表组成的列表等。
 
-All queries are executed in one transaction and if execution succeeds the ``COMMIT``
-command is called, otherwise ``ROLLBACK`` command is executed.
+在一个事务中执行所有查询。
+如果都执行成功，则调用 ``COMMIT`` 命令；否者，执行 ``ROLLBACK`` 命令
 
-Example
+示例
 =======
 
 .. code-block:: py
@@ -34,7 +30,7 @@ Example
         sql.append('UPDATE DEMO_CUSTOMERS SET QUANTITY=2 WHERE ID=%s' % i) 
     item.task.execute(sql)
 
-See also
+另请参见
 ========
 
 :doc:`select <m_select>`

@@ -4,13 +4,13 @@ append
 
 .. js:function:: append() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 在数据集末尾，打开一个新的空记录。
@@ -19,7 +19,7 @@ Description
 
 ``append`` 方法
 
-* 检查实体项的数据集是否处于 :doc:`活动(active) <at_active>` 状态，
+* 检查实体项的数据集是否处于 :doc:`active <at_active>` 状态，
   如果不是，会抛出异常
 
 * 如果实体项是一个 :doc:`明细项(detail) </programming/data/details>` ,
@@ -42,7 +42,7 @@ Description
 
 * 更新 :doc:`数据感知控件 </programming/interface/data_controls>`
 
-See also
+另请参见
 ========
 
 :doc:`修改数据集 </programming/data/modifying_datasets>`

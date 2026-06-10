@@ -4,25 +4,25 @@ on_view_form_close_query
 
 on_view_form_close_query(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task class </refs/client/task_api>`
+**类**: :doc:`Task 类 </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``on_view_form_close_query`` event is triggered by the 
+``on_view_form_close_query``  事件由实体项的 
 :doc:`close_view_form </refs/client/item/m_close_view_form>`
-method of the item.
+方法触发。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是那个触发事件的实体项。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`close_view_form </refs/client/item/m_close_view_form>`
 

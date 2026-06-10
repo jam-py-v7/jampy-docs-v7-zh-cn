@@ -4,18 +4,18 @@ value
 
 .. py:attribute:: value
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Filter class </refs/server/filter_api>`
+**类**: :doc:`Filter 类 </refs/server/filter_api>`
 
-Description
+描述说明
 ===========
 
-Use ``value`` property to get or set the value of the filter. 
+使用  ``value`` 属性来获取或设置过滤器的值。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -25,10 +25,10 @@ Example
     }
 
 
-See also
+另请参见
 ========
 
-:doc:`Filters </programming/data/filters>`
+:doc:`过滤器 </programming/data/filters>`
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 

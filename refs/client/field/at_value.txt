@@ -4,14 +4,14 @@ value
 
 .. js:attribute:: value
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 使用 **value** 属性来获取或设置字段的值。
@@ -37,7 +37,7 @@ Description
 * 如果为字段定义了 :doc:`on_field_changed </refs/client/item/on_field_changed>` 事件处理程序，则会被触发。
 * 更新数据感知控件
   
-Example
+示例
 =======
 
 .. code-block:: js
@@ -48,7 +48,7 @@ Example
         item.total.value = item.amount.value + item.tax.value;
     }
 
-See also
+另请参见
 ========
 
 :doc:`字段 </programming/data/fields>`

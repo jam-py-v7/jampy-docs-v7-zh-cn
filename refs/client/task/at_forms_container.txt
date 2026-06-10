@@ -4,25 +4,24 @@ forms_container
 
 .. js:attribute:: forms_container
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``forms_container`` is a JQuery object in which the application will create 
-forms.
+``forms_container`` 是一个 JQuery 对象，应用程序会在它里面创建表单窗体。
 
-To initialize ``forms_container`` use the 
-:doc:`set_forms_container <m_set_forms_container>` method or the
-:doc:`create_menu <m_create_menu>` method.
+要初始化 ``forms_container`` 属性，请使用
+:doc:`set_forms_container <m_set_forms_container>` 方法或 
+:doc:`create_menu <m_create_menu>` 方法。
 
-The default code uses the :doc:`create_menu <m_create_menu>` method.
+默认代码使用了 :doc:`create_menu <m_create_menu>` 方法。
 
-See also
+另请参见
 ========
 
 :doc:`forms_in_tabs <at_forms_in_tabs>`

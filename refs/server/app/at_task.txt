@@ -4,23 +4,23 @@ task
 
 .. py:attribute:: task
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class**: :doc:`App class </refs/server/app_api>`
+**类**: :doc:`App 类 </refs/server/app_api>`
 
-Description
+描述说明
 ===========
 
-Returns a reference to the Project task tree
+该属性返回对项目中任务树的引用。
 
-See also
+另请参见
 ========
 
-:doc:`Workflow </programming/workflow>`
+:doc:`工作流 </programming/workflow>`
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`
 
 
 

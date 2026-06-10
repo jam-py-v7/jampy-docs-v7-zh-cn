@@ -4,14 +4,14 @@ lookup_text
 
 .. js:attribute:: lookup_text
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 使用 **lookup_text** 属性来获取 :doc:`查找字段 </programming/data/lookup_fields>` 中对应的被转换为字符串的值.
@@ -19,7 +19,7 @@ Description
 如果字段是 :doc:`查找字段 </programming/data/lookup_fields>` ，那么 **lookup_text** 属性会获取字段对应的查找文本；
 否则，获取的是 doc:`text <at_text>` 属性的值。
 
-See also
+另请参见
 ========
 
 :doc:`字段 </programming/data/fields>`

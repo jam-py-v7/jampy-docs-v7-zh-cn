@@ -4,73 +4,50 @@ create_param_form
 
 .. js:function:: create_param_form()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Report class </refs/client/report_api>`
+**类**: :doc:`Report 类 </refs/client/report_api>`
 
-Description
+描述说明
 ===========
+``create_param_form`` 方法由 :doc:`print <m_print>` 方法调用，
+用于创建一个表单以在通过 :doc:`process_report <m_process_report>` 
+方法将请求发送到服务端之前设置报表参数。
 
-The ``create_param_form`` method is called by the 
-:doc:`print <m_print>`
-method to create a form to set report parameters before sending a request to 
-the server by the
-:doc:`process_report <m_process_report>`
-method.
+该方法检查报表及其所有者的 javascript 模块是否已加载，如果未加载（且设置了 
+:doc:`JS 模块动态加载参数 </admin/project/parameters>`），则加载它们。
 
-The method checks if javascript modules of the report and its owner are loaded,
-and if not (the
-:doc:`Dynamic JS modules loading parameter </admin/project/parameters>`
-is set) then loads them.
+然后它在任务 :doc:`templates </refs/client/task/at_templates>` 属性中搜索报表的 html 模板（参见 :doc:`表单窗体 </programming/interface/forms>`），
+并创建该模板的副本，将其分配给报表 :doc:`param_form <at_param_form>` 属性。
 
-Then it searches for the report html template in the task 
-:doc:`templates </refs/client/task/at_templates>`
-attribute (See 
-:doc:`Forms </programming/interface/forms>`
-) and creates a 
-clone of the template and assigns it to the report 
-:doc:`param_form <at_param_form>`
-attribute.
 
-Creates a form and appends the html to it.
+创建一个表单窗体，并为其添加  html 。
 
-Triggers the 
-:doc:`on_param_form_created </refs/client/task/on_param_form_created>`
-of the task.
+触发 “任务” 的 :doc:`on_param_form_created </refs/client/task/on_param_form_created>` 事件。
 
-Triggers the 
-:doc:`on_param_form_created </refs/client/reports/on_param_form_created>`
-of the report group, if one is defined.
+触发已为报表组定义的 :doc:`on_param_form_created </refs/client/reports/on_param_form_created>` 事件。
 
-Triggers the 
-:doc:`on_param_form_created <on_param_form_created>`
-of the report, if one is defined.
+触发已为报表定义的 :doc:`on_param_form_created <on_param_form_created>` 事件。
 
-Shows the form. Before showing the form the method applies 
-options specidied in the 
-:doc:`param_options <at_param_options>`
-attribute.
 
-Triggers the 
-:doc:`on_param_form_shown </refs/client/task/on_param_form_shown>`
-of the task.
+显示表单窗体。在显示窗体之前，方法会应用在 :doc:`param_options <at_param_options>` 属性中指定的参数选项。
 
-Triggers the 
-:doc:`on_param_form_created </refs/client/reports/on_param_form_shown>`
-of the report group, if one is defined.
+触发 “任务” 的 :doc:`on_param_form_shown </refs/client/task/on_param_form_shown>` 事件。
 
-Triggers the 
-:doc:`on_param_form_shown <on_param_form_shown>`
-of the report, if one is defined.
+触发已为报表组定义的 :doc:`on_param_form_created </refs/client/reports/on_param_form_shown>` 事件。
 
-See also
+
+触发已为报表定义的 :doc:`on_param_form_shown <on_param_form_shown>` 事件。
+
+
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
-:doc:`Client-side report programming </programming/reports/client_side_programming>`
+:doc:`客户端报表编程 </programming/reports/client_side_programming>`
 
 :doc:`print <m_print>`
 

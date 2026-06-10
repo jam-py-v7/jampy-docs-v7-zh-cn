@@ -4,61 +4,43 @@ close_param_form
 
 .. js:function:: close_param_form()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Report class </refs/client/report_api>`
+**类**: :doc:`Report 类 </refs/client/report_api>`
 
-Description
+描述说明
 ===========
 
-Use ``close_param_form`` method to close the param form of the report.
+使用 ``close_param_form`` 方法来关闭报表的参数表单窗体。
 
-The ``close_param_form`` method triggers the 
-:doc:`on_param_form_close_query <on_param_form_close_query>`
-event handler of the report, if one is defined. If the event handler is defined 
-and 
+``close_param_form`` 方法会触发以为报表定义的 :doc:`on_param_form_close_query <on_param_form_close_query>` 事件处理程序。
+如果定义了事件处理程序，并且
 
-* returns true - the form is destroyed, the report's 
-  :doc:`param_form <at_param_form>`
-  atrribute is set to undefined and the methods exits
+* 返回 true - 销毁表单窗体，将报表的 :doc:`param_form <at_param_form>` 
+  属性设置为 undefined ，该方法退出。
 
-* return false - the operation is aborted and the methods exits,
+* 返回 false - 操作中止，该方法退出。
 
-If it don't return a value (undefined) the method triggers the 
-:doc:`on_param_form_close_query </refs/client/reports/on_param_form_close_query>`
-of the group that owners the report, if one is defined for the group. If this 
-event handler is defined and 
+如果它不返回值（undefined），该方法会触发以为所属报表所属组定义的 :doc:`on_param_form_close_query </refs/client/reports/on_param_form_close_query>` 事件。如果此事件处理程序已定义，并且
 
-* returns true - the form is destroyed, the report's 
-  :doc:`param_form <at_param_form>`
-  atrribute is set to undefined and the methods exits
+* 返回 true - 表单被表单窗体，报表的 :doc:`param_form <at_param_form>` 属性被设置为 undefined，该方法退出
+* 返回 false - 操作中止，该方法退出
 
-* return false - the operation is aborted and the methods exits,
+如果它不返回值（undefined），该方法会触发任务的 :doc:`on_param_form_close_query </refs/client/task/on_param_form_close_query>`。如果此事件处理程序已定义，并且
 
-If it don't return a value (undefined) the method triggers the 
-:doc:`on_param_form_close_query </refs/client/task/on_param_form_close_query>`
-of the task. If this 
-event handler is defined and 
+* 返回 true - 表单被销毁，报表的 :doc:`param_form <at_param_form>` 属性被设置为 undefined，方法退出
+* 返回 false - 操作中止，方法退出
 
-* returns true - the form is destroyed, the report's 
-  :doc:`param_form <at_param_form>`
-  atrribute is set to undefined and the methods exits
+如果没有定义事件处理程序，或者这些事件处理程序都未返回 false，则表单被销毁，并且报表的 :doc:`param_form <at_param_form>` 属性被设置为 undefined 。
 
-* return false - the operation is aborted and the methods exits,
-
-If no event handler is defined or none of these event handlers return false, the 
-form is destroyed and the report's 
-:doc:`param_form <at_param_form>`
-atrribute is set to undefined.
-
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
-:doc:`Client-side report programming </programming/reports/client_side_programming>`
+:doc:`客户端报表编程 </programming/reports/client_side_programming>`
 
 :doc:`print <m_print>`
 

@@ -4,24 +4,23 @@ read_only
 
 .. py:attribute:: read_only
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
-Description
+描述说明
 ===========
 
-Determines whether the field can be modified in data-aware controls.
+确定是否允许在数据感知控件中修改字段。
 
-Set ``read_only`` to ``true`` to prevent a field from being modified in 
-data-aware controls.
+将 ``read_only`` 设置为 ``true`` ，以阻止在数据感知控件中对字段的修改。
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`required <at_required>`
 

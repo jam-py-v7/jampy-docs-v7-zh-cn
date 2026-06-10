@@ -6,21 +6,21 @@ on_filter_form_shown(item)
 
 The item parameter is the item that triggered the event.
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
 **on_filter_form_shown** 事件在表单窗体已经显示后由 :doc:`create_filter_form <m_create_filter_form>` 方法触发。
 
 ``item`` 参数是触发了这个事件的实体项。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_filter_form <m_create_filter_form>`
 

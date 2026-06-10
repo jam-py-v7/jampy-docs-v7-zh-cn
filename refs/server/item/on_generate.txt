@@ -2,6 +2,6 @@
 on_generate
 ===========
 
-See:
+请见 :
 
-:doc:`Reports class </refs/server/report/on_generate>`
+:doc:`Reports 类 </refs/server/report/on_generate>`

@@ -4,33 +4,27 @@ print_band
 
 .. py:method:: print_band(self, band, dic=None)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Report class </refs/server/report_api>`
+**类**: :doc:`Report 类 </refs/server/report_api>`
 
-Description
+描述说明
 ===========
 
-Use print_band method to set values of programmable cells of the band 
-defined in the report 
-:doc:`template <at_template>` 
-and add the band to the content of the report.
+使用 ``print_band`` 方法设置在报表 :doc:`template <at_template>` 中定义的区域中的可编程单元格的值，并将该区域添加到报表的内容中。
 
-It has the following parameters:
+它有下列参数:
 
-* **band** - specifies the name of the band to be printed.
+* **band** - 指定要打印的区域的名称
 
-* **dic** - dictionary, containing values than will be assigned to programmable 
-  cells of the band.
+* **dic** - 字典, 包含要分配给区域中的可编程单元格的值。
 
-
-Example
+示例
 =======
 
-The following code generates content of the **Customer list** report of the Demo 
-application:
+以下代码生成演示应用程序的 **客户列表(Customer list)** 报表的内容：
 
 .. code-block:: py
 
@@ -50,14 +44,14 @@ application:
             email = c.email.display_text
             report.print_band('detail', locals())
 
-See also
+另请参见
 ========
 
-:doc:`Programming reports </programming/reports/index>`
+:doc:`报表编程 </programming/reports/index>`
 
-:doc:`Report templates </programming/reports/templates>`
+:doc:`报表模板 </programming/reports/templates>`
 
-:doc:`Server-side report programming </programming/reports/server_side_programming>`
+:doc:`报表的服务器端编程 </programming/reports/server_side_programming>`
 
 :doc:`generate <m_generate>`
 

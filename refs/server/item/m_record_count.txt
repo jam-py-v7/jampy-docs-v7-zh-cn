@@ -4,19 +4,18 @@ record_count
 
 .. py:method:: record_count() 
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Call ``record_count`` to get the total number of records owned by the item's 
-dataset.
+调用 ``record_count`` 方法以获取实体项数据集拥有的记录的总数
 
-Example
+示例
 =======
 
 .. code-block:: py
@@ -25,10 +24,10 @@ Example
     if item.record_count():
         # some code
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
 :doc:`open <m_open>`
 

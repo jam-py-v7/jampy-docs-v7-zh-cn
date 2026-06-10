@@ -62,7 +62,7 @@
 以便在我们需要启用此字段验证的任何模块中编写 ``check_field_value`` 函数。
 当编辑表单显示后，会首先为每个实体调用任务的
  :doc:`on_edit_form_shown </refs/client/task/on_edit_form_shown>` 事件处理程序。
- 参考 :doc:`表单事件 </programming/interface/form_events>` 。
+ 参考 :doc:`表单窗体事件 </programming/interface/form_events>` 。
 
 .. code-block:: js
 

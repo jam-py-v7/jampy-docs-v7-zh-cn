@@ -4,13 +4,13 @@ warning
 
 .. js:function:: warning(mess, callback)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 使用 **warning** 方法创建一个带有 **确定(Ok)** 按钮的模态表单窗体
@@ -19,7 +19,7 @@ Description
 
 如果指定了 **callback** 函数，它们会在用户点击了按钮后被执行，然后会自动关闭表单窗体。
 
-Example
+示例
 =======
 
 .. code-block:: js

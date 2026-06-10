@@ -4,13 +4,13 @@ each_detail
 
 .. js:function:: each_detail(function(detail))
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``each_detail`` 方法来迭代访问一个实体项的所有明细项。
@@ -20,7 +20,7 @@ Description
 
 通过使回调函数返回 ``false`` ，你能在一个特定的迭代中终止 each_detail 循环。
 
-See also
+另请参见
 ========
 
 :doc:`明细 </programming/data/details>`

@@ -4,26 +4,24 @@ safe_mode
 
 .. js:attribute:: safe_mode
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-Check the ``safe_mode`` attribute to determine if the 
-:doc:`safe mode </admin/project/parameters>`
-parameter of the project is set.
+检查 ``safe_mode`` 属性可以判断是否设置了项目的 :doc:`安全模式 </admin/project/parameters>` 参数
 
-Example
+示例
 =======
 
 .. code-block:: js
 
     function on_page_loaded(task) {
-    
+
         $("#title").html(task.item_caption);
         if (task.safe_mode) {
             $("#user-info").text(task.user_info.role_name + ' ' + task.user_info.user_name);
@@ -34,15 +32,15 @@ Example
                 task.logout();
             });
         }
-    
+
         task.tasks.view($("#content"));
     } 
 
 
-See also
+另请参见
 ========
 
-:doc:`Parameters </admin/project/parameters>`
+:doc:`参数 </admin/project/parameters>`
 
 :doc:`user_info <at_user_info>`
 

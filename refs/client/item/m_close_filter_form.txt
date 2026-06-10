@@ -4,13 +4,13 @@ close_filter_form
 
 .. js:function:: close_filter_form()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``close_filter_form`` 方法关闭实体项的过滤器表单窗体。
@@ -46,10 +46,10 @@ Description
 
 如果未定义任何事件处理程序，或者这些事件处理程序都没有返回 ``false`` ，表单窗体将被销毁，并且实体项的 :doc:`filter_form <at_filter_form>` 属性被设置为 undefined 。
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_filter_form <m_create_filter_form>`
 

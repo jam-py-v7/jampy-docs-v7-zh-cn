@@ -10,5 +10,5 @@
 
 文档:
 
-* 将 :doc:`Authentication </how_to/authentication/index>` 添加到了  
-  :doc:`How to </how_to/index>` 中
+* 将 :doc:`认证 </how_to/authentication/index>` 添加到了  
+  :doc:`如何 ... </how_to/index>` 中

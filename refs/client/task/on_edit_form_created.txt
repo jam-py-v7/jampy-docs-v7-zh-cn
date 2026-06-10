@@ -4,29 +4,29 @@ on_edit_form_created
 
 on_edit_form_created(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task class </refs/client/task_api>`
+**类**: :doc:`Task 类 </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``on_edit_form_created`` event is triggered by the 
-:doc:`create_edit_form </refs/client/item/m_create_edit_form>`
-method of the item when the form has been created but not shown yet.
+当窗体已被创建当未显示时，由实体项的 
+:doc:`create_edit_form </refs/client/item/m_create_edit_form>` 
+方法触发 ``on_edit_form_created`` 事件。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是那个触发事件的实体项
 
-This event, if defined, is triggered for every item of the task, whose 
-:doc:`create_edit_form </refs/client/item/m_create_edit_form>`
-method has been called.
+如果定义了该事件，会为任务中调用了 
+:doc:`create_edit_form </refs/client/item/m_create_edit_form>` 
+方法的每个实体项触发此事件。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_edit_form </refs/client/item/m_create_edit_form>`
 

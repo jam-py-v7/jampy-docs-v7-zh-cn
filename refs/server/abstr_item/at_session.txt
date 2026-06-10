@@ -4,33 +4,32 @@ session
 
 .. py:attribute:: session
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Use the ``session`` property to get access to session object of the current 
-request from the client.
+使用 ``session`` 属性来访问来自客户端的当前请求的 session 对象。
 
-The session is a dictionary that has the following items:
+session 对象是一个字典，它有下列子项：
 
-* ``ip`` - ip address of the user
+* ``ip`` - 用户的 ip 地址
 
-* ``user_info`` - dictionary containing information about the user
+* ``user_info`` - 包含用户信息的字典
 
-  * ``user_id`` - id identifying the user
+  * ``user_id`` - 标识用户的 id 
   
-  * ``user_name`` - name of the user
+  * ``user_name`` - 用户名
   
-  * ``role_id`` - id of user role
+  * ``role_id`` - 用户角色的 id
   
-  * ``role_name`` - name of user role
+  * ``role_name`` - 用户所属角色的名称
 
-Example
+示例
 =======
 
 .. code-block:: py
@@ -49,10 +48,10 @@ Example
             d.post()
 
 
-See also
+另请参见
 ========
 
-:doc:`Server side programming </programming/server/index>`
+:doc:`服务器端编程 </programming/server/index>`
 
 :doc:`environ <at_environ>`
 

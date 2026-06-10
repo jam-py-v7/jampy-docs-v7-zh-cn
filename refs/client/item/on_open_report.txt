@@ -5,5 +5,5 @@ on_open_report
 请见
 ====
 
-:doc:`Report Events</refs/client/reports/on_open_report>`
+:doc:`报表事件 </refs/client/reports/on_open_report>`
 

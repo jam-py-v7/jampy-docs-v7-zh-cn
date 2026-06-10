@@ -4,14 +4,14 @@ raw_value
 
 .. js:attribute:: raw_value
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 表示一个字段对象中的数据。
@@ -20,7 +20,7 @@ Description
 其他属性例如 :doc:`value <at_value>` 和 :doc:`text <at_text>` 会对字段数据进行转换。
 因此， :doc:`value <at_value>` 属性将数值字段的 **null** 值转换为 **0**。
 
-See also
+另请参见
 ========
 
 :doc:`字段 </programming/data/fields>`

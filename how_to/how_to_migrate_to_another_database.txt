@@ -14,7 +14,7 @@
 
 #. 使用此数据库创建一个新项目
 
-#. 在 SQLite 项目的应用程序构建器中，通过点击 :doc:`导出(Export) </admin/project/export>` 按钮，将元数据导出为一个 zip 文件。
+#. 在 SQLite 项目的应用程序构建器中，通过点击 :doc:`导出 </admin/project/export>` 按钮，将元数据导出为一个 zip 文件。
 
 #. 将元数据导入到新项目中。Web 应用程序将在 Postgres 数据库中创建数据库结构。
   

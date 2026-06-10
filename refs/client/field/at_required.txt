@@ -4,14 +4,14 @@ required
 
 .. js:attribute:: required
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 
@@ -20,7 +20,7 @@ Description
 使用 **required** 来判断一个字段是必须有一个值，还是可以为空。
 当将 **required** 设置为 true ，试图保存 null 时，将会触发一个异常。
 
-See also
+另请参见
 ========
 
 :doc:`字段 </programming/data/fields>`

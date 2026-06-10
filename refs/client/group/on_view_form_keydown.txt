@@ -4,13 +4,13 @@ on_view_form_keydown
 
 on_view_form_keydown(item, event)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Group class </refs/client/item_group_api>`
+**类**: :doc:`Group 类 </refs/client/item_group_api>`
 
-Description
+描述说明
 ===========
 
 当按键的 keydown 事件发生在实体项的 :doc:`view_form </refs/client/item/at_view_form>` 表单上时，会触发 ``on_view_form_keydown``  事件。
@@ -20,9 +20,9 @@ Description
 ``event`` 是 JQuery 事件对象。
 
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`view </refs/client/item/m_view>`

@@ -4,25 +4,25 @@ visible
 
 .. js:attribute:: visible
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Filter class </refs/client/filter_api>`
+**类**: :doc:`Filter 类 </refs/client/filter_api>`
 
 
-Description
+描述说明
 ===========
 
 如果未指定 **filters** 选项，那么此属性为 **true** 时，
 过滤器的输入控件会被 :doc:`create_filter_inputs </refs/client/item/m_create_filter_inputs>` 方法创建。
 
 
-See also
+另请参见
 ========
 
 :doc:`过滤器 </programming/data/filters>`
 
 :doc:`value <at_value>`
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`

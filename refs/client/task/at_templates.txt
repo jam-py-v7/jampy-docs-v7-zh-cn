@@ -4,20 +4,20 @@ templates
 
 .. js:attribute:: templates
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``templates`` attribute stores the form templates of the project.
+``templates`` 属性中存储了项目的表单窗体的模板。
 
-See also
+另请参见
 ========
 
-:doc:`Form templates </programming/interface/form_templates>`
+:doc:`表单窗体模板 </programming/interface/form_templates>`
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`

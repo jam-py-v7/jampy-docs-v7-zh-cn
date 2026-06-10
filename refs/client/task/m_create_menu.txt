@@ -4,82 +4,63 @@ create_menu
 
 .. js:function:: create_menu: function(menu, forms_container, options)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``create_menu`` method created a menu based on the project 
-:doc:`task tree </programming/task_tree>`.
+``create_menu`` 方法将基于项目的 :doc:`task 树 </programming/task_tree>` 
+创建一个菜单。
 
-If display forms in tabs attribute of the 
-:doc:`project parameters </admin/project/parameters>` is set, initializes
-tabs that will be created to display forms.
+如果设置了 :doc:`project parameters </admin/project/parameters>` 的在选项卡中显示表单窗体的属性，将初始化创建后被用于显示表单窗体的选项卡。
 
-It iterates through the items of the 
-:doc:`task tree </programming/task_tree>`
-and adds items to the menu for which the visible attribute is set to true, 
-and the user has the right to view them.
+该方法将迭代 :doc:`task 树 </programming/task_tree>` 的实体项，并将可见属性设置为 true 且用户有权限查看的实体项添加到菜单中。
 
-The method uses to assign on click event to the menu items so that for reports the
-:doc:`print </refs/client/report/m_print>`
-method will be executed when a user clicks it and the
-:doc:`view </refs/client/item/m_view>`
-method will be executed for other items.
+该方法用于将点击事件分配给菜单项，当用户点击时，
+对于报表将执行 :doc:`print </refs/client/report/m_print>` 方法，
+而对其他项目将执行 :doc:`view </refs/client/item/m_view>` 方法。
 
-The following parameters could be passed to the method:
+可以把下列参数传递给该方法：
 
-* ``menu`` - a JQuery object of the menu element from index.html file
+* ``menu`` - 来自 index.html 文件中的菜单元素的 JQuery 对象
 
-* ``forms_container`` a JQuery object of the element that will contain the forms 
-  created by the
-  :doc:`view </refs/client/item/m_view>`
-  method
+* ``forms_container`` 一个 JQuery 对象，其元素包含由 :doc:`view </refs/client/item/m_view>` 常见的表单窗体。
+
+* ``options`` - 可以有下列属性的对象：
+
+  * ``custom_menu`` - 使用这个选项来创建一个自定义菜单，请见下文
+
+  * ``view_first`` - 如果为 `` true`` ，则创建菜单后将显示菜单中第一个实体项的视图表单窗体，默认值为  ``false`` 。
   
-* ``options`` - an object that can have the following attributes:
+  * ``create_single_group`` - 如果为 true，并且任务树中只有一个组有实体项，则将创建该组的菜单项，该菜单项具有组实体项的下拉菜单，否则将创建每个实体项的菜单项。默认值为false`` 。
 
-  * ``custom_menu`` - use this option to create a custom menu, see below for details
-
-  * ``view_first`` - if it is true the view form of the first item in the menu will
-    be displayed after menu is created, the default value is ``false``
-  
-  * ``create_single_group`` - if it is true and only one group in the task tree
-    has items the menu item for the group will be created that have a drop down 
-    menu for group items, otherwise the menuitems for each item will be created, 
-    the default value is ``false``
-
-  * ``splash_screen`` - an html that will be displayed in the forms_container when
-    all tabs are closed
+  * ``splash_screen`` - 一个 html ，当关闭全部选项卡是，它将显示在 forms_container 中。
     
-Custom menu option
+自定义菜单选项
 ------------------
 
-To create your own custom menu you must set a custom_menu option.
+要创建你自己的自定义菜单，你必须设置 custom_menu 选项。
 
-This option is a list of menu objects, each object can be:
+这个选项是一个含有多个菜单对象的列表，其中每个菜单对象可以是：
 
-* Jam.py item or item group
+* Jam.py 实体项或 or 实体项组
 
-* array: the first element of the array is the name of the menu item, and 
-  the second is the list of menu objects
+* array: 数组的第一个元素是菜单项的名称，第二个是菜单对象的列表
 
-* object with one attribute: the key of the attribute is the name of menu item 
-  and the value - a list of menu objects
+* 有一个属性的对象: 属性的 “键” 是菜单项的名称，而 “值” 是菜单对象的列表
 
-* object with one attribute: the key of the attribute is the name of menu item 
-  and the value - function to be executed when the menu item is clicked
-    
-To add a separator, an empty string ('') can be added to the list of menu objects
+* 有一个属性的对象: 属性的 “键” 是菜单项的名称，而 “值” 是一个点击菜单项将要执行的函数。
 
+要添加一个分隔线，可以将一个空字符串（ '' ）添加到菜单对象的列表中。
 
-Example
+示例
 =======
 
-Modified a ``on_page_loaded`` with:
+修改后 “on_page_loloaded” 如下所示：
 
 .. code-block:: js
 
@@ -89,7 +70,7 @@ Modified a ``on_page_loaded`` with:
             view_first: true
         });
 
-An example with custom menu in the same ``on_page_loaded``:
+在同一个 “on_page_looaded” 中使用自定义菜单的示例：
 
 .. code-block:: js
 
@@ -107,10 +88,8 @@ An example with custom menu in the same ``on_page_loaded``:
         view_first: true
     });
 
-For Demo application, the above will result with:
+对于演示应用程序，上面的代码会有如下结果：
 
 .. image:: /programming/_images/custom_menu_jampy.png
 	:align: center
 	:alt: Custom Menu
-
-

@@ -4,22 +4,20 @@ close
 
 .. py:function:: close(self) 
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Call ``сlose`` to close an item dataset. After dataset is closed the 
-:doc:`active <at_active>` 
-property is ``false``.
+调用 ``сlose`` 方法以关闭实体项数据集。关闭数据集后， :doc:`active <at_active>`  属性的值是 ``false`` .
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
 :doc:`open <m_open>`

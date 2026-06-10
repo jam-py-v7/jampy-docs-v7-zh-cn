@@ -4,30 +4,31 @@ item_type
 
 .. py:attribute:: item_type
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class**: :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Specifies the type of the item.
+指定实体项的类型。
 
-Use the ``item_type`` attribute to get the type of the item. It can have one of the 
-following values 
+使用 ``item_type`` 属性类获取实体项的类型。
 
-* “task”, 
-* “items”, 
-* “details”, 
-* “reports”, 
-* “item”, 
-* “detail_item”, 
-* “report”, 
+它可以是下列值之一：
+
+* “task” 
+* “items” 
+* “details” 
+* “reports” 
+* “item” 
+* “detail_item” 
+* “report” 
 * “detail”
 
-See also
+另请参见
 ========
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`

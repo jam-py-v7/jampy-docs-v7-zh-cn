@@ -4,13 +4,13 @@ copy
 
 .. js:function:: copy(options)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``copy`` 方法创建一个实体项的副本。创建的副本不会被添加到 :doc:`任务树 </programming/task_tree>` 中，而且不再需要时，它会被 JavaScript 垃圾处理程序回收。
@@ -34,7 +34,7 @@ following attributes:
   否则，副本没有明细项。 其默认值是 ``true`` 。
 
 
-Example
+示例
 =======
 
 在 :doc:`演示项目 </intro/demo_project>` 中，使用下面的代码来异步计算字段值的总和，
@@ -60,7 +60,7 @@ Example
         );
     }
 
-See also
+另请参见
 ========
 
 :doc:`任务树 </programming/task_tree>`

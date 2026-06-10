@@ -4,35 +4,30 @@ lock
 
 .. py:method:: lock(self, lock_name, timeout=-1)
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``lock`` to implement a platform independent file lock in Python, which 
-provides a simple way of inter-process communication.
+使用 ``lock`` 在 Python 中实现独立于平台的文件锁，这提供了一种简单的进程间通信方式。
 
-This method is a wrapper around Python filelock library:
+此方法对 Python 文件锁库的重新封装：
 https://github.com/benediktschmitt/py-filelock
 
-Once lock has been acquired, subsequent attempts to acquire it block execution, 
-until it is released.
+一旦获取了锁，后续获取它的尝试就会被阻止执行，直到它被释放。
 
-``lock_name`` parameter is the name of the lock. It must be unique in the 
-application. The filelock library creates a file in the *locks* folder with 
-this name and *.lock* extension that it uses to implement the lock.
+``lock_name`` 参数是 “锁(lock)” 的名称，在应用程序内它必须是唯一的。
+filelock 库在 *locks* 文件夹中创建一个具有此名称和 *.lock* 扩展名的文件，
+用于实现 “锁(lock)”。
 
-``timeout`` parameter - if the lock cannot be acquired within timeout seconds, a 
-Timeout exception is raised.
+``timeout`` 参数 - 如果在超时秒内无法获取锁，则会引发 Timeout 异常。
 
-Example
+示例
 =======
-
-The code 
 
 .. code-block:: py
 
@@ -44,7 +39,7 @@ The code
       finally:
           lock.release()
 
-is equivalent to
+上面的代码与下面的效果一样：
 
 .. code-block:: py
 
@@ -52,7 +47,7 @@ is equivalent to
       with item.task.lock('calculation'):
           #some code 
 
-The example with timeout:
+带有 timeout 的示例:
 
 .. code-block:: py
 
@@ -63,24 +58,24 @@ The example with timeout:
       with item.task.lock('calculation', timeout=10):
           #some code 
     except Timeout:
-      print("Another instance of this application currently holds the lock.")    
-          
+      print("Another instance of this application currently holds the lock.")
 
-In the following example when saving invoice the app calculates sold tracks.
-Before doing this it acquires a lock:
+
+在以下示例中，保存发票时，应用程序会计算已售出的曲目。
+在执行此操作之前，它会获取一个锁：
 
 .. code-block:: py
 
   def on_apply(item, delta, params): 
       with item.task.lock('invoice_saved'):
           tracks_sql = []
-          delta.update_deleted()    
+          delta.update_deleted()
           for d in delta:
               for t in d.invoice_table:
                   if t.rec_inserted():
                       sql = "UPDATE DEMO_TRACKS SET TRACKS_SOLD = COALESCE(TRACKS_SOLD, 0) + \
                       %s WHERE ID = %s" % \
-                      (t.quantity.value, t.track.value)                
+                      (t.quantity.value, t.track.value)
                   elif t.rec_deleted():
                       sql = "UPDATE DEMO_TRACKS SET TRACKS_SOLD = COALESCE(TRACKS_SOLD, 0) - \
                       (SELECT QUANTITY FROM DEMO_INVOICE_TABLE WHERE ID=%s) WHERE ID = %s" % \
@@ -89,6 +84,6 @@ Before doing this it acquires a lock:
                       sql = "UPDATE DEMO_TRACKS SET TRACKS_SOLD = COALESCE(TRACKS_SOLD, 0) - \
                       (SELECT QUANTITY FROM DEMO_INVOICE_TABLE WHERE ID=%s) + %s WHERE ID = %s" % \
                       (t.id.value, t.quantity.value, t.track.value)
-                  tracks_sql.append(sql)                
+                  tracks_sql.append(sql)
           sql = delta.apply_sql()
           return item.task.execute(tracks_sql + [sql])

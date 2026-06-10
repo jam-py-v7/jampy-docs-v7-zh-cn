@@ -77,4 +77,4 @@
         </div>
     </div>
 
-更多模板示例，请参阅 :doc:`表单示例 <form_examples>` 部分。
+更多模板示例，请参阅 :doc:`表单窗体示例 <form_examples>` 部分。

@@ -4,65 +4,42 @@ process_report
 
 .. js:function:: process_report()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Report class </refs/client/report_api>`
+**类**: :doc:`Report 类 </refs/client/report_api>`
 
-Description
+描述说明
 ===========
 
-The 
-:doc:`process_report </refs/client/report/m_process_report>`    
-method sends the report to the server to generate its content and accepts the 
-report file that the server returns to the client and opens or saves it.
+:doc:`process_report </refs/client/report/m_process_report>` 方法向服务端发送报表来生成报表的内容，并访问服务端返回给客户端的报表文件，然后将其打开或保存。
 
-It is called by the
-:doc:`print <m_print>`
-method direclly, if its ``create_form`` parameter equals false and there are no 
-visible parameters. If there are visible parameters, the 
-:doc:`print <m_print>` method creates a form to specify parameter values and the 
-form should call it (for example, by some button onclick event ).
+如果 ``create_form`` 参数等于 false 并且没有设置可见的参数。它由 :doc:`print <m_print>` 方法直接调用。
+如果有可见参数， :doc:`print <m_print>` 方法创建一个表单窗体来指定参数值，并调用它（例如，通过一些按钮点击事件）。
 
-The checks if parameter values are valid and the triggers the following events:
+检查参数值是否合法有效，并触发以下事件：
 
-* :doc:`on_before_print_report </refs/client/reports/on_before_print_report>` 
-  event handler of the report group 
-  
-* :doc:`on_before_print_report </refs/client/report/on_before_print_report>` 
-  event handler of the report
+* 报表组的 :doc:`on_before_print_report </refs/client/reports/on_before_print_report>` 事件处理程序
 
-In this event handlers developer can define some common (report group
-event handler) or specific (report event handler) attributes of the report.
+* 报表的 :doc:`on_before_print_report </refs/client/report/on_before_print_report>`  事件处理程序
 
-After that the
-:doc:`process_report </refs/client/report/m_process_report>`    
-method sends asynchronous request to the server to generate a report content.
-(see 
-:doc:`Server-side report programming </programming/reports/server_side_programming>`
-). 
+在这个事件处理程序中，开发人员能为报表定义一些通用（报表组事件处理程序）的或特定（报表事件处理程序）的属性。
 
-The server returns to the method an url to a file with the generated report 
-content. 
+之后， :doc:`process_report </refs/client/report/m_process_report>` 方法向服务端发送异步请求来生成一个报表的内容。
+(参考 :doc:`报表的服务器端编程 </programming/reports/server_side_programming>` )
 
-The method then checks if the 
-:doc:`on_open_report </refs/client/reports/on_open_report>` event handler of
-the report group is defined. If this events handler if defined calls it, 
-otherwise checks the 
-:doc:`on_open_report </refs/client/report/on_open_report>` of the report. If it 
-is defined then calls it.
+服务端为该方法返回一个指向文件的 url ，那个文件包含为报表已生成的内容。
 
-If none of this events are defined, it (depending on the report 
-:doc:`extension </refs/client/report/at_extension>`
-attribute) opens the report in the browser or saves it to disc.
+然后，该方法检查是否定义了报表组的 :doc:`on_open_report </refs/client/reports/on_open_report>` 事件处理程序。如果定义了，就调用它。
+否则，检查是否定义了报表的 :doc:`on_open_report </refs/client/report/on_open_report>` 事件处理程序，如果定义了，就调用它。
 
-Example
+如果没定义任何一个事件，将在浏览器中打开报表，或者将报表保存到磁盘（是打开还是保存，将依赖于报表的 :doc:`extension </refs/client/report/at_extension>`属性） 。
+
+示例
 =======
 
-In the following event handler, defined in the client module of the 
-**invoice** report of the Demo application, the value of the report 
-**id** parameter is set:
+在下面的事件处理程序中，设置了报表的 **id** 参数的值，这些代码的定义在演示应用程序中的 **发票(invoice)** 报表的客户端模块中。
 
 .. code-block:: js
 

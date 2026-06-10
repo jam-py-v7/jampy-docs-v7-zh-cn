@@ -4,28 +4,25 @@ on_view_form_keydown
 
 on_view_form_keydown(item, event)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task class </refs/client/task_api>`
+**类**: :doc:`Task 类 </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``on_view_form_keydown`` event is triggered when the keydown event 
-occurs for the 
-:doc:`view_form </refs/client/item/at_view_form>`
-of the item.
+当实体项的 :doc:`edit_form </refs/client/item/at_edit_form>` 中发生键盘的 keydown 事件时，触发 ``on_edit_form_keydown`` 事件。
 
-The ``item`` parameter is the item that triggered the event.
+``item`` 参数是那个触发事件的实体项。
 
-The ``event`` is JQuery event object.
+``event`` 是 JQuery 事件对象。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`view </refs/client/item/m_view>`
 

@@ -4,38 +4,31 @@ display_text
 
 .. py:attribute:: display_text
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
-Description
+描述说明
 ===========
 
-Represents the field's value as a string.
+将字段的值显示为字符串。
 
-``Display_text`` property is a read-only string representation of a field's value 
-to display it to users. If an 
-:doc:`on_field_get_text </refs/client/item/on_field_get_text>` 
-event handler is assigned, **display_text** is the value returned by this event 
-handler. Otherwise, display_text is the value of the 
-:doc:`lookup_text <at_lookup_text>` 
-property for 
-:doc:`lookup fields </programming/data/lookup_fields>`
-and 
-:doc:`text <at_text>` 
-property converted according to the
-:doc:`language locale </admin/language_support>`
-settings
-for other fields.
+``Display_text`` 属性是一个只读字符串，它是字段的值面向用户的显示形式。
+如果指派了一个 :doc:`on_field_get_text </refs/client/item/on_field_get_text>` 
+事件，那么 **display_text** 是这个事件处理程序的返回值。
+否则，display_text 的值是 
+:doc:`查找字段 </programming/data/lookup_fields>` 的
+:doc:`lookup_text <at_lookup_text>` 属性和 为其它字段设置的
+:doc:`语言区域设置 </admin/language_support>` 的
+:doc:`text <at_text>` 属性。
 
-``Display_text`` is the string representation of the field's value property when 
-it is not being edited. When the field is being edited, the 
-:doc:`text <at_text>`
-property is used.
+当字段不处于编状态时， ``Display_text`` 是字段的值属性的字符串表示形式。
+当字段处于编状态时，将使用 :doc:`text <at_text>` 属性表示字段。
 
-Example
+
+示例
 =======
 
 .. code-block:: py
@@ -56,12 +49,12 @@ Example
             email = c.email.display_text
             report.print_band('detail', locals())
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
-:doc:`Lookup fields </programming/data/lookup_fields>`
+:doc:`查找字段 </programming/data/lookup_fields>`
 
 :doc:`on_field_get_text </refs/client/item/on_field_get_text>`
 

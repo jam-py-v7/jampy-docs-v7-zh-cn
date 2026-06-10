@@ -11,7 +11,7 @@
 和 :doc:`edit_record </refs/client/item/m_edit_record>` 方法。
  这些方法会创建实体编辑表单。
 
-表单基于 HTML :doc:`表单模板 <form_templates>` ，这些模板决定了表单的布局。
+表单基于 HTML :doc:`表单窗体模板 <form_templates>` ，这些模板决定了表单的布局。
 表单模板定义在项目的根目录中的 :doc:`Index.html <index_html>` 文件中。
 
 应用程序已具有用于查看和编辑数据、指定过滤器和报告参数的默认模板。
@@ -37,14 +37,14 @@
     </div>
 
 
-您可以定义自己的表单模板来创建自定义表单。请参阅 :doc:`表单模板 <form_templates>` 。
+您可以定义自己的表单模板来创建自定义表单。请参阅 :doc:`表单窗体模板 <form_templates>` 。
 
 当某些方法创建表单时，应用程序会查找相应的 html 模板。
 
 如果指定了 ``container`` （一个 Jquery 对象）参数，该方法会先清空它，再将 html 模板添加到其中；否则，它会创建一个空的模态表单，并将模板添加到表单中。
 
 此后，它将实体的 ``prefix_form`` 属性分配给模板，触发 ``on_prefix_form_created`` 事件，显示表单并触发 ``on_prefix_form_shown`` 事件，其中 prefix 是表单的类型（view（查看）、edit（编辑）、filter（过滤）、param（参数））。
-详情请参阅 :doc:`表单事件 <form_events>`。
+详情请参阅 :doc:`表单窗体事件 <form_events>`。
 
 以下是任务的 ``on_edit_form_created`` 事件处理程序的示例：
 

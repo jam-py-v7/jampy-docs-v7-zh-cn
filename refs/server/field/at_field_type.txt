@@ -4,19 +4,20 @@ field_type
 
 .. py:attribute:: field_type
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
-Description
+描述说明
 ===========
 
-Identifies the data type of the field object.
+指定字段对象的数据类型。
 
-Use the ``field_type`` attribute to learn the type of the data the field contains. 
-It is one of the following values: 
+使用 ``field_type`` 属性了解字段包含的数据类型。
+
+它是下列值之一：
 
 * "text", 
 * "integer", 
@@ -27,10 +28,10 @@ It is one of the following values:
 * "boolean", 
 * "blob"
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 

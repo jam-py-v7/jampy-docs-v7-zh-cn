@@ -4,13 +4,13 @@ on_view_form_created
 
 on_view_form_created(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 ``on_view_form_created`` 事件，在表单窗体被创建但还未显示之前，由 
@@ -18,12 +18,12 @@ Description
 
 ``item`` 参数是触发了这个事件的实体项。
 
-在 :doc:`Demo project </intro/demo_project>` 中，有使用了 **on_view_form_created** 的代码。
+在 :doc:`演示项目 </intro/demo_project>` 中，有使用了 **on_view_form_created** 的代码。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`view <m_view>`
 

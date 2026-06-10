@@ -4,32 +4,30 @@ cancel
 
 .. py:method:: cancel(self) 
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Call ``cancel`` to undo modifications made to one or more fields belonging to 
-the current record, as long as those changes are not already posted to the item 
-dataset. 
+只要更改没有被提交到实体项的数据集中，就能调用 ``cancel`` 方法以撤销对当前记录中一个或多个字段的修改。
 
-``Cancel`` 
+``Cancel`` 方法：
 
-* triggers the ``on_before_cancel`` event handler if one is defined for the item. 
+* 触发为实体项定义的 ``on_before_cancel`` 事件处理程序。
 
-* to undo modifications made to the current record and its details if the record
-  has been edited or removes the new record if one was appended or inserted. 
+* 如果对编辑了记录，则撤销对当前记录及其明细项的更改；
+  如果添加或插入了新记录，则移除新记录。
 
-* puts the item into browse :doc:`state <at_item_state>`
+* 将实体项置于 “浏览” :doc:`状态 <at_item_state>`
 
-* triggers the ``on_after_cancel``  event handler if one is defined for the item.
+* 触发为实体项定义的 ``on_after_cancel`` 事件处理程序。
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 

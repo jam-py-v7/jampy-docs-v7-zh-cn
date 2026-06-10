@@ -4,19 +4,19 @@ lookup_field
 
 .. js:attribute:: lookup_field
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``lookup_field`` 检查是否创建了实体项来为查找字段选择值。
-请参阅： :doc:`Lookup fields </programming/data/lookup_fields>`
+请参阅： :doc:`查找字段 </programming/data/lookup_fields>`
 
-Example
+示例
 =======
 
 .. code-block:: js

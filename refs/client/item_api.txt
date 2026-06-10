@@ -4,15 +4,15 @@ Item class
 
 .. js:class:: Item
 
-**范围**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
 Item 类用于创建 :doc:`任务树 </programming/task_tree>` 中的实体项对象，这些对象可能有一个关联的数据库表。
 
 下面列出了的这个类的属性、方法和事件。
 
-它同样继承了其祖先类 :doc:`AbstractItem class <abstractitem_api>` 的属性和方法
+它同样继承了其祖先类 :doc:`AbstractItem 类 <abstractitem_api>` 的属性和方法
 
 属性与特性
 =========================
@@ -23,7 +23,7 @@ Item 类用于创建 :doc:`任务树 </programming/task_tree>` 中的实体项�
     
     item/at_*
 
-Methods 
+方法 
 =======
 
 .. toctree::
@@ -33,7 +33,7 @@ Methods
     item/m_*
     item/master_*
 
-Events
+事件
 ======
 
 .. toctree::

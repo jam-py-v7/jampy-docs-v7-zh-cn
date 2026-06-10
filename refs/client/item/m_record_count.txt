@@ -4,20 +4,20 @@ record_count
 
 .. js:function:: record_count() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 Call ``record_count`` to get the total number of records owned by the item's 
 dataset.
 调用 ``record_count`` 方法获取实体项的数据集拥有的记录的总数。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -28,10 +28,10 @@ Example
     }
 
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
 :doc:`open <m_open>`
 

@@ -2,27 +2,27 @@
 create_connection_ex
 ====================
 
-TBA - changed from Jam.py v5.
+待公布(TBA) - 自 Jam.py v5 后，有更改
 
 .. py:method:: create_connection_ex(self, db_module, database, user=None, password=None, host=None, port=None, encoding=None, server=None)
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``create_connection_ex`` to create a connection to other databases.
+使用 ``create_connection_ex`` 来创建一个到其它数据库的连接。
 
-The method returns a new connection.
+该方法返回一个新连接。
 
-A developer must close a connection after it is no longer needed.
+不再需要一个连接后，开发者必须关闭它。
 
-See also
+另请参见
 ========
 
-:doc:`How can I use data from other database tables </how_to/how_to_data_from_other_database_tables>`
+:doc:`如何使用来自其他数据库的数据表 </how_to/how_to_data_from_other_database_tables>`
 

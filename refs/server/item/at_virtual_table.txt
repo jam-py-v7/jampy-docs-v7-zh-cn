@@ -4,23 +4,19 @@ virtual_table
 
 .. py:attribute:: virtual_table
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Use the read-only ``virtual_table`` property to find out if the item has a 
-corresponding table in the project database.
+使用只读的 ``virtual_table`` 属性，
+来确定实体项在项目的数据库中是否有一个相应的数据表。
 
-If ``virtual_table`` is ``True`` there is no corresponding table in the project 
-database. You can use these items to work with in-memory dataset or use its 
-modules to write code.
-Calling the 
-:doc:`open <m_open>` 
-method creates an empty data set, and calling the 
-:doc:`apply <m_apply>`
-method does nothing.
+如果 ``virtual_table`` 的值是 ``True`` ，那么在项目的数据库中，就没有与之对应的数据表。
+你可以使用这样的实体项来处理内存中的数据集，或者使用它的模块编写代码。
+调用 :doc:`open <m_open>` 方法会创建一个空的数据集，
+而调用 :doc:`apply <m_apply>` 方法不起任何作用。

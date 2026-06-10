@@ -4,19 +4,19 @@ process_table_row
 
 process_table_row(row, item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 这是一个分配给 row_callback 的函数。
 第一个参数是表格行的 JQuery 对象，而 item 参数是表格实体项的副本。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -30,10 +30,10 @@ Example
             item.table_options.row_callback = process_table_row;
         }
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`on_field_get_text <on_field_get_text>`
 

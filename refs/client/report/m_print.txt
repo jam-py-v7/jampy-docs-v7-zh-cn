@@ -4,37 +4,31 @@ print
 
 .. js:function:: print(create_form)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Report class </refs/client/report_api>`
+**类**: :doc:`Report 类 </refs/client/report_api>`
 
-Description
+描述说明
 ===========
 
-Use ``print`` to print the report.
+使用 ``print``  方法来打印报表。
 
-If ``create_form`` parameter is omitted or equals true, the method calls the
-:doc:`create_param_form <m_create_param_form>`
-method to create a form based on the html template defined in the index.html
-file.
+如果 ``create_form`` 参数被省略或等于 ``true`` ，则该方法调用:doc:`create_param_form <m_create_param_form>` 方法，以基于在 index.html 文件中定义的 html 模板创建表单。
 
-If ``create_form`` parameter is set to ``false`` and the report has no visible
-parameters, it calls 
-:doc:`process_report <m_process_report>` to send request to server to generate
-the report, otherwise it calls
-:doc:`create_param_form <m_create_param_form>`
-method.
+如果 ``create_form`` 参数设置为 ``false`` ，并且报告没有可见参数，
+则它调用 :doc:`process_report <m_process_report>` 向服务端发送请求以生成报告，
+否则它调用 :doc:`create_param_form <m_create_param_form>` 方法
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
-:doc:`Report parameters </programming/reports/report_parameters>`
+:doc:`报表参数 </programming/reports/report_parameters>`
 
-:doc:`Client-side report programming </programming/reports/client_side_programming>`
+:doc:`客户端报表编程 </programming/reports/client_side_programming>`
 
 :doc:`create_param_form <m_create_param_form>`
 

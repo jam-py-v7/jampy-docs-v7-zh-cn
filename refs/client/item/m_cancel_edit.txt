@@ -4,13 +4,13 @@ cancel_edit
 
 .. js:function:: cancel_edit() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 取消记录的可视化编辑
@@ -21,7 +21,7 @@ Description
 
 * 调用 :doc:`cancel <m_cancel>` 方法以撤销对记录所做的修改。
 
-See also
+另请参见
 ========
 
 :doc:`修改数据集 </programming/data/modifying_datasets>`

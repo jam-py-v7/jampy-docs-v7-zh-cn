@@ -4,14 +4,14 @@ field_type
 
 .. js:attribute:: field_type
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 Identifies the data type of the field object.
@@ -28,7 +28,7 @@ Identifies the data type of the field object.
 * "boolean", 
 * "blob"
 
-See also
+另请参见
 ========
 
 :doc:`数据集 </programming/data/dataset>`

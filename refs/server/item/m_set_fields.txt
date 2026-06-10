@@ -4,35 +4,31 @@ set_fields
 
 .. py:method:: set_fields(self, lst=None, *fields)
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Use the ``set_fields`` method to define and store internally the ``fields``
-parameter that will be used by the 
-:doc:`open <m_open>` 
-method, when its own ``fields`` parameter is not specified. The 
-:doc:`open <m_open>` 
-method clears internally stored parameter value. 
+使用 ``set_fields`` 方法定义并存储内部存储 ``fields`` 参数 ，
+未指定 ``fields`` 参数的 :doc:`open <m_open>` 方法将使用这些内部参数。
+:doc:`open <m_open>` 方法会清除内部存储的该参数值。
 
-The ``fields`` is arbitrary argument list of field names.
+``fields`` 是字段名的任意参数列表
 
-Parameters
+参数
 ==========
 
-You can specify the fields as a list, the way the 
-:doc:`set_fields </refs/client/item/m_set_fields>`
-method on the client does or as non-keyworded arguments.
+你可以像客户端的 :doc:`set_fields </refs/client/item/m_set_fields>` 
+方法那样，以列表形式指定字段，或者以非关键字参数的形式指定字段。
 
-Example
+示例
 =======
 
-The result of the execution of following code snippets wil be the same:
+下列代码片段的执行结果相同：
 
 .. code-block:: py
 
@@ -48,9 +44,9 @@ The result of the execution of following code snippets wil be the same:
     item.set_fields(['id', 'invoicedate'])
     item.open()
     
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
 :doc:`open <m_open>`

@@ -5,7 +5,7 @@
 库:
 
 * 现在可以使用从相机捕获图像的选项。请参见 
-  :doc:`自读编辑器对话框 </admin/items/field_editor_dialog>` 中的
+  :doc:`字段编辑器对话框 </admin/items/field_editor_dialog>` 中的
   **Capturing image from camera**
 
 * 修复了 Chrome 7 中报表参数顺序的错误。

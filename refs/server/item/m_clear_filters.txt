@@ -4,20 +4,20 @@ clear_filters
 
 .. py:method:: clear_filters(self) 
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Use ``clear_filters`` to set filter values of the item to ``None``.
+使用 ``clear_filters`` 方法，将实体项的过滤器的值设置为 ``None`` 。
 
-See also
+另请参见
 ========
 
-:doc:`Filtering records </programming/data/filtering_records>`
+:doc:`过滤记录 </programming/data/filtering_records>`
 
-:doc:`Filters </programming/data/filters>`
+:doc:`过滤器 </programming/data/filters>`

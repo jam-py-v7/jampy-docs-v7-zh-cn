@@ -4,13 +4,13 @@ paginate
 
 .. js:attribute:: paginate
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 ``paginate`` 属性决定了由 :doc:`create_table <m_create_table>` 方法创建的表格的分页行为。
@@ -22,7 +22,7 @@ Description
 
 如果 ``paginate`` 为 ``false`` 时，表格将显示出数据集中所有可用的记录。
 
-See also
+另请参见
 ========
 
 :doc:`create_table <m_create_table>`

@@ -4,32 +4,27 @@ set_forms_container
 
 .. js:function:: set_forms_container(container, options)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``set_forms_container`` can be used to initialize the 
-:doc:`forms_container <at_forms_container>` attribute that will contain forms of
-the application.
+``set_forms_container`` 方法被用来初始化 :doc:`forms_container <at_forms_container>` 属性，该属性将包含应用程序的表单窗体。
 
-If the :doc:`forms_in_tabs <at_forms_in_tabs>` attribute is set the applications
-also initializes the tabs that will be used to display forms.
+如果设置了 :doc:`forms_in_tabs <at_forms_in_tabs>` 属性，应用程序也初始化用来显示表单窗体的选项卡。
 
-The ``container`` is JQuery object that will be used as a container for
-the application forms.
+``container`` 是一个 JQuery 对象，它将被用作应用程序表单窗体的一个容器。
 
-The ``options`` parameter can have the following attribute:
+``options`` 参数可以有如下属性：
 
-* ``splash_screen`` - an html that will be displayed in the forms_container when
-  all tabs are closed
+* ``splash_screen`` - 当所有选项卡都关闭时，将在 forms_container 中显示的 html .
 
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -38,7 +33,7 @@ Example
         splash_screen: '<h1 class="text-center">Jam.py Demo Application</h1>'
     });
 
-See also
+另请参见
 ========
 
 :doc:`forms_container <at_forms_container>`

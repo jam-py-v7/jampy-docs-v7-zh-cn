@@ -4,31 +4,24 @@ report_filename
 
 .. py:attribute:: report_filename
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Report class </refs/server/report_api>`
+**类**: :doc:`Report 类 </refs/server/report_api>`
 
-Description
+描述说明
 ===========
 
-When the 
-:doc:`template <at_template>`
-attribute of the report is specified, the
-:doc:`generate <m_generate>`
-method saves the content of the generated report to a file in a report folder 
-of the static directory and set the value of the
-**report_filename** attribute to the name of the saved file.
+当指定了报表的 :doc:`template <at_template>` 属性时， 
+:doc:`generate <m_generate>` 方法就会将生成的报表的内容保存到 “static” 目录的报表文件夹中的一个文件里，并将 **report_filename** 属性设置为已保存文件的文件名。
 
-Its value can be used in the
-:doc:`on_after_generate <on_after_generate>` 
-event handler.
+该属性的值可用在 :doc:`on_after_generate <on_after_generate>` 事件处理程序中。
 
-See also
+另请参见
 ========
 
-:doc:`Server-side report programming </programming/reports/server_side_programming>`
+:doc:`报表的服务器端编程 </programming/reports/server_side_programming>`
 
 :doc:`generate <m_generate>`
 

@@ -4,14 +4,14 @@ text
 
 .. js:attribute:: text
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 使用 **text** 属性来设置或获取字段的文本值。
@@ -26,7 +26,7 @@ Description
 
 按字段的类型对文本进行转换，并将字段的 :doc:`value <at_value>` 属性指定为转换后的值。
 
-See also
+另请参见
 ========
 
 :doc:`字段 </programming/data/fields>`

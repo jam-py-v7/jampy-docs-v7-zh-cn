@@ -4,15 +4,15 @@ AbstractItem 类
 
 .. js:class:: AbstractItem
 
-**范围**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
 AbstractItem 类是 :doc:`任务树 </programming/task_tree>` 中所有实体项对象的祖先。
 
 下面列出了这个类的属性和方法。
 
-Attributes
+属性
 ==========
 
 .. toctree::
@@ -21,7 +21,7 @@ Attributes
     
     abstr_item/at_*
 
-Methods 
+方法 
 =======
 
 .. toctree::

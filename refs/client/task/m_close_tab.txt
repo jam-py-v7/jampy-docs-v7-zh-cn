@@ -4,19 +4,18 @@ close_tab
 
 .. js:function:: close_tab(container, tab_id)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-Use the ``close_tab`` method to close tab in the ``container`` identified by 
-``tab_id``.
+使用 ``close_tab`` 方法关闭 ``container`` 中用 ``tab_id`` 标识的选项卡。
 
-See also
+另请参见
 ========
 
 :doc:`init_tabs <m_init_tabs>`

@@ -4,13 +4,13 @@ set_fields
 
 .. js:function:: set_fields(field_list)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 当没指定 :doc:`open <m_open>` 方法的可选参数 ``fields`` 时，
@@ -20,7 +20,7 @@ Description
 
 ``field_list`` 参数一个由字段名组成的列表。
 
-Example
+示例
 =======
 
 以下代码片段的执行结果相同：
@@ -34,9 +34,9 @@ Example
     item.set_fields(['id', 'invoicedate']);
     item.open();
     
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
 :doc:`open <m_open>`

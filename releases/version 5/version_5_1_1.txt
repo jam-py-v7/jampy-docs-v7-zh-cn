@@ -18,6 +18,6 @@
 应用程序构建器:
 
 * **Delete reports after** 属性已添加到 
-  :doc:`Project parameters </admin/project/parameters>`
+  :doc:`项目参数 </admin/project/parameters>`
 
 * 对界面进行了一些更改。

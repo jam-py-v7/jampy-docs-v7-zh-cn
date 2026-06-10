@@ -4,13 +4,13 @@ bof
 
 .. js:function:: bof() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 调用 ``bof`` (beginning of file) 方法，以确定数据库的游标是否在一个实体项数据集的第一条记录上。
@@ -30,7 +30,7 @@ Description
 
     如果 :doc:`eof <m_eof>` 和 bof 都返回 true ，实体项数据集是空的。
 
-See also
+另请参见
 ========
 
 :doc:`数据集 </programming/data/dataset>`

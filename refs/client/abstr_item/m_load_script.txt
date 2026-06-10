@@ -4,13 +4,13 @@ load_script
 
 .. js:function:: load_script(js_filename, callback, onload)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 在执行回调前， **load_script** 方法将动态地从服务端加载一个实体项的 javascript 文件。
@@ -23,7 +23,7 @@ Description
 
 发送到服务端的请求使被异步执行的。
 
-Example
+示例
 =======
 
 下面，只有当服务端从 *js* 目录中加载 *lib.js* 后，才会执行 do_some_work 函数：
@@ -38,7 +38,7 @@ Example
         // some code
     }
 
-See also
+另请参见
 ========
 
 :doc:`使用模块 </programming/modules>`

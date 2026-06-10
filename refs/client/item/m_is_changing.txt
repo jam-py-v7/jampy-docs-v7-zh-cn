@@ -4,13 +4,13 @@ is_changing
 
 .. js:function:: is_changing() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 检查一个实体项是否处于 “编辑” 或 “插入” 状体。 如果是，则返回 ``true`` 。
@@ -20,7 +20,7 @@ Description
 可以将一个实体项置于 “插入” 状态。
 
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

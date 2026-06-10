@@ -1,34 +1,33 @@
 ==================
-AbstractItem class
+AbstractItem 类
 ==================
 
 .. py:class:: AbstractItem
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-AbstractItem class is the ancestor for all item objects of the 
-:doc:`task tree </programming/task_tree>`
+AbstractItem 类是 :doc:`task 树 </programming/task_tree>` 
+的所有实体项对象的祖先。
 
-Below the attributes and methods of the class are listed.
+下面列出了该类的属性和方法。
 
-
-Attributes
+属性
 ==========
 
 .. toctree::
     :maxdepth: 1
     :glob:
-    
+
     abstr_item/at_*
 
-Methods 
+方法 
 =======
 
 .. toctree::
     :maxdepth: 1
     :glob:
-    
+
     abstr_item/m_*
 

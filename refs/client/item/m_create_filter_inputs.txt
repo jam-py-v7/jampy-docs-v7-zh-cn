@@ -4,14 +4,14 @@ create_filter_inputs
 
 .. js:function:: create_filter_inputs(container, options) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
-使用 ``create_filter_inputs`` 方法创建数据感知控件（输入框、复选框等）以编辑实体项的 :doc:`过滤器 <at_filters>` 。
+使用 ``create_filter_inputs`` 方法创建数据感知控件（输入框、复选框等）以编辑实体项的 :doc:`filters <at_filters>` 。
 
 通常，在由 :doc:`create_filter_form <m_create_filter_form>` 
 方法触发的 ``on_filter_form_created`` 事件中使用该方法。
@@ -43,7 +43,7 @@ Description
 
 在创建空间之前，应用程序将清空  ``container`` 。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -59,10 +59,10 @@ Example
         });
     }
 
-See also
+另请参见
 ========
 
-:doc:`过滤器 <at_filters>`
+:doc:`filters <at_filters>`
 
 :doc:`create_filter_form <m_create_filter_form>`
 

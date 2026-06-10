@@ -4,26 +4,24 @@ on_after_generate
 
 .. py:function:: on_after_generate(report)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Report class </refs/server/report_api>`
+**类**: :doc:`Report 类 </refs/server/report_api>`
 
-Description
+描述说明
 ===========
 
-The **on_after_generate** event is triggered by the 
-:doc:`generate <m_generate>` method, when the report has been generated and saved 
-to a file with the name that is stored in the
-:doc:`report_filename <at_report_filename>`
-attribute.
+在报表已被生成且被保存到一个以 
+:doc:`report_filename <at_report_filename>` 属性值命名的文件里时，
+:doc:`generate <m_generate>` 方法触发 **on_after_generate** 事件。
 
-The **report** parameter is the report that triggered the event.
+**report** 参数是触发该事件的报表。
 
-See also
+另请参见
 ========
 
-:doc:`Programming reports </programming/reports/index>`
+:doc:`报表编程 </programming/reports/index>`
 
 :doc:`generate <m_generate>`

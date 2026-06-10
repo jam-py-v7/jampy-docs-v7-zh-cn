@@ -72,7 +72,7 @@ project directory. If the folder doesn't exist, create it.
 不关闭 HTTP 服务器进程时导入元数据
 =============================================================
 
-点击应用程序构建器中的 :doc:`导入(Import) </admin/project/import>` 按钮。
+点击应用程序构建器中的 :doc:`导入 </admin/project/import>` 按钮。
 
 .. note::
 

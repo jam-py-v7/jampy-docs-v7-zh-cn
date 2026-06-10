@@ -4,13 +4,13 @@ active
 
 .. js:attribute:: active
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 指明实体项的数据集是否已经被打开。
@@ -22,12 +22,12 @@ Description
 
 当数据集打开时，可以浏览其记录，修改其数据，并将更改保存在实体项的数据库表中。
 
-See also
+另请参见
 ========
 
 :doc:`数据集 </programming/data/dataset>`
 
-:doc:`浏览数据集 </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`
 
 :doc:`修改数据集 </programming/data/modifying_datasets>`
 

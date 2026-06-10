@@ -1,12 +1,12 @@
 ============
-Filter class
+Filter Filter 类
 ============
 
 .. js:class:: Filter
 
-**范围**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
 
 属性与特性

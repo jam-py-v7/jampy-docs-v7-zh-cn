@@ -4,19 +4,19 @@ logout
 
 .. js:function:: logout()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-Call ``logout`` to logout a user.
+调用 ``logout`` 方法使一个用户退出。
 
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -35,7 +35,7 @@ Example
         // some initalization code
     }
 
-See also
+另请参见
 ========
 
 :doc:`load <m_load>`
@@ -44,6 +44,6 @@ See also
 
 :doc:`user_info <at_user_info>`
 
-:doc:`Users </admin/users>`
+:doc:`用户 </admin/users>`
 
-:doc:`Roles </admin/roles>`
+:doc:`角色 </admin/roles>`

@@ -4,35 +4,30 @@ active
 
 .. py:attribute:: active
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Specifies whether or not an item dataset is open.
+由该属性能确定一个实体项的数据集是否已打开。
 
-Use ``active`` read only property to determine whether an item dataset is open. 
+使用只读的 ``active`` 属性来确定一个实体项的数据集是否已打开。
 
-The 
-:doc:`open <m_open>` 
-method changes the value of ``active`` to ``true``. The
-:doc:`close <m_close>` method sets it to ``false``.
+:doc:`open <m_open>` 方法会将 ``active`` 的值改为 ``true`` 。
+:doc:`close <m_close>` 方法会将 ``active`` 的值改为 ``false`` 。
 
+当数据集处于打开状态时，可以导航它的记录，也可以修改记录并将变更保存到实体项对应的数据表中。
 
-When the dataset is 
-open its records can be navigated and its data can be modified and the changes 
-saved in the item database table.
-
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 

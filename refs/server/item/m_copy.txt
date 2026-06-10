@@ -4,36 +4,30 @@ copy
 
 .. py:method:: copy(self, filters=True, details=True, handlers=True)
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Use copy to create a copy of an item. The created copy is not added to the 
-:doc:`task tree </programming/task_tree>`
-and will be destroyed by Python garbage collector when no longer needed.
+使用 ``copy`` 方法以创建实体项的一个副本（复制品）。
+创建的副本不会被添加到 :doc:`task 树 </programming/task_tree>` 中，而且不再需要后，会被 Python 的垃圾回收器销毁。
 
-All attributes of the copy object are defined as they were at the time of creating
-of the task tree. See 
-:doc:`Workflow </programming/workflow>`
+副本对象的所有属性都按照创建任务树时的状态定义。
+请见 :doc:`工作流程 </programming/workflow>`
 
-The method can have the following parameters:
+该方法可以有下列参数：
 
-* ``handlers`` - if the value of this parameter is ``true``, all the functions and 
-  events defined in the server module of the item will also be available in the 
-  copy. The default value is ``true``.
-* ``filters`` - if the value of this parameter is ``true``, the filters will be 
-  created for the copy, otherwise there will be no filters. The default value 
-  is ``true``.
-* ``details`` - if the value of this parameter is ``true``, the details will be 
-  created for the copy, otherwise there will be no details. The default value 
-  is ``true``.
+* ``handlers`` - 如果这个参数的值是 ``true`` ，该实体项在服务端模块中的所有函数和事件处理程序在副本中依然可用。默认值是 ``true`` 。
+* ``filters`` - 如果这个参数的值是 ``true`` ，那么将为副本创建过滤器。
+ 否则，副本没有过滤器。 默认值是 ``true`` 。
+* ``details`` - 如果这个参数的值是 ``true`` ，那么将为副本创建明细项。
+ 否则，副本没有明细项。 默认值是 ``true`` 。
 
-Example
+示例
 =======
 
 .. code-block:: py
@@ -54,9 +48,9 @@ Example
             email = c.email.display_text
             report.print_band('detail', locals())
 
-See also
+另请参见
 ========
 
-:doc:`Task tree </programming/task_tree>`
+:doc:`Task 树 </programming/task_tree>`
 
-:doc:`Workflow </programming/workflow>`
+:doc:`工作流 </programming/workflow>`

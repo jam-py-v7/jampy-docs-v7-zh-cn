@@ -4,19 +4,19 @@ show_history
 
 .. js:function:: show_history() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 实体项的 ``show_history`` 方法打开一个对话框，显示所选记录的更改历史。
 
-See also
+另请参见
 ========
 
-:doc:`Saving the history of changes made by users </admin/saving_history>`
+:doc:`保存用户所做更改的历史记录 </admin/saving_history>`
 

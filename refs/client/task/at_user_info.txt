@@ -4,31 +4,28 @@ user_info
 
 .. js:attribute:: user_info
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-Use ``user_info`` attribute to get user information when project 
-:doc:`Safe mode parameter </admin/project/parameters>`
-is set. 
+当设置了项目的 :doc:`安全模式参数 </admin/project/parameters>` ，可以使用 ``user_info`` 属性来获取用户信息。
 
-``user_info`` is an object that has the following attributes:
+``user_info`` 一个有下列属性的对象：
 
-* ``user_id`` - the user id
-* ``user_name`` - the user name
-* ``role_id`` - user role id
-* ``role_name`` - the role assigned to the user
-* ``admin`` - if true the user can work in the Application builder
+* ``user_id`` - 用户 id
+* ``user_name`` - 用户名
+* ``role_id`` - 用户所属角色的 id
+* ``role_name`` - 分配给用户的角色
+* ``admin`` - 如果为 true ，那么用户能使用应用程序构建器.
 
-If safe mode is false the ``user_info`` attribute is an empty
-object.
+如果 safe mode 为  false ，那么 ``user_info`` 属性是一个空对象。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -47,7 +44,7 @@ Example
         // some initalization code
     }
 
-See also
+另请参见
 ========
 
 :doc:`load <m_load>`
@@ -56,6 +53,6 @@ See also
 
 :doc:`logout <m_logout>`
 
-:doc:`Users </admin/users>`
+:doc:`用户 </admin/users>`
 
-:doc:`Roles </admin/roles>`
+:doc:`角色 </admin/roles>`

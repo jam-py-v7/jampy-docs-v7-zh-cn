@@ -4,13 +4,13 @@ server
 
 .. js:function:: server(func_name, params, callback)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``sever`` 方法在客户端可以执行一个在实体项的服务端模块中定义的函数。
@@ -31,7 +31,7 @@ Description
 ``参数(params)`` 是一个参数列表，如果没有参数，可以省略 ``参数(params)`` 。
 
 
-Example
+示例
 =======
 
 在 *发票(Invoices)** 业务台账的服务端模块中，定义函数：

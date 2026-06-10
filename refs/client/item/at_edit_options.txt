@@ -4,13 +4,13 @@ edit_options
 
 .. js:attribute:: edit_options
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 ``edit_options`` 属性是一些选项的集合，这些选项决定着编辑表单将在浏览器页面中如何显示。
@@ -60,7 +60,7 @@ template_class      如果指定，则将在任务
 modeless            如果设置，则编辑表单将以非模态方式创建，否则将以模态方式创建
 =================== ============================================================
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -70,10 +70,10 @@ Example
         item.edit_options.close_on_escape = false;    
     }
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_edit_form <m_create_edit_form>`
 

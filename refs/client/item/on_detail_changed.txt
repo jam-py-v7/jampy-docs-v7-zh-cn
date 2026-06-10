@@ -4,13 +4,13 @@ on_detail_changed
 
 on_detail_changed(item, detail)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 在明细项记录的更改提交之后发生。
@@ -23,7 +23,7 @@ Description
 编写一个 ``on_detail_changed`` 事件处理程序，通过使用 
 :doc:`calc_summary <m_calc_summary>`方法计算明细项的字段的总和，并将这些值保存在其主表的字段中。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -40,10 +40,10 @@ Example
         }
     }
 
-See also
+另请参见
 ========
 
-:doc:`Details </programming/data/details>`
+:doc:`明细项 </programming/data/details>`
 
 :doc:`calc_summary <m_calc_summary>`
 

@@ -1,21 +1,21 @@
 ===========
-Group class
+Group Group 类
 ===========
 
 .. js:class:: Group
 
-**范围**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
 
 Group 类用于创建 :doc:`任务树 </programming/task_tree>` 中的组对象。
 
 下面列出了的这个类的属性、方法和事件。
 
-它同样继承了其祖先类 :doc:`AbstractItem class <abstractitem_api>` 的属性和方法
+它同样继承了其祖先类 :doc:`AbstractItem 类 <abstractitem_api>` 的属性和方法
 
-Events
+事件
 ======
 
 .. toctree::

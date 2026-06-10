@@ -4,20 +4,20 @@ lookup_value
 
 .. js:attribute:: lookup_value
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 如果字段是 :doc:`查找字段 </programming/data/lookup_fields>` ，
 获取到的是它的查找的值；否则，获取到的是 :doc:`value <at_value>` 属性的值。
 
-See also
+另请参见
 ========
 
 :doc:`字段 </programming/data/fields>`

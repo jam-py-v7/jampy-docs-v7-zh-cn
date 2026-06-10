@@ -4,18 +4,18 @@ open
 
 .. js:function:: open() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
-Description
+描述说明
 ===========
 
 在类型为 FILE 的字段上调用 ``open`` 函数，它会通过 ``window.open`` 方法来打开指向字段存储的文件的地址。
 
-Example
+示例
 =======
 
 .. code-block:: js

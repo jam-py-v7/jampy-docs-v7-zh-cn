@@ -5,13 +5,13 @@ master_applies
 
 .. js:attribute:: master_applies
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 如果在 master/Detail 场景中，将 ``master_applies`` 属性设置为 **true** ，则**master** 将应用对明细项的 “添加/删除” 操作所做的更改。 
@@ -19,7 +19,7 @@ Description
 如果该属性设置为 **false** ，则 **Detail** 将在创建新记录时立即应用更改以保证 Details 中的数据集的完整。
 
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -28,7 +28,7 @@ Example
         item.invoice_table.master_applies = true; 
     }
 
-See also
+另请参见
 ========
 
-:doc:`Details </programming/data/details>`
+:doc:`明细项 </programming/data/details>`

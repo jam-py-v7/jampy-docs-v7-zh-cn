@@ -4,13 +4,13 @@ on_before_field_changed
 
 on_before_field_changed(field)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 编写 ``on_before_field_changed`` 事件处理程序，在字段数据更改之前执行任何特殊处理。
@@ -23,7 +23,7 @@ Description
 您可以更改此属性的值。此值将用于更改字段的数据。 
 
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -34,10 +34,10 @@ Example
         }
     }
 
-See also
+另请参见
 ========
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 
 :doc:`value </refs/client/field/at_value>`
 

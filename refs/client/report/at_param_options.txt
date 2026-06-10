@@ -4,39 +4,28 @@ param_options
 
 .. js:attribute:: param_options
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Report class </refs/client/report_api>`
+**类**: :doc:`Report 类 </refs/client/report_api>`
 
-Description
+描述说明
 ===========
 
-Use the ``param_options`` attribute to specify parameters of the modal param form.
+使用 ``param_options`` 属性指定模态参数表单的参数。
 
-``param_options`` is an object that has the following attributes:
+``param_options`` 是一个对象，具有以下属性：
 
-* ``width`` - the width of the modal form, the default value is 560 px,
-* ``title`` - the title of the modal form, the default value is the value of a
-  :doc:`report_caption </refs/client/abstr_item/at_item_caption>`
-  attribute,
-* ``close_button`` - if true, the close button will be created in the upper-right 
-  corner of the form, the default value is true,
-* ``close_caption`` - if true and close_button is true, will display 'Close - [Esc]'
-  near the button
-* ``close_on_escape`` - if true, pressing on the Escape key will trigger the 
-  :doc:`close_param_form <m_close_param_form>`
-  method.
-* ``close_focusout`` - if true, the 
-  :doc:`close_param_form <m_close_param_form>`
-  method will be called when a form loses focus
-* ``template_class`` - if specified, the div with this class will be searched in 
-  the task 
-  :doc:`templates </refs/client/task/at_templates>` 
-  attribute and used as a form html template when creating a form
+* ``width`` - 模态表单的宽度，默认值为 560 px 。
+* ``title`` - 模态表单的标题，默认值为 :doc:`report_caption </refs/client/abstr_item/at_item_caption>` 属性的值。
+* ``close_button`` - 如果为 true，则在表单右上角创建关闭按钮，默认值为 true，
+* ``close_caption`` - 如果为 true 且 ``close_button`` 为 true，则在按钮旁显示 “Close - [Esc]” 。
+* ``close_on_escape`` - 如果为 true，按下 Escape 键将触发 :doc:`close_param_form <m_close_param_form>` 方法。
+* ``close_focusout`` - 如果为 true，当表单失去焦点时将调用 :doc:`close_param_form <m_close_param_form>` 方法。
+* ``template_class`` - 如果指定，则将在任务的 :doc:`templates </refs/client/task/at_templates>` 属性中查找具有此类的 div，并在创建表单时将其用作表单 HTML 模板。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -47,10 +36,10 @@ Example
         report.param_options.close_on_escape = false;    
     }
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`print <m_print>`
 

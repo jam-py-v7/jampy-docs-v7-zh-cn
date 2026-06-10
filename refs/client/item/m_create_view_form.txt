@@ -4,20 +4,20 @@ create_view_form
 
 .. js:function:: create_view_form(container)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``create_view_form`` 方法创建实体项的视图表单。
 
-该方法在 “任务” 的 :doc:`模板 </refs/client/task/at_templates>` 
+该方法在 “任务” 的 :doc:`templates </refs/client/task/at_templates>` 
 属性里搜索实体项的 html 模板
-（请见 :doc:`Forms </programming/interface/forms>` ），
+（请见 :doc:`表单窗体 </programming/interface/forms>` ），
 然后创建模板的一个副本并将其分配给实体项的 :doc:`view_form <at_view_form>` 属性。
 
 如果指定了 ``container`` 参数，则该方法将其清空并将 html 模板附加到该参数上。
@@ -51,10 +51,10 @@ Description
 :doc:`on_view_form_shown <on_view_form_shown>`  
 事件, 那么触发定义的事件。
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`view_form <at_view_form>`
 

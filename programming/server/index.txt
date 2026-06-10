@@ -23,8 +23,8 @@
 
 * :doc:`on_created </refs/server/task/on_created>` - 当任务刚刚被服务器应用程序创建时，由任务触发此事件。可用于初始化项目。
 
-* :doc:`on_apply_events <on_apply_events>` - 当在 :doc:`客户端 </refs/client/item/m_apply>` 或 :doc:`服务器端 </refs/server/item/m_apply>` 调用实体项的 ``apply`` 方法时触发这些事件。
-* :doc:`on_open_events <on_open_events>` - 当在 :doc:`客户端 </refs/client/item/m_open>` 或 :doc:`服务器端 </refs/server/item/m_open>` 调用实体项的 ``open`` 方法时触发这些事件。
+* :doc:`on_apply_events <on_apply_events>` - 当在 :doc:`客户端 </refs/client/item/m_apply>` 或 :doc:`服务端 </refs/server/item/m_apply>` 调用实体项的 ``apply`` 方法时触发这些事件。
+* :doc:`on_open_events <on_open_events>` - 当在 :doc:`客户端 </refs/client/item/m_open>` 或 :doc:`服务端 </refs/server/item/m_open>` 调用实体项的 ``open`` 方法时触发这些事件。
 
 * :doc:`on_generate </refs/server/report/on_generate>` - 当在客户端调用 **报表(report)** 的 :doc:`print </refs/client/report/m_print>` 方法时触发此事件。
 

@@ -4,21 +4,22 @@ login
 
 .. js:function:: login(callback)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Task </refs/client/task_api>`
+**类**: :doc:`Task </refs/client/task_api>`
 
-Description
+描述说明
 ===========
 
-The ``login`` method creates a login form using the login form div defined in the 
-templates of the index.html file. It is called by the :doc:`load <m_load>` method 
-when the project 
-:doc:`Safe mode parameter </admin/project/parameters>`
+``login`` 方法使用在 index.html 文件模板中定义的登录表单窗体 div 
+创建一个登录的表单窗体。
+当设置了项目的 :doc:`安全模式参数 </admin/project/parameters>` 后，
+该方法由 doc:`load <m_load>`方法调用。
 
-See also
+
+另请参见
 ========
 
 :doc:`load <m_load>`
@@ -27,6 +28,6 @@ See also
 
 :doc:`user_info <at_user_info>`
 
-:doc:`Users </admin/users>`
+:doc:`用户 </admin/users>`
 
-:doc:`Roles </admin/roles>`
+:doc:`角色 </admin/roles>`

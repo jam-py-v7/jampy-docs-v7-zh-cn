@@ -4,13 +4,13 @@ locate
 
 .. js:function:: locate(fields, values)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 实现一种方法，用于在实体数据集中搜索指定的记录，并使该记录成为 “活动” 记录。
@@ -26,9 +26,9 @@ Description
 
 如果未找到匹配的记录或光标未重新定位，则此方法返回 false 。
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`

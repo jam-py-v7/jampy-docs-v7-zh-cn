@@ -4,42 +4,40 @@ delete
 
 .. py:method:: delete(self)
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Deletes the active record and positions the cursor on the next record.
+该方法删除当前记录，并将游标定位到下一条记录上。
 
-The ``delete`` method
+``delete``方法：
 
-* checks if item dataset is 
-  :doc:`active <at_active>`, otherwise raises exception
+* 检查实体项数据集是否处于 :doc:`active <at_active>` 状态。
+  如果不是，则抛出异常。
 
-* checks if item dataset is not empty, otherwise raises exception
+* 检查实体项数据集是否不为空。如果是空的，则抛出异常。
 
-* if item is a 
-  :doc:`detail </programming/data/details>`
-  , checks if the master item is in edit or insert 
-  :doc:`state <at_item_state>`, otherwise raises exception.
-  
-* if item is not a 
-  :doc:`detail </programming/data/details>`
-  , checks if it is in browse 
-  :doc:`state <at_item_state>`, otherwise raises exception.
-  
-* puts the item into delete :doc:`state <at_item_state>`
+* 如果实体项是 :doc:`明细项 </programming/data/details>` ，
+  那么检查其主控实体项是否处于 “编辑” 或 “插入” :doc:`状体 <at_item_state>` 。
+  如果不是，则抛出异常。
 
-* deletes the active record and positions the cursor on the next record
+* 如果实体项不是 :doc:`明细项 </programming/data/details>` ，
+  那么它否处于 “浏览” :doc:`状体 <at_item_state>` 。
+  如果不是，则抛出异常。
 
-* puts the item into browse :doc:`state <at_item_state>`
+* 将实体项置于 “删除” :doc:`状体 <at_item_state>` 。
+
+* 删除当前活动的记录，并将游标定位到下一条记录上。
+
+* 将实体项置于 “浏览” :doc:`状体 <at_item_state>` 
 
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

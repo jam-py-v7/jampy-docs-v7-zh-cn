@@ -4,36 +4,30 @@ set_order_by
 
 .. py:method:: set_order_by(self, lst=None, *fields)
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Use the ``set_order_by`` method to define and store internally the ``order_by``
-parameter that will be used by the 
-:doc:`open <m_open>` 
-method, when its own ``order_by`` parameter is not specified. The 
-:doc:`open <m_open>` 
-method clears internally stored parameter value. 
+使用 ``set_order_by`` 方法定义并存储内部存储 ``order_by`` 参数 ，
+未指定 ``order_by`` 参数的 :doc:`open <m_open>` 方法将使用这些内部参数。
+:doc:`open <m_open>` 方法会清除内部存储的该参数值。
 
-Parameters
+参数
 ==========
 
-You can specify the fields as a list, the way the 
-:doc:`set_order_by </refs/client/item/m_set_order_by>`
-method on the client does or as non-keyworded arguments.
+你可以像客户端的 :doc:`set_order_by </refs/client/item/m_set_order_by>` 方法那样，以列表形式指定字段，或者以非关键字参数的形式指定字段。
 
-If there is a sign '-' before a field name, then on this field records will be 
-sorted in decreasing order.
+如果在一个字段名前有 “-” ，那么对记录在该字段上按降序排序。
 
-Example
+示例
 =======
 
-The result of the execution of following code snippets will be the same:
+下列代码片段的执行结果相同：
 
 .. code-block:: py
 
@@ -49,9 +43,9 @@ The result of the execution of following code snippets will be the same:
     item.set_order_by(['customer', '-invoicedate'])
     item.open();
     
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
 :doc:`open <m_open>`

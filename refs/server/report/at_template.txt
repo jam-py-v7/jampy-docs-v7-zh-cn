@@ -4,27 +4,25 @@ template
 
 .. py:attribute:: template
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Report class </refs/server/report_api>`
+**类**: :doc:`Report 类 </refs/server/report_api>`
 
-Description
+描述说明
 ===========
 
-The **report_filename** attribute stores a file name of the report template. Usually it
-is set in the Application builder when the report is created. But it can be changed 
-dynamically on the server in the 
-:doc:`on_before_generate <on_before_generate>`
-event handler or be empty, if it's necessary to create, for example, some **txt**  
-file.
+**report_filename** 属性里存储了报表模板的一个文件名。
+通常，在生成报表时，会在应用程序构建器里对其进行设置。
+但是，在服务端的 :doc:`on_before_generate <on_before_generate>` 事件处理程序里，
+能进行动态更改，或者清空，比如必须创建一些像 **txt** 文件的时候。
 
-See also
+另请参见
 ========
 
-:doc:`Report templates </programming/reports/templates>`
+:doc:`报表模板 </programming/reports/templates>`
 
-:doc:`Creating a report </programming/reports/creating_report>`
+:doc:`创建报表 </programming/reports/creating_report>`
 
-:doc:`Server-side report programming </programming/reports/server_side_programming>`
+:doc:`报表的服务器端编程 </programming/reports/server_side_programming>`

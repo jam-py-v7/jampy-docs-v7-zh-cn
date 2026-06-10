@@ -24,9 +24,9 @@
 * ``label_on_top`` - 在顶部显示的标签。
 
 :doc:`edit_options </refs/client/item/at_edit_options>` 有一个 ``fields`` 属性，用于指定字段名称列表。如果其 ``options`` 参数的 ``fields`` 属性未指定，则 :doc:`create_inputs </refs/client/item/m_create_inputs>` 方法将使用此列表，
-默认值是在应用程序构建器的 :doc:`Edit Form Dialog </admin/items/edit_form_dialog>` 中设置的字段名称列表。
+默认值是在应用程序构建器的 :doc:`编辑表单对话框 </admin/items/edit_form_dialog>` 中设置的字段名称列表。
 
-:doc:`view_options </refs/client/item/at_view_options>` 有一个 ``fields`` 属性，用于指定字段名称列表。如果其 ``options`` 参数的 ``fields`` 属性未指定，则 :doc:`create_table </refs/client/item/m_create_table>` 方法将使用此列表，默认值是在应用程序构建器的 :doc:`View Form Dialog </admin/items/view_form_dialog>` 中设置的字段名称列表。
+:doc:`view_options </refs/client/item/at_view_options>` 有一个 ``fields`` 属性，用于指定字段名称列表。如果其 ``options`` 参数的 ``fields`` 属性未指定，则 :doc:`create_table </refs/client/item/m_create_table>` 方法将使用此列表，默认值是在应用程序构建器的 :doc:`视图表单对话框 </admin/items/view_form_dialog>` 中设置的字段名称列表。
 
 在以下示例中创建的模态表单的宽度将为 700 px。
 

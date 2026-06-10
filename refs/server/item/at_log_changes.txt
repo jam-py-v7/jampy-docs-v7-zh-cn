@@ -4,28 +4,26 @@ log_changes
 
 .. py:attribute:: log_changes
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Indicates whether to log data changes.
+指明是否记录数据变更。
 
-Use ``log_changes`` to control whether or not changes made to the data in an 
-item dataset are recorded. When ``log_changes`` is ``true`` (the default), all 
-changes are recorded. They can later be applied to an application server by 
-calling the 
-:doc:`apply <m_apply>`
-method. When ``log_changes`` is ``false``, data changes are not recorded and cannot 
-be applied to an application server.
+使用 ``log_changes`` 来控制是否记录对实体项数据集中数据的更改。
+当 ``log_changes`` 是 ``true`` （默认值）时，将记录所有变更。
+稍后，可通过调用 :doc:`apply <m_apply>` 方法，可将这些变更应用到程序的服务端。
 
-See also
+当 ``log_changes`` 是  ``false`` 时，不会记录数据的变更，也不能将变更应用到程序的服务端。
+
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`
 
 :doc:`apply <m_apply>`

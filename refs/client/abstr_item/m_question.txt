@@ -6,13 +6,13 @@ question
 
 .. js:function:: question(mess, yes_callback, no_callback, options)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 使用  **question** 方法创建一个带有 **是(Yes)** 和 **否(No)** 按钮的模态表单窗体
@@ -21,7 +21,7 @@ Description
 
 如果指定了 **yes_callback** ， **no_callback** 函数，它们会在用户点击了 **是(Yes)** 或 **否(No)** 按钮后被执行，然后会自动关闭表单窗体。
 
-Example
+示例
 =======
 
 下面的代码将创建一个模态表单窗体，当用户用鼠标点击 “是(Yes)” 按钮时，将删除已选择的记录。

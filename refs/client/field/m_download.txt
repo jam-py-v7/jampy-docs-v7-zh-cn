@@ -4,18 +4,18 @@ download
 
 .. js:function:: download() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
-Description
+描述说明
 ===========
 
 在类型为 FILE 的字段上调用 ``download`` 函数来下载字段存储的文件。
 
-Example
+示例
 =======
 
 .. code-block:: js

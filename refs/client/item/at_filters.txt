@@ -4,19 +4,19 @@ filters
 
 .. js:attribute:: filters
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 列举出了实体项的所有的 :doc:`过滤器 </refs/client/filter_api>` 。
 
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -27,11 +27,11 @@ Example
         }
     }    
     
-See also
+另请参见
 ========
 
 :doc:`过滤器 </programming/data/filters>`
 
-:doc:`Filter class </refs/client/filter_api>`
+:doc:`Filter 类 </refs/client/filter_api>`
 
 :doc:`each_filter <m_each_filter>`

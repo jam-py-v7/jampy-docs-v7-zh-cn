@@ -4,20 +4,20 @@ on_filters_applied
 
 on_filters_applied(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 编写 ``on_filters_applied`` 事件处理成，在过滤器已经被应用到实体项数据集时，进行特殊的处理。
 
-See also
+另请参见
 ========
 
-:doc:`Filters </programming/data/filters>`
+:doc:`过滤器 </programming/data/filters>`
 
 

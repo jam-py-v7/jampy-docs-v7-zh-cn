@@ -6,44 +6,35 @@ open
         order_by=None, open_empty=False, params=None, offset=None, limit=None, 
         funcs=None, group_by=None, safe=False)
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Call ``open`` to generate and execute a SELECT SQL query to the item database 
-table for obtaining a dataset. 
+调用 ``open`` 方法来生成并执行针对实体项数据库表的 SELECT SQL 查询语句，以获取数据集。
 
-The method initializes the item 
-:doc:`fields <at_fields>`,
-formulates parameters of a request, and triggers the 
-``on_before_open`` event handler if one is defined for the item.
+该方法初始化实体项的 :doc:`fields <at_fields>` 属性, 设置请求的参数，
+并触发为实体项已定义的 ``on_before_open`` 事件处理程序。
 
-If there is a
-:doc:`on_open </refs/server/item/on_open>`
-event handler defined for the item, ``open`` executes this event handler and 
-assigns a dataset to the result, returned by it, 
-otherwise generates a SELECT SQL query, based on parameters of the request, 
-executes this query and assigns the result of the execution to the dataset
+如果为实体项定义了 :doc:`on_open </refs/server/item/on_open>` 事件处理程序，
+那么 ``open`` 方法执行此事件处理程序并将获得的数据集分配给返回的结果。
+否则，将根据请求的参数生成 SELECT SQL 查询语句，
+再执行生成的查询语句并将执行的结果分配给数据集。
 
-After that it sets 
-:doc:`active <at_active>`
-to true, the
-:doc:`item_state <at_item_state>` 
-to browse mode, goes to the first record of the dataset, triggers 
-``on_after_open``, if it is defined for the item.
+稍后，将 :doc:`active <at_active>` 设置为 true ， 
+将 :doc:`item_state <at_item_state>` 设置为 浏览模式，
+将游标定位到数据集的第一条记录，触发已定义的 ``on_after_open`` 事件处理程序。
 
-Parameters
+
+参数
 ==========
 
-You can pass ``options`` dictionary to specify parameters of the request in the same 
-form as for the 
-:doc:`open </refs/client/item/m_open>`
-method on the client:
+你可以传入``options`` 字典，以与客户端 :doc:`open </refs/client/item/m_open>` 
+方法完全相同的格式来指定请求参数：
 
 .. code-block:: py
 
@@ -53,7 +44,7 @@ method on the client:
         'order_by': ['invoicedate']
     })
 
-or pass the keyworded arguments:
+或者传递关键字参数:
 
 .. code-block:: py
 
@@ -63,73 +54,57 @@ or pass the keyworded arguments:
         order_by=['invoicedate']
     )
 
-* ``expanded`` - if the value of this parameter is true, the SELECT query will 
-  have JOIN clauses to get lookup values of the 
-  :doc:`lookup fields </programming/data/lookup_fields>`
-  , otherwise there will be no lookup values. The default value if ``true``.
+* ``expanded`` - 如果该参数的值是 true ，那么 SELECT 查询语句将含有获取 
+  :doc:`查找字段 </programming/data/lookup_fields>` 
+  的查找值的 JOIN 子语句，否则结果将不包含查找值。
+  该参数值默认是 ``true`` 。
   
-* ``fields`` - use this parameter to specify the WHERE clause of the SELECT 
-  query. This parameter is a list of field names. If it is omitted, the fields 
-  defined by the
-  :doc:`set_fields <m_set_fields>`
-  method will be used. If the
-  :doc:`set_fields <m_set_fields>`
-  method was not called before the ``open`` method execution, all available fields 
-  will be used.
+* ``fields`` - 使用该参数来指定 SELECT 查询语句中的可用字段。
+  该参数是一个字段名称的列表。如果省略该参数，将使用 
+  :doc:`set_fields <m_set_fields>` 方法定义的字段。
+  如果在 ``open``方法执行之前，未调用 :doc:`set_fields <m_set_fields>` 
+  方法，将使用所有可用字段。
 
-* ``where`` - use this parameter to specify how records will be filtered in the 
-  SQL query. This parameter is a dictionary, whose keys are
-  field names, that are followed, after double underscore, by a filtering symbols
-  (see
-  :doc:`Filtering records </programming/data/filtering_records>`
-  ). If this parameter is omitted, values
-  defined by the
-  :doc:`set_where <m_set_where>`
-  method will be used. If the
-  :doc:`set_where <m_set_where>`
-  method was not called before the ``open`` method execution, and ``where`` 
-  parameter is omitted, then the values of 
-  :doc:`filters </programming/data/filters>` 
-  defined for the item will be used to filter records.
+* ``where`` - 使用该参数指定在 SQL 查询语句中如何过滤记录。
+  该参数是一个字典，其 “键” 是字段的名称，紧跟双下划线，再加过滤器符号。
+  （请见 :doc:`过滤记录 </programming/data/filtering_records>` ）
+  如果省略该参数，将使用 :doc:`set_where <m_set_where>` 方法定义的值。
+  如果在 ``open`` 方法执行之前，未调用  :doc:`set_where <m_set_where>` 
+  方法，且省略了 ``where`` 参数，那么将使用为实体项定义的 
+  :doc:`过滤器 </programming/data/filters>` 的值来过滤记录。
   
-* ``order_by`` - use ``order_by`` to specify sort order of the records. This 
-  parameter is a list of field names. If there is a sign '-' before the field 
-  name, then on this field records will be sorted in decreasing order. If this 
-  parameter is omitted, a list defined by the   
-  :doc:`set_order_by <m_set_order_by>`
-  method will be used.
+* ``order_by`` - 使用 ``order_by`` 参数来指定记录的排序顺序。
+  该参数是一个字段名称的列表。如果字段名称前有 “-” 符号，
+  那么在该字段上会对记录按降序排序。
+  如果省略了该参数，将使用 :doc:`set_order_by <m_set_order_by>` 方法定义的列表。
 
-* ``offset`` -  use ``offset`` to specify the offset of the first row to get.
+* ``offset`` -  使用 ``offset`` 参数来指定要获取的第一行记录的偏移。
 
-* ``limit`` - use ``limit`` to limit the output of a SQL query to the first 
-  so-many rows.
+* ``limit`` - 使用 ``limit``参数来限制 SQL 查询语句的输出，只保留输出的前 n 行记录。。
 
-* ``funcs`` - this parameter can be a a dictionary, whose keys are
-  a field names and values are function names that will be applied to the fields 
-  in the SELECT Query
+* ``funcs`` - 该参数可以是一个字典，其 “键” 是字段的名称，其 “值” 是函数名称，
+  在 SELECT 查询语句中，将使用这些函数处理对应的字段。
 
-* ``group_by`` - use ``group_by`` to specify fields to group the result of the 
-  query by. This parameter must be a list of field names.
+* ``group_by`` - 使用 ``group_by`` 参数来指定如何对查询的结果按字段分组。
+  该参数必须是字段名称的列表。
 
-* ``open_empty`` - if this parameter is set to ``true``, the application does 
-  not send a request to the server but just initializes an empty dataset. 
-  The default value  if ``false``.
+* ``open_empty`` - 如果将此参数设置为 ``true`` ，
+  那么应用程序不会向服务端方请求，而是仅仅初始化一个空的数据集。
+  其默认值是 ``false`` 。
 
-* ``params`` - use the parameter to pass some user defined options to be used in
-  the 
-  :doc:`on_open </refs/server/item/on_open>`
-  event handler. This parameter must be an object of key-value pairs
+* ``params`` - 使用此参数传递用户自定义的一些选项，在
+  :doc:`on_open </refs/server/item/on_open>` 事件处理程序中将使用这些自定义选项。
+  该参数必须是一个 “键-值” 对组成的对象。
   
-* ``safe`` - if set to ``True`` the method checks if the user that called the
-  method has a right to view the item's data and, if not, raises an exception. 
-  The default value is ``False``.
-  See 
-  :doc:`Roles </admin/roles>`
+* ``safe`` - 如果此参数为 ``True`` ，
+  将检查调用该方法的用户是否有权限查看实体项的数据。
+  如果用户没有权限，则抛出一个异常。
+  请见 :doc:`角色 </admin/roles>`
 
 Examples
 ========
 
-In this example the parameters of the request are a dictionary:
+在这个例子中，请求的参数是一个字典：
 
 .. code-block:: py
     
@@ -146,7 +121,8 @@ In this example the parameters of the request are a dictionary:
             'order_by': ['customer', 'date']
         })
 
-Below the parameters are passed as a keyworded list:
+
+在下面，传递的参数是一个关键字列表：
 
 .. code-block:: py
     
@@ -162,9 +138,8 @@ Below the parameters are passed as a keyworded list:
             where={'date__ge': date1, 'date__le': date2},
             order_by=['customer', 'date']
         )
-    
-The same result can be achieved by using set_fields, set_where, set_order_by 
-methods:
+
+分别使用 set_fields、set_where、set_order_by 方法，可以获得与上面相同的结果：
 
 .. code-block:: py
     
@@ -190,13 +165,14 @@ methods:
             funcs={'id': 'count', 'total': 'sum'}, 
             group_by=['customer'], 
             order_by=['customer'])
+    }
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Filtering records </programming/data/filtering_records>`
+:doc:`过滤记录 </programming/data/filtering_records>`
 
 :doc:`set_fields <m_set_fields>`
 

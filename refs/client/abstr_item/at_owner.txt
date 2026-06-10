@@ -7,13 +7,13 @@ owner
 
 .. js:attribute:: owner
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 使用 owner 属性来引用某个实体项的拥有者（即父项）。

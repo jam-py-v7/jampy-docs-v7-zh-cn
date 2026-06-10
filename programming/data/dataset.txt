@@ -55,7 +55,7 @@ Jam.py 框架使用的数据集概念非常接近 `Embarcadero Delphi`_ 的数�
 
 .. note::
 
-    有一种更简短的浏览数据集的方法（参见 :doc:`浏览数据集 <navigating_datasets>` ）。例如，在 Python 中，以下循环是等效的：
+    有一种更简短的浏览数据集的方法（参见 :doc:`导航数据集 <navigating_datasets>` ）。例如，在 Python 中，以下循环是等效的：
     
     .. code-block:: py
     

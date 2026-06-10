@@ -7,7 +7,7 @@
 调用此函数的结果是，客户端会调用 
 :doc:`create_param_form </refs/client/report/m_create_param_form>` 
 方法，基于 index.html 文件中定义的 html 模板，创建一个用于编辑报表参数的表单
-（参见 :doc:`表单 </programming/interface/forms>` ）。
+（参见 :doc:`表单窗体 </programming/interface/forms>` ）。
 
 此方法在创建表单后，会触发以下事件：
 

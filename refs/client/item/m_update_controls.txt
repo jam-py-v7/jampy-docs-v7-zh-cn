@@ -4,18 +4,18 @@ update_controls
 
 .. js:function:: update_controls()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 调用 :doc:`update_controls <m_update_controls>` 告诉相关联的控件刷新显示以反应当前的数据。
 
-See also
+另请参见
 ========
 
 :doc:`Data-aware controls </programming/interface/data_controls>`

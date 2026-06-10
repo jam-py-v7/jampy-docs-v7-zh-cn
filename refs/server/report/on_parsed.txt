@@ -4,33 +4,30 @@ on_parsed
 
 .. py:function:: on_parsed(report)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Report class </refs/server/report_api>`
+**类**: :doc:`Report 类 </refs/server/report_api>`
 
-Description
+描述说明
 ===========
 
-The **on_parsed** event is triggered by the 
-:doc:`generate <m_generate>` 
-method, after the report 
-:doc:`template </programming/reports/templates>` have been parsed.
+在报表的 :doc:`模板 </programming/reports/templates>` 被解析之后，
+:doc:`generate <m_generate>` 方法会触发 **on_parsed** 事件。
 
-Use this event handler you hide some columns in the report template by calling
-:doc:`hide_columns <m_hide_columns>`
+使用该事件处理程序， 通过调用 :doc:`hide_columns <m_hide_columns>` 方法来隐藏在报表模板中定义的一些列。
 
-The **report** parameter is the report that triggered the event.
+**report** 参数是触发该事件的报表。
 
-See also
+另请参见
 ========
 
-:doc:`Programming reports </programming/reports/index>`
+:doc:`报表编程 </programming/reports/index>`
 
-:doc:`Server-side report programming </programming/reports/server_side_programming>`
+:doc:`报表的服务器端编程 </programming/reports/server_side_programming>`
 
-:doc:`Report templates </programming/reports/templates>`
+:doc:`报表模板 </programming/reports/templates>`
 
 :doc:`hide_columns <m_hide_columns>`
 

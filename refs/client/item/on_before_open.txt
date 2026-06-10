@@ -4,13 +4,13 @@ on_before_open
 
 on_before_open(item, params)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 应用程序向服务端发送请求以获取数据集之前发生此事件。
@@ -26,7 +26,7 @@ Description
 
 ``on_before_open`` 由 :doc:`open <m_open>` method 调用。
 
-See also 
+另请参见 
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`

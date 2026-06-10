@@ -4,19 +4,19 @@ enable_edit_form
 
 .. js:function:: enable_edit_form()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 在调用 :doc:`disable_edit_form <m_disable_edit_form>` 方法之后，
 调用 ``enable_edit_form`` 方法以重新启用编辑表单窗体，
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -38,7 +38,7 @@ Example
       });
   }
 
-See also
+另请参见
 ========
 
 :doc:`disable_edit_form <m_disable_edit_form>` 

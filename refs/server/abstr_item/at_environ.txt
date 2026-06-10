@@ -4,21 +4,21 @@ environ
 
 .. py:attribute:: environ
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`AbstractItem class </refs/server/abstractitem_api>`
+**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
-Specifies the WSGI environment dictionary of the current request from the client.
+指定来自客户端的当前请求的 WSGI 环境字典。
 
-See also
+另请参见
 ========
 
-:doc:`Server side programming </programming/server/index>`
+:doc:`服务器端编程 </programming/server/index>`
 
 :doc:`session <at_session>`
 

@@ -4,20 +4,20 @@ disable_controls
 
 .. js:function:: disable_controls()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 调用 ``disable_controls`` 方法 “关闭” 控件的数据感知功能。因此，控件不再实时反应实体项数据集中数据的变更。
 
 调用 :doc:`enable_controls <m_enable_controls>` 方法，以重新启用与数据集关联的数据感知控件中的数据显示，同时更新它们显示的数据值。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -56,7 +56,7 @@ Example
         }
     }
 
-See also
+另请参见
 ========
 
 :doc:`数据感知控件 </programming/interface/data_controls>`

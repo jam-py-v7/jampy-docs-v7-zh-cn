@@ -265,7 +265,7 @@ class 为 "view-table" 的 div 在任务的
 
 id 为 "report-btn" 的 div 在任务的
 :doc:`on_view_form_created </refs/client/task/on_view_form_created>`
-事件处理程序中用于用实体项 :doc:`Reports Dialog </admin/items/reports_dialog>`
+事件处理程序中用于用实体项 :doc:`表白对话框 </admin/items/reports_dialog>`
 中定义的报告填充下拉按钮菜单项（如果它们存在）。
 
 .. code-block:: html

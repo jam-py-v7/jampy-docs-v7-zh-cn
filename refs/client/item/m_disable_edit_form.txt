@@ -4,20 +4,20 @@ disable_edit_form
 
 .. js:function:: disable_edit_form()
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 当 :doc:`edit_form <at_edit_form>` 可见时，调用 ``disable_edit_form`` 方法可以阻止任何用户的操作。
 
 调用 :doc:`enable_edit_form <m_enable_edit_form>` 方法重新启用编辑表单对窗体。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -39,7 +39,7 @@ Example
       });
   }
 
-See also
+另请参见
 ========
 
 :doc:`enable_edit_form <m_enable_edit_form>`

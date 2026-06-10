@@ -4,22 +4,21 @@ on_convert_report
 
 .. py:function:: on_convert_report(report)
 
-**domain**: server 
+**使用范围**: server 
 
-**language**: python
+**编程语言**: python
 
-**class**: :doc:`Reports class </refs/server/report_group_api>`
+**类**: :doc:`Reports 类 </refs/server/report_group_api>`
 
-Description
+描述说明
 ===========
 
-The framework converts reports internally, using LibreOffice. Use the 
-**on_convert_report** event if you want to use some other service or change some 
-parameters of report conversion.
+框架在内部使用 LibreOffice 来转换报表。
+如果像使用其它转换服务或修改报表转换的某些参数，请使用 **on_convert_report** 事件。
 
-The **report** parameter is the report that triggered the event.
+**report** 参数是触发该事件的报表。
 
-Example
+示例
 =======
 
 

@@ -4,19 +4,19 @@ master
 
 .. py:attribute:: master
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Detail class </refs/server/detail_api>`
+**类**: :doc:`Detail 类 </refs/server/detail_api>`
 
 
-Description
+描述说明
 ===========
 
-Use ``master`` attribute to get reference to the master of the detail.
+使用 ``master`` 属性来获取对明细项的主表的引用。
 
-See also
+另请参见
 ========
 
-:doc:`Details </programming/data/details>`
+:doc:`明细项 </programming/data/details>`

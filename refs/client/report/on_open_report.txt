@@ -4,24 +4,23 @@ on_open_report
 
 on_open_report(report)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Report class </refs/client/report_api>`
+**类**: :doc:`Report 类 </refs/client/report_api>`
 
-Description
+描述说明
 ===========
 
-The ``on_open_report`` event is triggered by the 
-:doc:`process_report <m_process_report>`
-method. 
+``on_open_report`` 事件由 :doc:`process_report <m_process_report>` 方法触发。
 
-The ``report`` parameter is the report that triggered the event.
+``report`` 参数是触发该事件的报表。
 
-See also
+
+另请参见
 ========
 
-:doc:`Client-side report programming </programming/reports/client_side_programming>`
+:doc:`客户端报表编程 </programming/reports/client_side_programming>`
 
 :doc:`process_report <m_process_report>`

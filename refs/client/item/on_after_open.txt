@@ -4,13 +4,13 @@ on_after_open
 
 on_after_open(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 应用程序接收到来自服务端获取数据集的响应之后发生此事件。
@@ -39,8 +39,8 @@ Description
     }
 
 
-See also 
+另请参见 
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 

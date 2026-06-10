@@ -4,19 +4,19 @@ rec_no
 
 .. js:attribute:: rec_no
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 检查 ``rec_no`` 属性以确定实体项数据集中当前记录的记录号。 
 ``rec_no`` 可以设置为特定的记录号，以将光标定位在该记录上。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -55,7 +55,7 @@ Example
         }
     }
 
-See also
+另请参见
 ========
 
 :doc:`数据集 </programming/data/dataset>`

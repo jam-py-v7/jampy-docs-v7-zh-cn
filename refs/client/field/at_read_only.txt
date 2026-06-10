@@ -4,21 +4,21 @@ Field read_only
 
 .. js:attribute:: read_only
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 决定着字段在数据感知控件里是否可以被修改。
 
 将 **read_only** 设置为 **true** ，可以防止字段的值在数据感知控件里被修改。
 
-See also
+另请参见
 ========
 
 :doc:`字段 </programming/data/fields>`

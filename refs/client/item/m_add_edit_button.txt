@@ -4,11 +4,11 @@ add_edit_button
 
 .. js:function:: add_edit_button(text, options) 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Description
+描述说明
 ===========
 
 使用 ``add_edit_button`` ，可以在编辑表单窗体中动态地添加一个按钮。

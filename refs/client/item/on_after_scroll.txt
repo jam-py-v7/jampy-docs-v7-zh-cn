@@ -4,13 +4,13 @@ on_after_scroll
 
 on_after_scroll(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 应用程序由一条记录滚动到另一条记录之后发生此事件。
@@ -21,10 +21,10 @@ Description
 
 ``on_after_scroll`` 在这些方法触发的所有其他事件以及在实体项数据集中从一个记录切换到另一个记录的任何其他方法之后调用。
 
-Example
+示例
 =======
 
-在 :doc:`Demo project </intro/demo_project>` 中使用以下代码，在 **invoice** 业务台账记录更改后异步打开 **invoice_table** 明细数据集。它还禁用按钮：
+在 :doc:`演示项目 </intro/demo_project>` 中使用以下代码，在 **invoice** 业务台账记录更改后异步打开 **invoice_table** 明细数据集。它还禁用按钮：
 
 .. code-block:: js
 
@@ -41,9 +41,9 @@ Example
         );
     }
 
-See also
+另请参见
 ========
 
-:doc:`Navigating datasets </programming/data/navigating_datasets>`
+:doc:`导航数据集 </programming/data/navigating_datasets>`
 
 :doc:`on_before_scroll <on_before_scroll>`

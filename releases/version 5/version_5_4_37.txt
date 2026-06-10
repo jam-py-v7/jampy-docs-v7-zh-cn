@@ -5,11 +5,11 @@
 库:
 
 * 现在可以将 Jam.py 部署到 `PythonAnywhere <https://www.pythonanywhere.com>`_ 。
-  参见 :doc:`How to deploy project on PythonAnywhere </how_to/deploy/how_to_deploy_project_on_pythonanywhere>`
+  参见 :doc:`如何在 PythonAnywhere 上部署项目 </how_to/deploy/how_to_deploy_project_on_pythonanywhere>`
 
 * 现在，可以将项目目录传递给 create_application 函数（ jam/wsgi.py 模块）。
 
-* 已从项目 :doc:`Parameters </admin/project/parameters>` 中移除多进程连接池参数
+* 已从项目 :doc:`参数 </admin/project/parameters>` 中移除多进程连接池参数
   
 * 修复了与表单键盘事件处理相关的错误
 
@@ -17,6 +17,6 @@
 
 文档:
 
-* 已创建 :doc:`How to </how_to/index>` 部分。
+* 已创建 :doc:`如何 ... </how_to/index>` 部分。
   该部分将包含可用于快速完成常见任务的代码示例。
 

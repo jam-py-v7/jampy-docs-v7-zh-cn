@@ -4,13 +4,13 @@ Filtered
 
 .. js:attribute:: filtered
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 指定一个数据集是否启用了过滤（筛选）。
@@ -20,7 +20,7 @@ Description
 要应用 :doc:`on_filter_record <on_filter_record>` 事件处理程序中指定的筛选条件，
 请将 ``filtered`` 设置为 ``true`` 。
 
-See also
+另请参见
 ========
 
 :doc:`on_filter_record <on_filter_record>`

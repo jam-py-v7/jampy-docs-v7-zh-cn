@@ -4,18 +4,18 @@ clear_filters
 
 .. js:function:: clear_filters() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``clear_filters`` 方法以将实体项的过滤器的值设置为 ``null`` 。
 
-See also
+另请参见
 ========
 
 :doc:`过滤记录 </programming/data/filtering_records>`

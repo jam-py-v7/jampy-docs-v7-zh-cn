@@ -4,13 +4,13 @@ on_after_apply
 
 on_after_apply(item)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 应用程序在项目数据库中保存变更日志之后发生此事件。
@@ -21,7 +21,7 @@ Description
 
 ``on_after_apply`` 方法由 :doc:`apply <m_apply>` 方法触发。
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

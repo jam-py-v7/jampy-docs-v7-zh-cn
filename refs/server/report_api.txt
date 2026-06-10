@@ -1,43 +1,41 @@
 ============
-Report class
+Report 类
 ============
 
 .. py:class:: Report
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-Report class inherits 
 
-Below the attributes, methods and events of the class are listed.
+下面列出了该类的属性、方法和事件。
 
-It, as well, inherits attributes and methods of its ancestor class
-:doc:`AbstractItem class <abstractitem_api>`
+该类同样继承了祖先类 :doc:`AbstractItem 类 <abstractitem_api>` 的属性、方法。
 
-Attributes
+属性
 ==========
 
 .. toctree::
     :maxdepth: 1
     :glob:
-    
+
     report/at_*
 
-Methods 
+方法 
 =======
 
 .. toctree::
     :maxdepth: 1
     :glob:
-    
+
     report/m_*
 
-Events
+事件
 ======
 
 .. toctree::
     :maxdepth: 1
     :glob:
-    
+
     report/on_*

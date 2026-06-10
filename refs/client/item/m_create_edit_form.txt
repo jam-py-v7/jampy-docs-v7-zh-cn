@@ -4,18 +4,18 @@ create_edit_form
 
 .. js:function:: create_edit_form(container)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``create_edit_form`` 方法创建一个实体项的编辑表单窗体，以对记录可视化编辑。
 
-该方法在 “任务” 的 :doc:`模板 </refs/client/task/at_templates>` 
+该方法在 “任务” 的 :doc:`templates </refs/client/task/at_templates>` 
 属性里搜索实体项的 html 模板，然后创建模板的一个副本并将其分配给实体项的 
 :doc:`edit_form <at_edit_form>` 属性。
 
@@ -50,10 +50,10 @@ Description
 :doc:`on_edit_form_shown <on_edit_form_shown>` 
 事件, 那么触发定义的事件。
 
-See also
+另请参见
 ========
 
-:doc:`表单 </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`edit_form <at_edit_form>`
 

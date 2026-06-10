@@ -7,13 +7,13 @@
 * 重做了并行进程中运行的 Web 应用程序在元数据更改时的参数同步和任务树重新加载。
 
 * 重做了元数据导入。请参阅
-  :doc:`Export/import metadata </admin/project/metadata_file>`
+  :doc:`导出/导入元数据 </admin/project/metadata_file>`
 
 * 创建了在服务器重启时从迁移文件夹导入元数据的能力。请参阅
-  :doc:`How to migrate development to production </how_to/how_to_migrate_development_to_production>`
+  :doc:`如何将开发结果迁移到生产环境 </how_to/how_to_migrate_development_to_production>`
 
 * 现在可以迁移到另一个数据库。请参阅
-  :doc:`How to migrate to another database </how_to/how_to_migrate_to_another_database>`
+  :doc:`如何迁移到另一个数据库 </how_to/how_to_migrate_to_another_database>`
 
 * 现在客户端 :doc:`virtual_table </refs/client/item/at_virtual_table>`
   和服务器 :doc:`virtual_table </refs/server/item/at_virtual_table>` 上，

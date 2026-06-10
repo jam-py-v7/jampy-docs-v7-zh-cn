@@ -4,13 +4,13 @@ hide_message
 
 .. js:function:: hide_message(form)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 使用 **hide_message** 方法来关闭一个由 :doc:`message <m_message>` 方法创建的模态对话框。

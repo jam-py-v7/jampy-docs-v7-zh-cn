@@ -4,24 +4,23 @@ owner
 
 .. py:attribute:: owner
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-:doc:`Field class </refs/server/field_api>`
+:doc:`Field 类 </refs/server/field_api>`
 
-Description
+描述说明
 ===========
 
-Identifies the item to which a field object belongs.
+指明一个字段对象所属的实体项。
 
-Check the value of the owner attribute to determine the item that uses the field 
-object to represent one of its fields. 
+检查 owner 属性的值，以确定使用当前字段对象表示其字段之一的实体项。
 
-See also
+另请参见
 ========
 
-:doc:`Dataset </programming/data/dataset>`
+:doc:`数据集 </programming/data/dataset>`
 
-:doc:`Fields </programming/data/fields>`
+:doc:`字段 </programming/data/fields>`
 

@@ -1,16 +1,16 @@
 ============
-Detail class
+Detail Detail 类
 ============
 
 .. js:class:: Detail
 
-**范围**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-Detail class 继承了 :doc:`Item class <item_api>` 的属性、方法和事件。
+Detail class 继承了 :doc:`Item 类 <item_api>` 的属性、方法和事件。
 
-Attributes
+属性
 ==========
 
 .. toctree::

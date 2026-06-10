@@ -4,13 +4,13 @@ field_by_name
 
 .. js:function:: field_by_name(field_name)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 当只知道字段的名称时，调用 ``field_by_name`` 方法来检索字段的信息。

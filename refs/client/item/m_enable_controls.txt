@@ -4,18 +4,18 @@ enable_controls
 
 .. js:function:: enable_controls() 
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 调用 ``enable_controls`` 方法以允许在数据感知控件中显示数据，并在之前调用 :doc:`disable_controls <m_disable_controls>` 后再重新绘制它们。
 
-See also
+另请参见
 ========
 
 :doc:`数据感知控件 </programming/interface/data_controls>`

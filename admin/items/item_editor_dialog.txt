@@ -25,7 +25,7 @@
 
 * **可见(Visible)** - 使用此复选框设置实体项的可见属性。该属性的值可在客户端代码中用于创建菜单项等。
 
-* **软删除(Soft delete)** - 当勾选此复选框时，删除方法不会从表中真正地物理删除记录，而是使用此字段将记录标记为已删除。请参阅 :doc:`公共字段 </programming/data/common_fields>` 、 :doc:`服务器端 delete </refs/server/item/m_delete>` 方法、 :doc:`客户端 delete </refs/client/item/m_delete>` 方法。
+* **软删除(Soft delete)** - 当勾选此复选框时，删除方法不会从表中真正地物理删除记录，而是使用此字段将记录标记为已删除。请参阅 :doc:`公共字段 </programming/data/common_fields>` 、 :doc:`服务端的 delete </refs/server/item/m_delete>` 方法、 :doc:`客户端 delete </refs/client/item/m_delete>` 方法。
 
 * **虚拟表(Virtual table)** - 如果勾选此复选框，将不会创建数据库表。使用此选项可以创建具有内存数据集的数据项，或使用其模块编写代码。此复选框必须在创建实体项时设置，以后不能再更改。
 

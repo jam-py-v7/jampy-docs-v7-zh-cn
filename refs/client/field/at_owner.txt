@@ -4,21 +4,21 @@ owner
 
 .. js:attribute:: owner
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Field class </refs/client/field_api>`
+**类**: :doc:`Field 类 </refs/client/field_api>`
 
 
-Description
+描述说明
 ===========
 
 获取字段对象所属的实体项。
 
 检查字段的 owner 属性的值，以确定将该字段对象作为其自身来显示的实体项。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -33,7 +33,7 @@ Example
         }
     }
 
-See also
+另请参见
 ========
 
 :doc:`数据集 </programming/data/dataset>`

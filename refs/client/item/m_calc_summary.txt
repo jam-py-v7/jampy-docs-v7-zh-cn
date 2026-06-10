@@ -4,13 +4,13 @@ calc_summary
 
 .. js:function:: calc_summary(detail, fields)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 calc_summary 方法计算明细项的字段的总和，并在 on_detail_changed 事件处理程序中将这些值保存明细项的主表的字段中。
@@ -22,7 +22,7 @@ Description
 如果 明细项字段是一个数值类型的字段，将对其求和，否则，计算的结果是记录的数量。
 这个对象的值可以是一个函数，它返回对明细项的记录的计算结果。
 
-Example
+示例
 =======
 
 .. code-block:: js
@@ -37,7 +37,7 @@ Example
     }
 
 
-See also
+另请参见
 ========
 
 :doc:`on_detail_changed <on_detail_changed>`

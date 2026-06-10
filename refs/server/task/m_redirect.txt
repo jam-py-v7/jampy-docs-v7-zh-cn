@@ -4,26 +4,25 @@ redirect
 
 .. py:method:: redirect(self, location, code=302, Response=None) 
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Task class </refs/server/task_api>`
+**类**: :doc:`Task 类 </refs/server/task_api>`
 
-Description
+描述说明
 ===========
 
-Using Werkzeug ``redirect`` Object to redirect a Client to the target location. 
+使用  Werkzeug ``redirect`` 对象将客户端重定向到目标位置。
 
-
-Example
+示例
 =======
 
 .. code-block:: py
 
 	task.redirect('/login.html')
 
-See also
+另请参见
 ========
 
 :doc:`serve_page <m_serve_page>`

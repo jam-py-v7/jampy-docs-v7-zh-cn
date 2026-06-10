@@ -4,26 +4,22 @@ is_changing
 
 .. py:function:: is_changing(self) 
 
-**domain**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-**class** :doc:`Item class </refs/server/item_api>`
+**类**: :doc:`Item 类 </refs/server/item_api>`
 
-Description
+描述说明
 ===========
 
-Checks if an item is in edit or insert state and returns true if it is.
+检查实体项是否处于 “编辑” 或 “插入” 状态，如果是，则返回 true 。
 
-An application calls 
-:doc:`edit <m_edit>` 
-to put an item into edit state and
-:doc:`append <m_append>`
-or
-:doc:`insert <m_insert>`
-to put an item into insert state.
+应用程序调用 :doc:`edit <m_edit>` 方式会将实体项置于 “编辑” 状态，
+调用 :doc:`append <m_append>` 或 :doc:`insert <m_insert>` 
+方法会将实体项置于 “插入” 状态。
 
-See also
+另请参见
 ========
 
-:doc:`Modifying datasets </programming/data/modifying_datasets>`
+:doc:`修改数据集 </programming/data/modifying_datasets>`

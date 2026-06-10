@@ -4,25 +4,25 @@ on_edit_form_keydown
 
 on_edit_form_keydown(item, event)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
-``on_edit_form_keydown`` 事件在实体项的 :doc:`edit form <at_edit_form>` 上发生 keydown 事件时被触发。
+``on_edit_form_keydown`` 事件在实体项的 :doc:`编辑表单窗体 <at_edit_form>` 上发生 keydown 事件时被触发。
 
 ``item`` 参数是触发了这个事件的实体项。
 
 ``event`` 是一个 JQuery 事件对象。
 
-See also
+另请参见
 ========
 
-:doc:`Forms </programming/interface/forms>`
+:doc:`表单窗体 </programming/interface/forms>`
 
 :doc:`create_edit_form <m_create_edit_form>`
 

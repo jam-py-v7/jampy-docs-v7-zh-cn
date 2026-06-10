@@ -4,13 +4,13 @@ item_type
 
 .. js:attribute:: item_type
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 指定实现项的类型。使用 type 属性来获取实现项的类型。

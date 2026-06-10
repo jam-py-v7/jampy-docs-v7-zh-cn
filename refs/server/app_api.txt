@@ -1,16 +1,16 @@
 =========
-App class
+App 类
 =========
 
 .. py:class:: App
 
-**范围**: server
+**使用范围**: server
 
-**language**: python
+**编程语言**: python
 
-App class is used to create a WSGI application
+App 类被用于创建一个 WSGI 应用程序。
 
-Below the attributes of the class are listed.
+下面列出了该类的属性。
 
 .. toctree::
     :maxdepth: 1

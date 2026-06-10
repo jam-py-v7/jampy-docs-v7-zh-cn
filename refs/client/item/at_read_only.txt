@@ -4,13 +4,13 @@ read_only
 
 .. js:attribute:: read_only
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 ``read_only`` 属性决定了是否可以修改数据感知控件中的数据。
@@ -24,12 +24,12 @@ data-aware controls.
 
 如果用户角色禁止编辑记录， 那么 ``read_only`` 返回 ``true`` 。
 
-See also
+另请参见
 ========
 
 :doc:`read_only </refs/client/field/at_read_only>`
 
-Example
+示例
 =======
 
 在这个例子中，我们首先将发票实体项的 ``read_only`` 属性设置为 ``true`` 。这将使所有字段和 invoice_table 明细都是只读的。然后，我们运行一个用户编辑 customer 字段和 invoice_table 明细表。

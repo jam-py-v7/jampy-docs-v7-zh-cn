@@ -4,19 +4,19 @@ load_modules
 
 .. js:function:: load_modules(module_array, callback)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`AbstractItem </refs/client/abstractitem_api>`
+**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
-Description
+描述说明
 ===========
 
 在执行 **callback** 前， **load_modules** 方法会动态加载指定的多个模块。
 该方法与 :doc:`load_module <m_load_module>` 的作用类似，不同处是会加载并初始化 **module_array** 中指定的实体项的所有模块。
 
-Example
+示例
 =======
 
 
@@ -32,7 +32,7 @@ Example
         // some code
     }
 
-See also
+另请参见
 ========
 
 :doc:`使用模块 </programming/modules>`

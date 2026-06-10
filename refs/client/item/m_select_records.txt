@@ -4,13 +4,13 @@ select_records
 
 .. js:function:: select_records(field_name, all_records)
 
-**domain**: client 
+**使用范围**: client 
 
-**language**: javascript
+**编程语言**: javascript
 
-**class** :doc:`Item class </refs/client/item_api>`
+**类**: :doc:`Item 类 </refs/client/item_api>`
 
-Description
+描述说明
 ===========
 
 使用 ``select_records`` 方法，通过从字段的查找项中选择记录，将记录添加到实体项中。
@@ -23,7 +23,7 @@ Description
 * ``all_records`` : 如果设置为 true ，将添加对应数据表中的所有记录。
   否则，该方法会忽略实体项中已经存在的记录（那些记录早已添加到了实体项）。
   
-Example
+示例
 =======
 
 .. code-block:: js
