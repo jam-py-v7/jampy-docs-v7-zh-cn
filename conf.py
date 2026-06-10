@@ -49,7 +49,7 @@ import shlex
 # ones.
 
 #extensions = ['sphinx_rtd_theme']
-extensions = ['sphinx_copybutton', 'sphinxcontrib.jquery', 'sphinx.ext.linkcode', 'sphinx_llms_txt']
+extensions = ['sphinx_copybutton', 'sphinxcontrib.jquery', 'sphinx.ext.linkcode', "sphinx.ext.githubpages", 'sphinx_llms_txt']
 html_baseurl = 'https://jampy-docs.readthedocs.io/projects/V7/zh-cn/latest'
 
 html_context = {
@@ -94,7 +94,7 @@ project = u'Jam.py'
 
 copyright = u'2022, Jam.py Team'
 
-author = u'Andrew Yushev & Dean D. Babic'
+author = u'Andrew Yushev & Dean D. Babic & 杨文增'
 
 
 
@@ -236,15 +236,13 @@ html_theme_options = {
 
     'logo_only': False,
 
-    'display_version': True
-
 }
 
 
 
 # Add any paths that contain custom themes here, relative to this directory.
 
-#html_theme_path = ['_templates']
+# html_theme_path = ['_templates']
 
 
 
@@ -458,7 +456,7 @@ latex_documents = [
 
   (master_doc, 'Jampydocumentation.tex', u'Jam.py V7 文档',
 
-   u'Andrew Yushev & Dean D. Babic', 'manual'),
+   u'Andrew Yushev & Dean D. Babic & 杨文增', 'manual'),
 
 ]
 
