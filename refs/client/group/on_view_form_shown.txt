@@ -8,7 +8,7 @@ on_view_form_shown(item)
 
 **编程语言**: javascript
 
-**类**: :doc:`Group 类 </refs/client/item_group_api>`
+**父类**: :doc:`Group 类 </refs/client/item_group_api>`
 
 描述说明
 ===========

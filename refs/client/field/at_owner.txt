@@ -8,7 +8,7 @@ owner
 
 **编程语言**: javascript
 
-**类**: :doc:`Field 类 </refs/client/field_api>`
+**父类**: :doc:`Field 类 </refs/client/field_api>`
 
 
 描述说明

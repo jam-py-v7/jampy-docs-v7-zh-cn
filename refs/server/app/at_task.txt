@@ -8,7 +8,7 @@ task
 
 **编程语言**: python
 
-**类**: :doc:`App 类 </refs/server/app_api>`
+**父类**: :doc:`App 类 </refs/server/app_api>`
 
 描述说明
 ===========

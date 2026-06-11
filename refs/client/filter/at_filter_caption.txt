@@ -8,7 +8,7 @@ filter_caption
 
 **编程语言**: javascript
 
-**类**: :doc:`Filter 类 </refs/client/filter_api>`
+**父类**: :doc:`Filter 类 </refs/client/filter_api>`
 
 
 描述说明

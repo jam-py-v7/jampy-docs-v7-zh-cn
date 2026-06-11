@@ -8,7 +8,7 @@ on_open_report(report)
 
 **编程语言**: javascript
 
-**类**: :doc:`Reports 类 </refs/client/report_group_api>`
+**父类**: :doc:`Reports 类 </refs/client/report_group_api>`
 
 描述说明
 ===========

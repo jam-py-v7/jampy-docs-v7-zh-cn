@@ -8,7 +8,7 @@ task
 
 **编程语言**: python
 
-**类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
+**父类**: :doc:`AbstractItem 类 </refs/server/abstractitem_api>`
 
 描述说明
 ===========

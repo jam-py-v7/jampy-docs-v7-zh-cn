@@ -8,7 +8,7 @@ report_url
 
 **编程语言**: python
 
-**类**: :doc:`Report 类 </refs/server/report_api>`
+**父类**: :doc:`Report 类 </refs/server/report_api>`
 
 描述说明
 ===========

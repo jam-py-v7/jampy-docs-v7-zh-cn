@@ -8,7 +8,7 @@ init_tabs
 
 **编程语言**: javascript
 
-**类**: :doc:`Task </refs/client/task_api>`
+**父类**: :doc:`Task </refs/client/task_api>`
 
 描述说明
 ===========

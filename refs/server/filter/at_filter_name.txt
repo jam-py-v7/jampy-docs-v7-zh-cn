@@ -8,7 +8,7 @@ filter_name
 
 **编程语言**: python
 
-**类**: :doc:`Filter 类 </refs/server/filter_api>`
+**父类**: :doc:`Filter 类 </refs/server/filter_api>`
 
 
 描述说明

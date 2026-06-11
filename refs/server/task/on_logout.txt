@@ -8,4 +8,4 @@ on_logout(task, request)
 
 **编程语言**: python
 
-**类**: :doc:`Task 类 </refs/server/task_api>`
+**父类**: :doc:`Task 类 </refs/server/task_api>`

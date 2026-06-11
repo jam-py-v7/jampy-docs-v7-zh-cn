@@ -8,7 +8,7 @@ item_state
 
 **编程语言**: javascript
 
-**类**: :doc:`实体项 </refs/client/item_api>`
+**父类**: :doc:`实体项 </refs/client/item_api>`
 
 描述说明
 ===========

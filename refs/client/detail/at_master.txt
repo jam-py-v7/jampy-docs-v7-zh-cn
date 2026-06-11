@@ -8,7 +8,7 @@ master
 
 **编程语言**: javascript
 
-**类**: :doc:`Detail 类 </refs/client/detail_api>`
+**父类**: :doc:`Detail 类 </refs/client/detail_api>`
 
 
 描述说明

@@ -8,7 +8,7 @@ load_module
 
 **编程语言**: javascript
 
-**类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
+**父类**: :doc:`AbstractItem </refs/client/abstractitem_api>`
 
 描述说明
 ===========

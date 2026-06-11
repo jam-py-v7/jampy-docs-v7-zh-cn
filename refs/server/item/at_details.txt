@@ -8,7 +8,7 @@ details
 
 **编程语言**: python
 
-**类**: :doc:`Item 类 </refs/server/item_api>`
+**父类**: :doc:`Item 类 </refs/server/item_api>`
 
 描述说明
 ===========

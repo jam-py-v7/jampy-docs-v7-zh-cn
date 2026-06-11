@@ -10,7 +10,7 @@ create_connection_ex
 
 **编程语言**: python
 
-**类**: :doc:`Task 类 </refs/server/task_api>`
+**父类**: :doc:`Task 类 </refs/server/task_api>`
 
 描述说明
 ===========

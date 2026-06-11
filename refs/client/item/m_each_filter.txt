@@ -8,7 +8,7 @@ each_filter
 
 **编程语言**: javascript
 
-**类**: :doc:`Item 类 </refs/client/item_api>`
+**父类**: :doc:`Item 类 </refs/client/item_api>`
 
 描述说明
 ===========
