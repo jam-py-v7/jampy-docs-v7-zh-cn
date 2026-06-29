@@ -417,21 +417,33 @@ htmlhelp_basename = 'Jampydocumentationdoc'
 # -- Options for LaTeX output ---------------------------------------------
 
 
-latex_engine = 'xelatex'
-
-#latex_elements = {
-#
-#    'papersize': 'a4paper',
-#    'pointsize': '10pt',
-#    'preamble': r'''
-#        \usepackage{xeCJK}
-#        \setCJKmainfont{SimSun} % Ensure you have a standard font like SimSun (or WenQuanYi on Linux)
-#    ''',
-#}
 
 latex_elements = {
-    'makeindex': 'zhmakeindex -c -t \\jobname.ind -o \\jobname.idx',
+
+# The paper size ('letterpaper' or 'a4paper').
+
+#'papersize': 'letterpaper',
+
+
+
+# The font size ('10pt', '11pt' or '12pt').
+
+#'pointsize': '10pt',
+
+
+
+# Additional stuff for the LaTeX preamble.
+
+#'preamble': '',
+
+
+
+# Latex figure (float) alignment
+
+#'figure_align': 'htbp',
+
 }
+
 
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -444,7 +456,7 @@ latex_documents = [
 
   (master_doc, 'Jampydocumentation.tex', u'Jam.py V7 文档',
 
-   u'Andrew Yushev & Dean D. Babic & 杨文增', 'manual'),
+   u'Andrew Yushev & Dean D. Babic & Yang Wenzeng 杨文增', 'manual'),
 
 ]
 
