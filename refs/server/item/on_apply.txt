@@ -2,7 +2,7 @@
 on_apply
 ========
 
-on_apply(self, delta, params, connection)
+on_apply(item, delta, params, connection)
 
 **使用范围**: server
 
@@ -25,6 +25,7 @@ on_apply(self, delta, params, connection)
 
 ``on_apply`` 事件处理程序有下列参数：
 
+* ``item`` - 实体项的引用 
 * ``delta`` - 一个包含数据项变更日志的增量（delta）数据（下文将详细讨论）
 * ``params`` - 通过 apply 方法传递到服务端的参数
 * ``connection`` - 用于将更改保存到数据库的连接
