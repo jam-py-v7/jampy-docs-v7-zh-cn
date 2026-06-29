@@ -8,8 +8,7 @@ Report 类
 
 **编程语言**: python
 
-
-下面列出了该类的属性、方法和事件。
+在下面，列出了 Report 类的属性、方法和事件，它们之中有些是继承父类的。
 
 该类同样继承了祖先类 :doc:`AbstractItem 类 <abstractitem_api>` 的属性、方法。
 
