@@ -30,7 +30,7 @@ https://jampy-docs.readthedocs.io/projects/V7/zh-cn/latest/llms.txt
 
 ```
 pip install jam.py-v7
-git clone https://github.com/jam-py-v7/jampy-docs-v7/
+git clone https://github.com/jam-py-v7/jampy-docs-v7-zh-cn/
 cd demo_zh_CN
 server.py
 ```
